@@ -26,16 +26,22 @@ const ProgressGraph = ({ progress, series }) => {
               <div className="seasonCount">{`${watched}/${total}`}</div>
               <div className="seasonBar">
                 {Array.from({ length: watched }).map((_, index) => (
-                  <div key={index} className={`dot`} style={{ width: `2.9%` }}>
+                  <div key={index} className={`dot`} style={{ width: `8px` }}>
                     <div className={`blob ${seasonKey}`} />
                   </div>
                 ))}
 
-                {Array.from({ length: total - watched }).map((_, index) => (
-                  <div key={index} className={`dot`} style={{ width: `2.9%` }}>
-                    <div className={`blob unwatched`} />
-                  </div>
-                ))}
+                {Array.from({ length: total - watched }).map(
+                  (_, index, arr) => (
+                    <div key={index} className="dot" style={{ width: '8px' }}>
+                      <div
+                        className={`blob unwatched ${
+                          index === arr.length - 1 ? 'endBlob' : ''
+                        }`}
+                      />
+                    </div>
+                  )
+                )}
               </div>
             </div>
           )

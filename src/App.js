@@ -4,7 +4,8 @@ import './App.css';
 import chronsEpisodes from './chronsData.js'; // Adjust the path to your data.js file
 import netcafeEpisodes from './netcafeData.js'; // Adjust the path to your data.js file
 import Table from './Table';
-import ProgressGraph from './ProgressGraph';
+import ChronsCategory from './ChronsCategory'; // Add this line to import ChronsCategory
+import NetcafeCategory from './NetcafeCategory'; // Add this line to import NetcafeCategory
 
 import Try from './Try';
 
@@ -31,16 +32,28 @@ function App() {
     chrons: chronsEpisodes,
     netcafe: netcafeEpisodes,
   });
-  const [chronsProgress, setChronsProgress] = useState({});
-  const [netcafeProgress, setNetcafeProgress] = useState({});
   const [progress, setProgress] = useState({ chrons: {}, netcafe: {} });
   const [sortOn, setSortOn] = useState(null);
   const [order, setOrder] = useState(1); // 1 for asc, -1 for desc
   const [isGapiLoaded, setIsGapiLoaded] = useState(false);
   const [thumbnails, setThumbnails] = useState({}); // Store fetched thumbnails
-  const [seasonsProgress, setSeasonsProgress] = useState(null);
   const [series, setSeries] = useState('chrons'); // chrons or netcafe
   const [watchedFilter, setWatchedFilter] = useState(false);
+
+  const [stuImage, setStuImage] = useState(null);
+  const [janeImage, setJaneImage] = useState(null);
+
+  // useEffect(() => {
+  //   const img = new Image();
+  //   img.src = '/stu95.png'; // Preload image
+  //   img.onload = () => setStuImage(img.src);
+  // }, []);
+
+  // useEffect(() => {
+  //   const img = new Image();
+  //   img.src = '/jane95.png'; // Preload image
+  //   img.onload = () => setJaneImage(img.src);
+  // }, []);
 
   // Function to extract video ID from YouTube URL
   const extractVideoId = (url) => {
@@ -156,7 +169,7 @@ function App() {
 
       console.log(updatedEpisodeObj);
 
-      // setEpisodeObjs(updatedEpisodeObj);
+      setEpisodeObjs(updatedEpisodeObj);
     };
 
     if (isGapiLoaded) {
@@ -285,74 +298,21 @@ function App() {
           <div className="greyDivider">
             <div className="whiteLineHalf" />
           </div>
-          {series === 'chrons' ? (
-            <div className="categoryInfo">
-              <div className="picAndTitle">
-                <div className="StuPicContainer">
-                  <img className="stuImg" src="/stu95.png" />
-                </div>
-                <h1 class="ph1 wave">
-                  <span>C</span>
-                  <span>o</span>
-                  <span>m</span>
-                  <span>p</span>
-                  <span>u</span>
-                  <span>t</span>
-                  <span>e</span>
-                  <span>r</span>
-                  <span style={{ marginLeft: '15px' }}> </span>
-                  <span>C</span>
-                  <span>h</span>
-                  <span>r</span>
-                  <span>o</span>
-                  <span>n</span>
-                  <span>i</span>
-                  <span>c</span>
-                  <span>l</span>
-                  <span>e</span>
-                  <span>s</span>
-                  <span style={{ marginLeft: '15px' }}> </span>
-                  <span>🖥️</span>
-                </h1>
-              </div>
 
-              {progress.chrons && progress.netcafe ? (
-                <ProgressGraph progress={progress} series={series} />
-              ) : null}
-            </div>
-          ) : (
-            <div className="categoryInfo">
-              <div className="picAndTitle">
-                <div className="StuPicContainer">
-                  <img className="janeImg" src="/jane95.png" />
-                </div>
-                <h1 className="ph1 wave">
-                  <span>T</span>
-                  <span>h</span>
-                  <span>e</span>
-                  <span style={{ marginLeft: '15px' }}> </span>
-                  <span>I</span>
-                  <span>n</span>
-                  <span>t</span>
-                  <span>e</span>
-                  <span>r</span>
-                  <span>n</span>
-                  <span>e</span>
-                  <span>t</span>
-                  <span style={{ marginLeft: '15px' }}> </span>
-                  <span>C</span>
-                  <span>a</span>
-                  <span>f</span>
-                  <span>e</span>
-                  <span style={{ marginLeft: '15px' }}> </span>
-                  <span>☕</span>
-                </h1>
-              </div>
-              {progress.chrons && progress.netcafe ? (
-                <ProgressGraph progress={progress} series={series} />
-              ) : null}
-            </div>
-          )}
+          <div style={{ display: series === 'chrons' ? 'block' : 'none' }}>
+            <ChronsCategory
+              progress={progress}
+              series={series}
+              janeImage={janeImage}
+            />
+          </div>
+          <div style={{ display: series === 'netcafe' ? 'block' : 'none' }}>
+            <NetcafeCategory
+              progress={progress}
+              series={series}
+              stuImage={stuImage}
+            />
+          </div>
         </div>
         <div className="toolbar">
           <button

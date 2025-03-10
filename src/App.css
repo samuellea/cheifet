@@ -113,7 +113,7 @@ body {
 }
 
 .seasonsProgress {
-  /* border: 1px dashed green; */
+  /* border: 4px dashed pink; */
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -173,6 +173,7 @@ body {
 }
 
 .progressGraph {
+  /* border: 3px solid green; */
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -183,11 +184,6 @@ body {
   bottom: -50px;
   z-index: 3000;
   /* border: 1px solid red; */
-}
-
-.stuImg {
-  /* border: 2px solid red; */
-  height: 90%;
 }
 
 .janeImg {
@@ -201,6 +197,7 @@ body {
   /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
 }
 
 .seasonName {
@@ -272,13 +269,19 @@ body {
 }
 
 .StuPicContainer {
-  /* border: 1px solid red; */
   height: 80%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  overflow: hidden; /* Prevents any layout shifts */
+}
+
+.stuImg {
+  height: 300px; /* Set a fixed height */
+  width: auto; /* Set a fixed width */
+  object-fit: cover; /* Ensures the image fills the box properly */
 }
 
 .wave span {
@@ -385,6 +388,21 @@ body {
   margin-bottom: 4px;
   text-shadow: 6px 4px 0 rgb(134, 134, 134),
     /* Moves the entire shadow down-right */ 3px 3px 0 rgb(134, 134, 134);
+}
+
+.ph1Container {
+  /* border: 1px solid red; */
+  height: 90px;
+  max-height: 90px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.netcafeTitle {
+  /* color: rgb(195, 55, 55); */
 }
 
 .columnHeaders {
@@ -604,10 +622,14 @@ body {
 }
 
 .blob {
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   background-color: blue; /* Or any color you'd like for the blob */
-  border-radius: 50%; /* Makes the div round */
+  border-radius: 0px; /* Makes the div round */
+}
+
+.endBlob {
+  border-radius: 0px 50px 50px 0px;
 }
 
 .unwatched {
