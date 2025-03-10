@@ -1,0 +1,145 @@
+import React, { useState } from 'react';
+import { format } from 'date-fns';
+
+const Row = ({ episode, index, lastInSeason }) => {
+  const {
+    id,
+    season,
+    episodeOfSeason,
+    titles,
+    date,
+    internetArchiveURL,
+    youtubeURL,
+    youtubeThumbnail,
+    framesURL,
+    watched,
+    streamTitle,
+    streamDate,
+    streamURL,
+  } = episode;
+
+  const [showFrames, setShowFrames] = useState(false);
+
+  /*
+  
+  https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_1999Codi99
+
+  https://storage.googleapis.com/data.gdeltproject.org/gdeltv3/iatv/visualexplorer/IAITEM_1999Codi99.jpg
+
+  https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Year2000
+  
+  https://storage.googleapis.com/data.gdeltproject.org/gdeltv3/iatv/visualexplorer/IAITEM_Year2000.jpg
+  */
+
+  const formattedDate = date ? format(new Date(date), 'MMM d, yyyy') : null;
+  const formattedStreamDate = streamDate
+    ? format(new Date(streamDate), 'MMM d, yyyy')
+    : null;
+  const rowInfoClass = `rowInfo watched-${watched}`;
+  const rowFramesClass = `rowFrames showFrames-${showFrames}`;
+
+  const extractId = (url) => {
+    if (!url) return null;
+    const match = url.match(/[?&]id=([^&]+)/);
+    return match.length ? match[1] : null; // Return the matched id or null if no match is found
+  };
+
+  const handleClickFrames = () => {
+    if (!framesURL) return;
+    if (!showFrames) {
+      setShowFrames(true);
+    } else {
+      setShowFrames(false);
+    }
+  };
+
+  const imageURLStart = `https://storage.googleapis.com/data.gdeltproject.org/gdeltv3/iatv/visualexplorer/`;
+  const imageNamePortion = extractId(framesURL);
+  const fullFramesImgURL = `${imageURLStart}${imageNamePortion}.jpg`;
+
+  // Determine the background color based on the index
+  const rowBackgroundColor = index % 2 === 0 ? 'white' : 'rgb(244, 244, 244)';
+
+  return (
+    <div
+      className="row"
+      style={{
+        borderBottom: lastInSeason ? '1px solid rgb(244, 244, 244)' : 'none',
+        backgroundColor: rowBackgroundColor, // Set the background color conditionally
+      }}
+    >
+      <div className={rowInfoClass}>
+        <div className={`cell ep season${season}`}>{episodeOfSeason}</div>
+        {watched === true || watched === 'partial' ? (
+          <div className="progress">{watched === true ? '✅' : '⏳'}</div>
+        ) : null}
+        <div className="cell title">
+          <p>{titles.join(' / ')}</p>
+        </div>
+        <div className="cell date">{formattedDate}</div>
+        <div className="cell youtube">
+          {youtubeURL ? (
+            <a target="_blank" href={youtubeURL} rel="noreferrer">
+              ▶️ YouTube
+            </a>
+          ) : null}
+        </div>
+        <div className="cell frames" onClick={handleClickFrames}>
+          {framesURL ? (
+            <>
+              🔎 See <br />
+              🎞️ Frames
+            </>
+          ) : null}
+        </div>
+        <div className="cell internetArchive">
+          {framesURL ? (
+            <a target="_blank" href={youtubeURL} rel="noreferrer">
+              ▶️ Internet Archive
+            </a>
+          ) : null}
+        </div>
+        <div className="cell streamDate">
+          {watched === true || watched === 'partial' ? (
+            <p className="">{formattedStreamDate}</p>
+          ) : null}
+        </div>
+
+        <div
+          className="cell streamTitle"
+          id={!framesURL ? 'unclickable' : null}
+        >
+          {watched === true || watched === 'partial' ? (
+            <>
+              <img src={youtubeThumbnail} />
+              <p>
+                {' '}
+                <a target="_blank" href={streamURL} rel="noreferrer">
+                  🔗 {streamTitle}
+                </a>
+              </p>
+            </>
+          ) : null}
+        </div>
+      </div>
+      <div className={rowFramesClass}>
+        <div className="left">
+          <div className="leftSticky">
+            <button
+              className="closeFramesButton"
+              type="button"
+              onClick={handleClickFrames}
+            >
+              <div className="closeFramesButtonInside">Close</div>
+            </button>
+          </div>
+        </div>
+        <div className="right">
+          <img src={fullFramesImgURL} alt="episode thumbs" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Row;
