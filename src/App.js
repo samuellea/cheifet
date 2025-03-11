@@ -7,8 +7,6 @@ import Table from './Table';
 import ChronsCategory from './ChronsCategory'; // Add this line to import ChronsCategory
 import NetcafeCategory from './NetcafeCategory'; // Add this line to import NetcafeCategory
 
-import Try from './Try';
-
 function App() {
   const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
 
