@@ -203,18 +203,8 @@ function App() {
     <div className="App">
       <div className="pageHeader">
         <div className="windowPicContainer">
-          <img className="windowImg" src="/window.png" />
+          <img className="bannerGif" src="/banner.gif" />
           <h1 className="pageHeaderTitle">
-            Has{' '}
-            <a
-              href="https://www.youtube.com/@FrancisHiggins"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="header-link"
-            >
-              Francis
-            </a>{' '}
-            watched...
             <div className="windowButtons">
               <p>Yes</p>
               <p>No</p>
@@ -226,21 +216,21 @@ function App() {
           A resource for keeping track of{' '}
           <span style={{ fontWeight: 900 }}>Computer Chronicles</span> /{' '}
           <span style={{ fontWeight: 900 }}>Netcafe </span>
-          episodes watched on{' '}
+          episodes watched on Francis Higgins'{' '}
           <a
             href="https://www.youtube.com/@FrancisHiggins/playlists"
             target="_blank"
             rel="noopener noreferrer"
             className="header-link"
           >
-            stream
+            streams
           </a>
         </p>
         <div className="followContainer">
           <p className="followText">
             Follow:
             <a
-              href="https://www.youtube.com/@FrancisHiggins/playlists"
+              href="https://www.youtube.com/@FrancisHiggins/"
               target="_blank"
               rel="noopener noreferrer"
               className="header-link"

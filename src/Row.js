@@ -85,8 +85,12 @@ const Row = ({ episode, index, lastInSeason }) => {
             </a>
           ) : null}
         </div>
-        <div className="cell frames" onClick={handleClickFrames}>
-          {framesURL ? (
+        <div
+          className="cell frames"
+          style={{ cursor: framesURL.length ? 'pointer' : 'default' }}
+          onClick={() => (framesURL.length ? handleClickFrames() : null)}
+        >
+          {framesURL.length ? (
             <>
               🔎 See <br />
               🎞️ Frames
@@ -94,7 +98,7 @@ const Row = ({ episode, index, lastInSeason }) => {
           ) : null}
         </div>
         <div className="cell internetArchive">
-          {framesURL ? (
+          {internetArchiveURL.length ? (
             <a target="_blank" href={internetArchiveURL[0]} rel="noreferrer">
               ▶️ Internet Archive
             </a>

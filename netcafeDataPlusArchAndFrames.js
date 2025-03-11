@@ -1,31 +1,3 @@
-/*
-youtubeURL: null,
-    internetArchiveURL: [ null ],
-    framesURL: [ null ],
-    watched: false,
-    streamTitle: null,
-    streamDate: null,
-    streamURL: null,
-    
-    {
-      index: 0,
-      season: 1996,
-      episodeOfSeason: 1,
-      titles: [''],
-      date: '1996',
-    },
- 
-    {
-      '1996': 10,
-      '1997': 23,
-      '1998': 30,
-      '1999': 21,
-      '2000': 11,
-      '2001': 17,
-      '2002': 7,
-    }
-*/
-
 const netcafeEpisodes = [
   {
     index: 1,
@@ -720,7 +692,7 @@ const netcafeEpisodes = [
     index: 43,
     season: '1998',
     episodeOfSeason: 14,
-    titles: ['Home Improvement (1998)', 'Home Improvement'],
+    titles: ['Home Improvement', 'Home Improvement'],
     date: null,
     youtubeURL: null,
     internetArchiveURL: ['https://archive.org/details/nc231_home_improvement'],
@@ -1928,11 +1900,13 @@ const netcafeEpisodes = [
     index: 116,
     season: '2002',
     episodeOfSeason: 1,
-    titles: ['Home Improvement (2002)', 'Home Improvement'],
+    titles: ['Home Improvement', 'Home Improvement'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: [],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/HomeImpr2002'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HomeImpr2002',
+    ],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2084,5 +2058,3 @@ const netcafeEpisodes = [
     streamURL: null,
   },
 ];
-
-module.exports = netcafeEpisodes;

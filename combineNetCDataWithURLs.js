@@ -1,32 +1,56 @@
-/*
-youtubeURL: null,
-    internetArchiveURL: [ null ],
-    framesURL: [ null ],
-    watched: false,
-    streamTitle: null,
-    streamDate: null,
-    streamURL: null,
-    
-    {
-      index: 0,
-      season: 1996,
-      episodeOfSeason: 1,
-      titles: [''],
-      date: '1996',
-    },
- 
-    {
-      '1996': 10,
-      '1997': 23,
-      '1998': 30,
-      '1999': 21,
-      '2000': 11,
-      '2001': 17,
-      '2002': 7,
-    }
-*/
+const fs = require('fs');
 
-const netcafeEpisodes = [
+function updateData(A, B) {
+  // Map over each object in array A
+  const updatedArray = A.map((objA) => {
+    // Check if .internetArchiveURL is an empty array
+    if (
+      Array.isArray(objA.internetArchiveURL) &&
+      objA.internetArchiveURL.length === 0
+    ) {
+      // Extract the second element from .titles array in the current object of A
+      const titleToMatch = objA.titles[1];
+
+      // Find the matching object in B based on the .gdeltTitle
+      const matchingObjectB = B.find(
+        (objB) => objB.gdeltTitle === titleToMatch
+      );
+
+      // If a matching object is found in B, proceed with the update
+      if (matchingObjectB) {
+        const urlFromB = matchingObjectB.url;
+
+        // Set .framesURL to be an array with the matching URL as the only item
+        objA.framesURL = [urlFromB];
+
+        // Extract the portion of the .url value after 'IAITEM_'
+        const iaItemPortion = urlFromB.split('IAITEM_')[1];
+
+        // Create a new internetArchiveURL by appending the portion to the base URL
+        const internetArchiveURL = `https://archive.org/details/${iaItemPortion}`;
+
+        // Set .internetArchiveURL to be an array with the new URL as the only item
+        objA.internetArchiveURL = [internetArchiveURL];
+      }
+    }
+    return objA;
+  });
+
+  // Save the updated array to a file
+  const fileContent = `const netcafeDataPlusArchAndFrames = ${JSON.stringify(
+    updatedArray,
+    null,
+    2
+  )};`;
+
+  // Write to 'netcafeDataPlusArchAndFrames.js'
+  fs.writeFileSync('netcafeDataPlusArchAndFrames.js', fileContent);
+
+  // Return the updated array
+  return updatedArray;
+}
+
+const arrA = [
   {
     index: 1,
     season: '1996',
@@ -104,10 +128,8 @@ const netcafeEpisodes = [
     titles: ['Women on the Web', 'Women on the Web'],
     date: 846460800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc105_women'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc105_women',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -120,10 +142,8 @@ const netcafeEpisodes = [
     titles: ['Games', 'Games on the Net'],
     date: 847065600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc106_games'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc106_games',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -136,10 +156,8 @@ const netcafeEpisodes = [
     titles: ['The 3D Web', 'The 3D Web'],
     date: 847843200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc107_vrml3d_worlds'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc107_vrml3d_worlds',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -152,10 +170,8 @@ const netcafeEpisodes = [
     titles: ['Music', 'Music Web Sites'],
     date: 848275200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc110_music'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc110_music',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -168,10 +184,8 @@ const netcafeEpisodes = [
     titles: ['Movies', 'Movies Online'],
     date: 849571200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc111_movies'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc111_movies',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -184,10 +198,8 @@ const netcafeEpisodes = [
     titles: ['Writers', 'Cyber Writing'],
     date: 850867200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc112_writers'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc112_writers',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -248,10 +260,8 @@ const netcafeEpisodes = [
     titles: ['Weird Science', 'Weird Science on the Web'],
     date: 855792000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc107_weird_science'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc107_weird_science',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -264,10 +274,8 @@ const netcafeEpisodes = [
     titles: ['Travel Sites Online', 'Travel Sites Online'],
     date: 856483200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc108_travel'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc108_travel',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -280,12 +288,8 @@ const netcafeEpisodes = [
     titles: ['Equality and Diversity', 'Equality & Diversity On Line'],
     date: 857088000000,
     youtubeURL: null,
-    internetArchiveURL: [
-      'https://archive.org/details/nc109_equality-diversity',
-    ],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc109_equality-diversity',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -329,10 +333,8 @@ const netcafeEpisodes = [
     titles: ['Health Sites', 'Health Sites'],
     date: 859507200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc113_health'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc113_health',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -345,10 +347,8 @@ const netcafeEpisodes = [
     titles: ['TV Shows Online', 'TV Shows Online'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/TVshowso98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TVshowso98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -361,10 +361,8 @@ const netcafeEpisodes = [
     titles: ['Censorship Online', 'Censorship Online'],
     date: 826761600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc111_censorship'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc111_censorship',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -394,10 +392,8 @@ const netcafeEpisodes = [
     titles: ['Online Sports', 'Online Sports'],
     date: 880675200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/OnlineSp1997'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineSp1997',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -410,10 +406,8 @@ const netcafeEpisodes = [
     titles: ['Privacy in Cyberspace', 'Privacy in Cyberspace'],
     date: 883094400000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/privacyi97'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_privacyi97',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -426,10 +420,8 @@ const netcafeEpisodes = [
     titles: ['Science Fiction Online', 'Science Fiction Online'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc118_scifi'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc118_scifi',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -459,10 +451,8 @@ const netcafeEpisodes = [
     titles: ['Virtual Doctors', 'Virtual Doctors'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc216_virtual_doctor'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc216_virtual_doctor',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -475,10 +465,8 @@ const netcafeEpisodes = [
     titles: ['Web Radio', 'Web Radio'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/webradio97'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_webradio97',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -491,10 +479,8 @@ const netcafeEpisodes = [
     titles: ['Webby Awards 1997', 'Webby Awards 1997'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc112_webby_awards'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc112_webby_awards',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -524,10 +510,8 @@ const netcafeEpisodes = [
     titles: ['Online Sports', 'Online Sports'],
     date: 880675200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/OnlineSp1997'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineSp1997',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -540,10 +524,8 @@ const netcafeEpisodes = [
     titles: ['Privacy in Cyberspace', 'Privacy in Cyberspace'],
     date: 877647600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/privacyi97'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_privacyi97',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -556,10 +538,8 @@ const netcafeEpisodes = [
     titles: ['Web Radio', 'Web Radio'],
     date: 877042800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/webradio97'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_webradio97',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -589,10 +569,8 @@ const netcafeEpisodes = [
     titles: ['War on the Web', 'War On The Web'],
     date: 887932800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/WarOnThe00'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WarOnThe00',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -605,10 +583,8 @@ const netcafeEpisodes = [
     titles: ['Chat Rooms', 'Chat Rooms'],
     date: 907887600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/ChatRoom00'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ChatRoom00',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -638,10 +614,8 @@ const netcafeEpisodes = [
     titles: ['Cyber News', 'Cyber News'],
     date: 888883200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/CyberNew00'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CyberNew00',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -691,10 +665,8 @@ const netcafeEpisodes = [
     ],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc428_gambling_games'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc428_gambling_games',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -707,10 +679,8 @@ const netcafeEpisodes = [
     titles: ['Games on the Net', 'Games on the Net'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc106_games'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc106_games',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -720,7 +690,7 @@ const netcafeEpisodes = [
     index: 43,
     season: '1998',
     episodeOfSeason: 14,
-    titles: ['Home Improvement (1998)', 'Home Improvement'],
+    titles: ['Home Improvement', 'Home Improvement'],
     date: null,
     youtubeURL: null,
     internetArchiveURL: ['https://archive.org/details/nc231_home_improvement'],
@@ -739,10 +709,8 @@ const netcafeEpisodes = [
     titles: ['Investing Online (1998)', 'Investing Online'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Investin1998'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Investin1998',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -772,10 +740,8 @@ const netcafeEpisodes = [
     titles: ['Safe Kids Safe Net', 'Safe Kids Safe Net'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/SafeKids2002'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SafeKids2002',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -791,10 +757,8 @@ const netcafeEpisodes = [
     ],
     date: 895791600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/BestSOHO98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BestSOHO98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -807,10 +771,8 @@ const netcafeEpisodes = [
     titles: ['Space Science', 'Space Science'],
     date: 893977200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/SpaceSci98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpaceSci98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -823,10 +785,8 @@ const netcafeEpisodes = [
     titles: ['The Global Net', 'The Global Net'],
     date: 910915200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/GlobalNe99'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GlobalNe99',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -839,10 +799,8 @@ const netcafeEpisodes = [
     titles: ['TV Shows Online', 'TV Shows Online'],
     date: 878256000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/TVshowso98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TVshowso98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -858,10 +816,8 @@ const netcafeEpisodes = [
     ],
     date: 886118400000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Findinga98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Findinga98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -874,10 +830,8 @@ const netcafeEpisodes = [
     titles: ['Best SOHO Resources', 'Small Business Resources On the Net'],
     date: 895791600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/BestSOHO98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BestSOHO98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -907,10 +861,8 @@ const netcafeEpisodes = [
     titles: ['Humor on the Web', 'Humor on the Web'],
     date: 899420400000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/HumorOnT98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HumorOnT98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -959,10 +911,8 @@ const netcafeEpisodes = [
     titles: ['Jobs and Careers', 'Jobs and Careers'],
     date: 902444400000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/JobsandC98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_JobsandC98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -975,10 +925,8 @@ const netcafeEpisodes = [
     titles: ['The Hollywood Connection', 'The Hollywood Connection'],
     date: 903049200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Hollywoo98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Hollywoo98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -991,10 +939,8 @@ const netcafeEpisodes = [
     titles: ['Sex Online', 'Sex Online'],
     date: 904863600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/SexOnlin98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SexOnlin98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1007,10 +953,8 @@ const netcafeEpisodes = [
     titles: ['Cool Home Pages', 'Cool Home Pages'],
     date: 906073200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/CoolHome98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CoolHome98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1023,10 +967,8 @@ const netcafeEpisodes = [
     titles: ['Making Money On Line', 'Making Money On Line'],
     date: 906678000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Moneyont98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Moneyont98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1039,10 +981,8 @@ const netcafeEpisodes = [
     titles: ['Portals', 'Portals'],
     date: 911520000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Portals98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Portals98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1055,10 +995,8 @@ const netcafeEpisodes = [
     titles: ['Space Science', 'Space Science'],
     date: 893977200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/SpaceSci98'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpaceSci98',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1071,10 +1009,8 @@ const netcafeEpisodes = [
     titles: ['Incredibly Useful Sites', 'Incredibly Useful Sites'],
     date: 923612400000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Incredib1999'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Incredib1999',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1087,10 +1023,8 @@ const netcafeEpisodes = [
     titles: ['Online Literature', 'Online Literature'],
     date: 915753600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/OnlineLi1999'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineLi1999',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1103,10 +1037,8 @@ const netcafeEpisodes = [
     titles: ['Adventure Travel Online', 'Adventure Travel Online'],
     date: 916963200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Adventur1999'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Adventur1999',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1119,10 +1051,8 @@ const netcafeEpisodes = [
     titles: ['Crime and Justice', 'Crime and Justice'],
     date: 924822000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Crimeand1999'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Crimeand1999',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1151,10 +1081,8 @@ const netcafeEpisodes = [
     titles: ['Lions and Tigers and Bears', 'Lions and Tigers and Bears'],
     date: 930265200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Lionsand1999'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Lionsand1999',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1167,10 +1095,8 @@ const netcafeEpisodes = [
     titles: ['Hollywood on the Net', 'Hollywood on the Net'],
     date: 930870000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Hollywoo1999'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Hollywoo1999',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1197,10 +1123,8 @@ const netcafeEpisodes = [
     titles: ['Lifelong Learning', 'Lifelong Learning'],
     date: 938732400000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Lifelong1999'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Lifelong1999',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1229,10 +1153,8 @@ const netcafeEpisodes = [
     titles: ['E-Commerce', 'E-Commerce'],
     date: 940546800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/ECommerc1999'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ECommerc1999',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1292,10 +1214,8 @@ const netcafeEpisodes = [
     titles: ['Humor Online', 'Humor Online'],
     date: 946339200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/HumorOnl00'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HumorOnl00',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1308,10 +1228,8 @@ const netcafeEpisodes = [
     titles: ['New Age Websites', 'New Age Web Sites'],
     date: 932079600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc439_new_age_websites'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc439_new_age_websites',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1338,10 +1256,8 @@ const netcafeEpisodes = [
     titles: ['Consumer Protection Online', 'Consumer Protection Online'],
     date: 928450800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Consumer99'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Consumer99',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1354,10 +1270,8 @@ const netcafeEpisodes = [
     titles: ['Online Collecting', 'Online Collecting'],
     date: 931474800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/nc440_online_collecting'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc440_online_collecting',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1370,10 +1284,8 @@ const netcafeEpisodes = [
     titles: ['Webby Awards 1999 - Part One', 'Webby Awards 1999 – Part One'],
     date: 925426800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/WebbyAwa99'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WebbyAwa99',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1386,10 +1298,8 @@ const netcafeEpisodes = [
     titles: ['Webby Awards 1999 - Part Two', 'Webby Awards 1999 – Part Two'],
     date: 926031600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/WebbyAwa99_2'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WebbyAwa99_2',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1402,10 +1312,8 @@ const netcafeEpisodes = [
     titles: ['Online Job Hunting', 'Online Job Hunting'],
     date: 953251200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/OnlineJo2000'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineJo2000',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1418,10 +1326,8 @@ const netcafeEpisodes = [
     titles: ['Entertainment on the Web', 'Entertainment on the Web'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Entertai2000'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Entertai2000',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1434,10 +1340,8 @@ const netcafeEpisodes = [
     titles: ['Finding People Online', 'Finding People Online'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/FindingP2000'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_FindingP2000',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1470,10 +1374,8 @@ const netcafeEpisodes = [
     ],
     date: 955580400000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/NewWebBu01_4'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebBu01_4',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1489,10 +1391,8 @@ const netcafeEpisodes = [
     ],
     date: 955666800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/PreIPOCo00'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_PreIPOCo00',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1505,10 +1405,8 @@ const netcafeEpisodes = [
     titles: ['Web Startups May 5th', 'Net Cafe: Web StartUps – May 5, 2000'],
     date: 957481200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/NewWebEn2000'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebEn2000',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1521,10 +1419,8 @@ const netcafeEpisodes = [
     titles: ['Web Startups May 26th', 'Net Cafe: Web StartUps – May 26, 2000'],
     date: 959295600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/PreIPOCo01'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_PreIPOCo01',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1556,10 +1452,8 @@ const netcafeEpisodes = [
     ],
     date: 973209600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_529_newb'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_529_newb',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1591,10 +1485,8 @@ const netcafeEpisodes = [
     titles: ['Webby Awards 2000 Part One', 'Webby Awards 2000 – Part One'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/2000Webb00'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_2000Webb00',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1607,10 +1499,8 @@ const netcafeEpisodes = [
     titles: ['Webby Awards 2000 Part Two', 'Webby Awards 2000 – Part Two'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/2000Webb00_2'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_2000Webb00_2',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1654,10 +1544,8 @@ const netcafeEpisodes = [
     titles: ['New Web Sites', 'New Web Sites – Part 1'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/NewWebSi2001'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebSi2001',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1687,10 +1575,8 @@ const netcafeEpisodes = [
     ],
     date: 984096000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_530_newb'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_530_newb',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1706,10 +1592,8 @@ const netcafeEpisodes = [
     ],
     date: 986511600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_533_neww'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_533_neww',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1725,10 +1609,8 @@ const netcafeEpisodes = [
     ],
     date: 987116400000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_528_netc'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_528_netc',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1744,10 +1626,8 @@ const netcafeEpisodes = [
     ],
     date: 987721200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/HotNewWe01_7'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_7',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1760,10 +1640,8 @@ const netcafeEpisodes = [
     titles: ['Web Startups May 4th', 'Net Cafe: Web StartUps – May 4, 2001'],
     date: 988930800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Internet01_2'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Internet01_2',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1776,10 +1654,8 @@ const netcafeEpisodes = [
     titles: ['Web Startups May 11th', 'Net Cafe: Web StartUps – May 11, 2001'],
     date: 989535600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/HotNewWe01_6'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_6',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1792,10 +1668,8 @@ const netcafeEpisodes = [
     titles: ['Web Startups June 1st', 'Net Cafe: Web StartUps – June 1, 2001'],
     date: 991350000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/HotNewWe01_3'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_3',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1808,10 +1682,8 @@ const netcafeEpisodes = [
     titles: ['Web Startups June 8th', 'Net Cafe: Web StartUps – June 8, 2001'],
     date: 991954800000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/HotNewWe01_4'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_4',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1827,10 +1699,8 @@ const netcafeEpisodes = [
     ],
     date: 992559600000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/NewWebBu01_2'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebBu01_2',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1846,10 +1716,8 @@ const netcafeEpisodes = [
     ],
     date: 993769200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/Internet2001'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Internet2001',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1896,10 +1764,8 @@ const netcafeEpisodes = [
     ],
     date: 1007683200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_616_netc'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_616_netc',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1915,10 +1781,8 @@ const netcafeEpisodes = [
     ],
     date: 1008288000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_617_netc'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_617_netc',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1928,11 +1792,13 @@ const netcafeEpisodes = [
     index: 116,
     season: '2002',
     episodeOfSeason: 1,
-    titles: ['Home Improvement (2002)', 'Home Improvement'],
+    titles: ['Home Improvement', 'Home Improvement'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: [],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/HomeImpr2002'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HomeImpr2002',
+    ],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1945,12 +1811,8 @@ const netcafeEpisodes = [
     titles: ['Nicholas Negroponte Part One', 'Nicholas Negroponte – Part One'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: [
-      'https://archive.org/details/nc613_nicholas_negroponte_pt1',
-    ],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc613_nicholas_negroponte_pt1',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1963,12 +1825,8 @@ const netcafeEpisodes = [
     titles: ['Nicholas Negroponte Part Two', 'Nicholas Negroponte – Part Two'],
     date: null,
     youtubeURL: null,
-    internetArchiveURL: [
-      'https://archive.org/details/nc615_nicholas_negroponte_pt2',
-    ],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc615_nicholas_negroponte_pt2',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1998,10 +1856,8 @@ const netcafeEpisodes = [
     ],
     date: 1010102400000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_609_netc'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_609_netc',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2017,10 +1873,8 @@ const netcafeEpisodes = [
     ],
     date: 1010707200000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_610_netc'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_610_netc',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2036,10 +1890,8 @@ const netcafeEpisodes = [
     ],
     date: 1014336000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_611_netc'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_611_netc',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2055,10 +1907,8 @@ const netcafeEpisodes = [
     ],
     date: 1014336000000,
     youtubeURL: null,
-    internetArchiveURL: ['https://archive.org/details/tmp_nc_612_netc'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_612_netc',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2085,4 +1935,479 @@ const netcafeEpisodes = [
   },
 ];
 
-module.exports = netcafeEpisodes;
+const arrB = [
+  {
+    gdeltTitle: 'Adventure Travel Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Adventur1999',
+  },
+  {
+    gdeltTitle: 'Art on the Net',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc104_art',
+  },
+  {
+    gdeltTitle: 'Buy It Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Buyitonl98',
+  },
+  {
+    gdeltTitle: 'Censorship Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc111_censorship',
+  },
+  {
+    gdeltTitle: 'Chat Rooms',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ChatRoom00',
+  },
+  {
+    gdeltTitle: 'Comic Books on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc102_comics',
+  },
+  {
+    gdeltTitle: 'Conspiracy Theories (2001)',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Conspira2001',
+  },
+  {
+    gdeltTitle: 'Conspiracy Theories (1999)',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Conspira1999',
+  },
+  {
+    gdeltTitle: 'Consumer Protection Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Consumer99',
+  },
+  {
+    gdeltTitle: 'Cool Home Pages',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CoolHome98',
+  },
+  {
+    gdeltTitle: 'Crime and Justice',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Crimeand1999',
+  },
+  {
+    gdeltTitle: 'Cyber Chat',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CyberCha98',
+  },
+  {
+    gdeltTitle: 'Cyber Communities',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CyberCom99',
+  },
+  {
+    gdeltTitle: 'Cyber News',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CyberNew00',
+  },
+  {
+    gdeltTitle: 'Cyber Sports',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CyberSpo99',
+  },
+  {
+    gdeltTitle: 'Cyber Writing',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc112_writers',
+  },
+  {
+    gdeltTitle: 'Disinformation on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc119_disinformation',
+  },
+  {
+    gdeltTitle: 'E-Commerce',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ECommerc1999',
+  },
+  {
+    gdeltTitle: 'Entertainment on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Entertai2000',
+  },
+  {
+    gdeltTitle: 'Equality & Diversity On Line',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc109_equality-diversity',
+  },
+  {
+    gdeltTitle: 'Extreme Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc351_xtreme_web',
+  },
+  {
+    gdeltTitle: 'Finding Anyone / Anything Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Findinga98',
+  },
+  {
+    gdeltTitle: 'Finding People Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_FindingP2000',
+  },
+  {
+    gdeltTitle: 'Fun Web Sites',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_JustforF1999',
+  },
+  {
+    gdeltTitle: 'Gambling and Gaming on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc428_gambling_games',
+  },
+  {
+    gdeltTitle: 'Games on the Net',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc106_games',
+  },
+  {
+    gdeltTitle: 'Grim Reaper Web Sites',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GrimReap98',
+  },
+  {
+    gdeltTitle: 'Grim Reaper Web Sites',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GrimReap00',
+  },
+  {
+    gdeltTitle: 'Group Therapy Net Style (1998)',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GroupThe98',
+  },
+  {
+    gdeltTitle: 'Group Therapy Net Style (2002)',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GroupThe02',
+  },
+  {
+    gdeltTitle: 'Hackers',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc101_hackers',
+  },
+  {
+    gdeltTitle: 'Health Sites',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc113_health',
+  },
+  {
+    gdeltTitle: 'Hollywood on the Net',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Hollywoo1999',
+  },
+  {
+    gdeltTitle: 'Home Improvement',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc231_home_improvement',
+  },
+  {
+    gdeltTitle: 'Home Improvement',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HomeImpr2002',
+  },
+  {
+    gdeltTitle: 'Humor on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HumorOnT98',
+  },
+  {
+    gdeltTitle: 'Humor Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HumorOnl00',
+  },
+  {
+    gdeltTitle: 'Incredibly Useful Sites',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Incredib1999',
+  },
+  {
+    gdeltTitle: 'Investing Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Investin1998',
+  },
+  {
+    gdeltTitle: 'Jobs and Careers',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_JobsandC98',
+  },
+  {
+    gdeltTitle: 'Lifelong Learning',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Lifelong1999',
+  },
+  {
+    gdeltTitle: 'Lions and Tigers and Bears',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Lionsand1999',
+  },
+  {
+    gdeltTitle: 'Love and Romance on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc103_dating_romance',
+  },
+  {
+    gdeltTitle: 'Making Money On Line',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Moneyont98',
+  },
+  {
+    gdeltTitle: 'Movies Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc111_movies',
+  },
+  {
+    gdeltTitle: 'Music Web Sites',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc110_music',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – April 13, 2000',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebBu01_4',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – April 13, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_528_netc',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – April 14, 2000',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_PreIPOCo00',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – April 20, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_7',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – April 6, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_533_neww',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – April 6, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebBu01',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Dec 14, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_617_netc',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Dec 7, 2000',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_StateOfT02',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Dec 7, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_616_netc',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Feb 15, 2002',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_611_netc',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Feb 22, 2002',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_612_netc',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Jan 11, 2002',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_610_netc',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Jan 4, 2002',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_609_netc',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – June 1, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_3',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – June 1, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_531_hotn',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – June 15, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebBu01_2',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – June 15, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebBu01_3',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – June 29, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Internet2001',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – June 8, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_4',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – June 8, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_5',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – March 9, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_530_newb',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – May 11, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_6',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – May 11, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01_2',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – May 26, 2000',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_PreIPOCo01',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – May 4, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Internet01_2',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – May 4, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Internet01',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – May 4, 2001',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HotNewWe01',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – May 5, 2000',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebEn2000',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – November 3, 2000',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_tmp_nc_529_newb',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Oct 13, 2000',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebSi02',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Oct 20, 2000',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Newwebsi01_2',
+  },
+  {
+    gdeltTitle: 'Net Cafe: Web StartUps – Oct 6, 2000',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Newwebsi01',
+  },
+  {
+    gdeltTitle: 'Net Games',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NetGames00',
+  },
+  {
+    gdeltTitle: 'New Age Web Sites',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc439_new_age_websites',
+  },
+  {
+    gdeltTitle: 'New Web Sites – Part 1',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewWebSi2001',
+  },
+  {
+    gdeltTitle: 'Nicholas Negroponte – Part One',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc613_nicholas_negroponte_pt1',
+  },
+  {
+    gdeltTitle: 'Nicholas Negroponte – Part Two',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc615_nicholas_negroponte_pt2',
+  },
+  {
+    gdeltTitle: 'Online Activism',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc217_online_activism',
+  },
+  {
+    gdeltTitle: 'Online Collecting',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc440_online_collecting',
+  },
+  {
+    gdeltTitle: 'Online Job Hunting',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineJo2000',
+  },
+  {
+    gdeltTitle: 'Online Literature',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineLi1999',
+  },
+  {
+    gdeltTitle: 'Online Sports',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineSp1997',
+  },
+  {
+    gdeltTitle: 'Performing Arts on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Performi1999',
+  },
+  {
+    gdeltTitle: 'Politics on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc103_cyberpolitics',
+  },
+  {
+    gdeltTitle: 'Portals',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Portals98',
+  },
+  {
+    gdeltTitle: 'Privacy in Cyberspace',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_privacyi97',
+  },
+  {
+    gdeltTitle: 'Safe Kids Safe Net',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SafeKids2002',
+  },
+  {
+    gdeltTitle: 'Science Fiction Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc118_scifi',
+  },
+  {
+    gdeltTitle: 'Sex Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SexOnlin98',
+  },
+  {
+    gdeltTitle: 'Small Business Resources On the Net',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BestSOHO98',
+  },
+  {
+    gdeltTitle: 'Space Science',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpaceSci98',
+  },
+  {
+    gdeltTitle: 'Sports Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc148_online_sports',
+  },
+  {
+    gdeltTitle: 'The 3D Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc107_vrml3d_worlds',
+  },
+  {
+    gdeltTitle: 'The Dark Side of the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc104_dark_side_of_the_net',
+  },
+  {
+    gdeltTitle: 'The Global Net',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GlobalNe99',
+  },
+  {
+    gdeltTitle: 'The Hollywood Connection',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Hollywoo98',
+  },
+  {
+    gdeltTitle: 'The Virtual Zoo',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc147_virtual_zoo',
+  },
+  {
+    gdeltTitle: 'The Weird Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc117_weird_web',
+  },
+  {
+    gdeltTitle: 'Travel Sites Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc108_travel',
+  },
+  {
+    gdeltTitle: 'TV Shows Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TVshowso98',
+  },
+  {
+    gdeltTitle: 'UFOs',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc102_ufos',
+  },
+  {
+    gdeltTitle: 'Virtual Doctors',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc216_virtual_doctor',
+  },
+  {
+    gdeltTitle: 'Voyeurism Online',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Voyerism00',
+  },
+  {
+    gdeltTitle: 'War On The Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WarOnThe00',
+  },
+  {
+    gdeltTitle: 'Web Radio',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_webradio97',
+  },
+  {
+    gdeltTitle: 'Webby Awards 1997',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc112_webby_awards',
+  },
+  {
+    gdeltTitle: 'Webby Awards 1999 – Part One',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WebbyAwa99',
+  },
+  {
+    gdeltTitle: 'Webby Awards 1999 – Part Two',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WebbyAwa99_2',
+  },
+  {
+    gdeltTitle: 'Webby Awards 2000 – Part One',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_2000Webb00',
+  },
+  {
+    gdeltTitle: 'Webby Awards 2000 – Part Two',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_2000Webb00_2',
+  },
+  {
+    gdeltTitle: 'Weird Science on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc107_weird_science',
+  },
+  {
+    gdeltTitle: 'Women on the Web',
+    url: 'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc105_women',
+  },
+];
+
+updateData(arrA, arrB);

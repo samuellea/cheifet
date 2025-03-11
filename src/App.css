@@ -37,11 +37,18 @@ body {
   position: relative;
 }
 
+.bannerGif {
+  /* border: 2px solid red; */
+  height: 250px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
 .windowButtons {
   position: absolute;
-  left: 104px;
-  top: 48px;
-  width: 105px;
+  left: 243px;
+  top: 154px;
+  width: 100px;
   color: rgb(68, 68, 68);
   display: flex;
   flex-direction: row;
@@ -58,7 +65,7 @@ body {
   align-items: center;
   justify-content: space-around;
   width: 75%;
-  height: 250px;
+  height: 380px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, Geneva, sans-serif;
