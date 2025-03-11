@@ -1,8 +1,4 @@
-/*
-watched = false / true / 'partial'
- */
-
-const chronsEpisodes = [
+const allIntArchsAndFrames = [
   {
     index: 0,
     season: 1,
@@ -7663,5 +7659,3 @@ const chronsEpisodes = [
     streamURL: null,
   },
 ];
-
-module.exports = chronsEpisodes;

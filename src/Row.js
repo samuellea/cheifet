@@ -39,8 +39,9 @@ const Row = ({ episode, index, lastInSeason }) => {
   const rowFramesClass = `rowFrames showFrames-${showFrames}`;
 
   const extractId = (url) => {
-    if (!url) return null;
-    const match = url.match(/[?&]id=([^&]+)/);
+    if (!url.length) return null;
+    console.log(url);
+    const match = url[0].match(/[?&]id=([^&]+)/);
     return match.length ? match[1] : null; // Return the matched id or null if no match is found
   };
 
@@ -94,7 +95,7 @@ const Row = ({ episode, index, lastInSeason }) => {
         </div>
         <div className="cell internetArchive">
           {framesURL ? (
-            <a target="_blank" href={youtubeURL} rel="noreferrer">
+            <a target="_blank" href={internetArchiveURL[0]} rel="noreferrer">
               ▶️ Internet Archive
             </a>
           ) : null}
@@ -122,22 +123,24 @@ const Row = ({ episode, index, lastInSeason }) => {
           ) : null}
         </div>
       </div>
-      <div className={rowFramesClass}>
-        <div className="left">
-          <div className="leftSticky">
-            <button
-              className="closeFramesButton"
-              type="button"
-              onClick={handleClickFrames}
-            >
-              <div className="closeFramesButtonInside">Close</div>
-            </button>
+      {showFrames ? (
+        <div className={rowFramesClass}>
+          <div className="left">
+            <div className="leftSticky">
+              <button
+                className="closeFramesButton"
+                type="button"
+                onClick={handleClickFrames}
+              >
+                <div className="closeFramesButtonInside">Close</div>
+              </button>
+            </div>
+          </div>
+          <div className="right">
+            <img src={fullFramesImgURL} alt="episode thumbs" />
           </div>
         </div>
-        <div className="right">
-          <img src={fullFramesImgURL} alt="episode thumbs" />
-        </div>
-      </div>
+      ) : null}
     </div>
   );
 };
