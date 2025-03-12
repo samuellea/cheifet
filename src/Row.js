@@ -40,7 +40,7 @@ const Row = ({ episode, index, lastInSeason }) => {
 
   const extractId = (url) => {
     if (!url.length) return null;
-    console.log(url);
+    // console.log(url);
     const match = url[0].match(/[?&]id=([^&]+)/);
     return match.length ? match[1] : null; // Return the matched id or null if no match is found
   };

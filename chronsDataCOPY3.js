@@ -13,7 +13,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_MainFram1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=wpXnqBfgvPM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -29,7 +29,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Integrat1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=SJdYuMzyEJM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -45,7 +45,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=1LEn94TF1tg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -61,7 +61,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Simulati1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ZVZiureyV-s',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -77,7 +77,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Operatin1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=V5S8kFvXpo4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -93,7 +93,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WordProc1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Jt0OoXluC8g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -109,7 +109,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1984_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=DGBLzYyHBJk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -125,7 +125,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Robotics1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=WvV6a6g4m-I',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -141,7 +141,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpeechSy1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=B0S8SUzgViI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -157,7 +157,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Networki1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=E25R8Txrmf8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -173,7 +173,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Microchi1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=LYE4g9N4kCs',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -189,7 +189,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=jinq5NLWyw0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -205,7 +205,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_StorageD1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=WqsZJjqCXlI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -218,8 +218,7 @@ const chronsEpisodes = [
     titles: ['Printers'],
     date: 451522800000,
     internetArchiveURL: ['https://archive.org/details/Printers1984'],
-    youtubeURL:
-      'https://www.youtube.com/watch?v=ilo7j24xe5I&pp=ygUhY29tcHV0ZXIgY2hyb25pY2xlcyBwcmludGVycyAxOTg0',
+    youtubeURL: 'https://www.youtube.com/watch?v=ilo7j24xe5I',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Printers1984',
     ],
@@ -238,7 +237,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Database1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=10b6RYxt2pg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -254,7 +253,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1984_6',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=cmhtRHw_Bv0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -270,7 +269,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Decision1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=-xqW_cC3R_c',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -286,7 +285,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1984_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=OxLqWu23zFE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -302,7 +301,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Programm1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=D5osk9lrGNg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -318,7 +317,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ccs01e08utilities',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=rf4KZCwnOzM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -354,7 +353,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1984_5',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC122ComputerEntrepreneurs',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=H07xxyfLySA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -370,7 +369,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_FifthGen1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Mu8zyHh4vTg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -386,7 +385,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC126_supercomputers',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=6Dn6vLCN4F0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -406,7 +405,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1024_artificial_intelligence',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Artifici1984',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=_S3m0V_ZF_Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -422,7 +421,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_education_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=-UFjGssUvgo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -438,7 +437,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Lasersan1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=km_fsAATN2E',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -454,7 +453,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Portable1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=NY7AR_xmcQ8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -470,7 +469,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1985_6',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=7PH7ifJKJpU',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -486,7 +485,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_IBMClone1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=iRXVL3k53es',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -502,7 +501,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Software1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=n-M7FJKfR7k',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -518,7 +517,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1985_7',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=udIId8WNrqA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -534,7 +533,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_UNIX1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=0DdoGPav3fc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -550,7 +549,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1985_8',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=n5W4u27FRAE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -566,7 +565,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Personal1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KmIMoVq3ZJQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -582,7 +581,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TheMacin1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Nrg9VVkZQb4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -598,7 +597,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Profileo1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PWRKKbkwgL0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -630,7 +629,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_LowEndCo1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KGvsIVlbngA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -646,7 +645,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Japanese1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=rbh1XP4kCT4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -659,7 +658,7 @@ const chronsEpisodes = [
     titles: ['Japanese Computer Technology', 'Robots - Japanese Style (1985)'],
     date: 486082800000,
     internetArchiveURL: ['https://archive.org/details/Robots-J1985'],
-    youtubeURL: 'https://www.youtube.com/watch?v=rbh1XP4kCT4',
+    youtubeURL: 'https://www.youtube.com/watch?v=WvV6a6g4m-I',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Robots-J1985',
     ],
@@ -678,7 +677,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1985_10',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=bdVNwyhJN8s',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -694,7 +693,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Slowdown1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=QVf6mlbdEgo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -710,7 +709,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Slowdown1985_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=jfFCaWCwDhY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -726,7 +725,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WomeninC1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=vMMAlmF2dv0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -742,7 +741,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Printers1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=wbkWVx4lv-8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -770,7 +769,7 @@ const chronsEpisodes = [
     date: 497574000000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=TcrmLfQx_to',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -786,7 +785,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1985_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=_9qhbFm3vak',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -802,7 +801,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ModemsBu1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Pb7te_HZyiA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -818,7 +817,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1985_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=illGtdeI6uo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -834,7 +833,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1985_4',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=s3ugxpjCk_g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -850,7 +849,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1985_5',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Pufguf4KJfI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -866,7 +865,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OpticalS1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=5TcsOgy9weg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -882,7 +881,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Q4NMc7TAP-c',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -930,7 +929,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HardDisk1985',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PBsKakmW0fs',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -946,7 +945,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Artifici1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ybzoK2XmWY0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -962,7 +961,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=dYlYZ8G_wdM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -978,7 +977,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Investme1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=NI_dmKo0CoQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -994,7 +993,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Psycholo1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PVsQd4MwOdc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1010,7 +1009,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Astronom1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=H7K20wm5GA8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1024,7 +1023,7 @@ const chronsEpisodes = [
     date: 509673600000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=LZD6Od-wkKw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1040,7 +1039,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Careersi1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=-jWHq2eGiUM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1056,7 +1055,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Parallel1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=G_2yGCdLLCg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1072,7 +1071,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1986_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=oGPag8Nilq4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1088,7 +1087,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1986_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=OXigSfn13yk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1104,7 +1103,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Educatio1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=_fjcm-bzthQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1120,7 +1119,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Educatio1986_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=2buTEbaNcbY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1136,7 +1135,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_MIDIMusi1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=eitBQT8zOIg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1150,7 +1149,7 @@ const chronsEpisodes = [
     date: 529023600000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=DIccm7H3OA0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1166,7 +1165,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Utilitie1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=lyHm8u_AR30',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1182,7 +1181,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SecondHa1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=_WsFrVld5_8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1198,7 +1197,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DesktopP1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=lk1xrbwjni8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1214,7 +1213,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DesktopP1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=deP1YntadRQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1228,7 +1227,7 @@ const chronsEpisodes = [
     date: 532051200000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=xqvSJU-8fyk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1244,7 +1243,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_RAMResid1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=xV2rxImyGYE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1260,7 +1259,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ComdexSp1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=gI4c7G7SVHs',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1276,7 +1275,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ProjectM1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=4cnxrNzOR0Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1308,7 +1307,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Electron1986',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Os6mNunxolI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1324,7 +1323,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Intel3861987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=VsE0BwQ3l8U',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1340,7 +1339,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_On-LineD1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=WWXBjCevVIE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1356,7 +1355,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_On-LineD1987_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=DOo1d2bbUZQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1372,7 +1371,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Intellig1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=AJFzPc469SU',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1386,7 +1385,7 @@ const chronsEpisodes = [
     date: 538704000000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=Pb7te_HZyiA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1402,7 +1401,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpeechRe1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=BK8SE6UBBkk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1418,7 +1417,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TaxPrepa1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ffXQAHp4a0c',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1434,7 +1433,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Portable1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=NY7AR_xmcQ8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1450,7 +1449,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Komputer1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=wmMY76ffftc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1466,7 +1465,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=quqKYrlFPwE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1498,7 +1497,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1987_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=m86oc6cR6k4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1514,7 +1513,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=4eNSJtUVvzw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1530,7 +1529,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1987_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=aT5QmX8_yNU',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1546,7 +1545,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1987_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ZTGS-GVtc0g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1562,7 +1561,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1987_4',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=7avscnG8saM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1594,7 +1593,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_IBMPerso1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=yoAH1aHmwR0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1610,7 +1609,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SuperCom1987',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=wRdtIJPJ_vA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1623,7 +1622,7 @@ const chronsEpisodes = [
     titles: ['PC Clones from Asia'],
     date: 547772400000,
     internetArchiveURL: ['https://archive.org/details/CC434_asian_clones'],
-    youtubeURL: 'https://www.youtube.com/watch?v=BUv7xIt1J1s',
+    youtubeURL: 'https://www.youtube.com/watch?v=VLM12igHTX4',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC434_asian_clones',
     ],
@@ -1642,7 +1641,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC501_hypercard',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=FquNpWdf9vg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1658,7 +1657,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_laserprinter',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=6bSqlPJ61I4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1674,7 +1673,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_comdex_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=lcIaWo6kFLQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1690,7 +1689,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_networks1',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=-8EBYIucD2g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1706,7 +1705,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_networks2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=cdQwiY2D3Ts',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1722,7 +1721,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC506_buyers_guide',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KiU1sgiUD44',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1738,7 +1737,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_macbussoftwa',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=M-Nys92zX5Y',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1752,7 +1751,7 @@ const chronsEpisodes = [
     date: 566611200000,
     internetArchiveURL: ['https://archive.org/details/games1'],
     framesURL: ['https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_games1'],
-    youtubeURL: 'https://www.youtube.com/watch?v=mC_ugGMyOIM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1766,7 +1765,7 @@ const chronsEpisodes = [
     date: 567216000000,
     internetArchiveURL: ['https://archive.org/details/games2'],
     framesURL: ['https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_games2'],
-    youtubeURL: 'https://www.youtube.com/watch?v=TK9hI6caI4o',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1782,7 +1781,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_decisionsoft',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=-xqW_cC3R_c',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1798,7 +1797,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_imaging_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=uxAIgdDL0wM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1814,7 +1813,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_macworld_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=2yg1OB0o_oo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1830,7 +1829,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_amiga_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=C-hJ_3MvH7Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1844,7 +1843,7 @@ const chronsEpisodes = [
     date: 572659200000,
     internetArchiveURL: ['https://archive.org/details/cdroms'],
     framesURL: ['https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_cdroms'],
-    youtubeURL: 'https://www.youtube.com/watch?v=9NU_XI7fguI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1860,7 +1859,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_taxpreparati',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ZyDDCEc2Ktg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1876,7 +1875,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_shareware',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=1aDXV10-5lo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1892,7 +1891,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC517_commodore_64',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=lL70gLaouDQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1908,7 +1907,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC518_multitasking',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=9JfFVZgxbbA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1926,7 +1925,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC519_business_graphics_1',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=8ArHvZ4EfAU',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1944,7 +1943,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC520_business_graphics_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=BknYhb6cQ3A',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1960,7 +1959,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_inputdevices',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=3NQhSLYOspw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1974,7 +1973,7 @@ const chronsEpisodes = [
     date: 567993600000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=HAw1l4a4iug',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1992,7 +1991,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC523_laptop_peripherals',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=DLtzzMJhOFI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2008,8 +2007,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC524_add-on_boards',
     ],
-    youtubeURL:
-      'https://www.youtube.com/watch?v=Ym3HiO2hHY4&pp=ygUnY29tcHV0ZXIgY2hyb25pY2xlcyBhZGQgb24gYm9hcmRzIGNhcmRz',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2027,7 +2025,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC525_investment_software',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=NI_dmKo0CoQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2043,7 +2041,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC526_personal_cad',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=8lIfKeV36Wo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2059,7 +2057,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC601_macworld',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ppbhCI2dk_A',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2075,7 +2073,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_602',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=wc2dfpMg0_U',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2091,7 +2089,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_603',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=SSz_4LFZaxo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2107,7 +2105,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_buswars',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=aYt4ZPxVkSs',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2123,7 +2121,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC605_apple_ii_forever',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=OcwKZbVE2Fg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2139,7 +2137,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC606_spreadsheet_wars',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=eAiZBUYNUBA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2155,7 +2153,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_buyersguide_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=eRpHYaBw9oY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2171,7 +2169,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_comdex_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=MukSEB3VPoc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2187,7 +2185,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Uharddiskman',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=VnooVMqu2SM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2203,7 +2201,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_viruses_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=xuE3zNiuErI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2217,7 +2215,7 @@ const chronsEpisodes = [
     date: 601603200000,
     internetArchiveURL: ['https://archive.org/details/pims'],
     framesURL: ['https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_pims'],
-    youtubeURL: 'https://www.youtube.com/watch?v=nfAmit0arvk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2233,7 +2231,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_macworldsf',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=QezmMA9AgkM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2249,7 +2247,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_amiga_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=zObp2cyo_B0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2265,7 +2263,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_faxboards',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Kc_JVVuE31Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2281,7 +2279,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_writingsoftw',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=DxBgGO-ZSxE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2297,7 +2295,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_foreignlangu',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=iorZd_t_HLI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2313,7 +2311,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_india_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=_c8kDl1E5As',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2327,7 +2325,7 @@ const chronsEpisodes = [
     date: 608857200000,
     internetArchiveURL: ['https://archive.org/details/unix_2'],
     framesURL: ['https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_unix_2'],
-    youtubeURL: 'https://www.youtube.com/watch?v=lkyyAKTvmx0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2343,7 +2341,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_atarist',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=EjKnUOZ7ZN8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2359,7 +2357,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_indiansoftwa',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ilTGI82fHlo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2389,7 +2387,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_laptops_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PA36embl18g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2409,7 +2407,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_space_2',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_space_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=THtkk-LvZ18',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2423,7 +2421,7 @@ const chronsEpisodes = [
     date: 625968000000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=HB38RA5xYY0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2439,7 +2437,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Creating_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=4x7WkwAeW5Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2453,7 +2451,7 @@ const chronsEpisodes = [
     date: 627177600000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=7Uz3HYfCIGc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2469,8 +2467,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC704_new_laptops',
     ],
-    youtubeURL:
-      'https://www.youtube.com/watch?v=xSueEm2Cw28&pp=ygUmY29tcHV0ZXIgY2hyb25pY2xlcyBwb3J0YWJsZSBjb21wdXRlcnM%3D',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2500,7 +2497,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC706_megahertz_mania',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=FHuwKBJwEx8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2518,7 +2515,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC707_desktop_presentation_graphics_1',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ysJZn3wqsAw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2536,7 +2533,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC707_desktop_presentation_graphics_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=nne6O4iH3lE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2552,7 +2549,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC709_buyers_guide',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PJ95IclntIY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2568,8 +2565,7 @@ const chronsEpisodes = [
       'https://archive.org/details/Computer_Chronicles/Season+07/Computer+Chronicles+-+07x10+-+Software+Piracy.mpeg',
     ],
     framesURL: [],
-    youtubeURL:
-      'https://www.youtube.com/watch?v=DQ6WK7TZRtI&pp=ygUjY29tcHV0ZXIgY2hyb25pY2xlcyBzb2Z0d2FyZSBwaXJhY3k%3D',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2585,7 +2581,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC711_dos_mac',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=eMllK3O5AHk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2601,7 +2597,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC712_fitness',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=85u6P5Od2Gg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2617,7 +2613,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC713_lans',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=8O9ygxelTiI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2647,7 +2643,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC715_optical_storage',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=5TcsOgy9weg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2665,7 +2661,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC716_low_cost_laser_printers',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=M-uvBNBnNUg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2679,7 +2675,7 @@ const chronsEpisodes = [
     date: 635644800000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=83IxRHJPDd8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2695,7 +2691,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_programming_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=TcrmLfQx_to',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2711,7 +2707,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_hypercard_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ty2rV5kXqCU',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2743,7 +2739,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_flightsimula',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=tm8VTZ2fyos',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2759,7 +2755,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_oncampus',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=5eWdfwaXuhE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2775,7 +2771,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_frenchtech1',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=DUx7dP2S7h4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2791,7 +2787,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_724',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=sbQPrcyCf00',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2807,7 +2803,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_compbowl1',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=GJbtdrMbPK4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2823,7 +2819,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_compbowl2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=NbjCZtBOWyk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2839,7 +2835,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_globalsw',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=mX35DxSFe1Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2855,7 +2851,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_windows30',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=YewNEAIkbG4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2871,7 +2867,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_hypertext',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=FzbHYl17x6U',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2887,7 +2883,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_homepcs',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=aLcY9A4vODk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2903,7 +2899,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_palmtops',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Al4FSngrhns',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2919,7 +2915,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_inputdevices',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=3NQhSLYOspw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2967,7 +2963,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_memory_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=aqmBIoNEd7g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2983,7 +2979,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_videogames_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=kUB8dr_Kqf4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -2996,7 +2992,8 @@ const chronsEpisodes = [
     titles: ['Computer Viruses (1990)', 'Computer Viruses', 'Viruses'],
     date: 661478400000,
     internetArchiveURL: ['https://archive.org/details/viruses_3'],
-    youtubeURL: 'https://www.youtube.com/watch?v=xuE3zNiuErI',
+    youtubeURL:
+      'https://www.youtube.com/watch?v=xuE3zNiuErI&ab_channel=TheComputerChronicles',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_viruses_3',
     ],
@@ -3015,7 +3012,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_speech_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=DODWzfs-d1Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3031,8 +3028,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_macros_2',
     ],
-    youtubeURL:
-      'https://www.youtube.com/watch?v=7pW_5wjQT6M&pp=ygUaY29tcHV0ZXIgY2hyb25pY2xlcyBtYWNyb3M%3D',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3048,7 +3044,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_cdroms_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=jFgxejnWorc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3064,7 +3060,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_sleepersw',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=1Rukq_prUTM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3080,7 +3076,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_823',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=K39D0dTXA2E',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3094,7 +3090,7 @@ const chronsEpisodes = [
     date: 668736000000,
     internetArchiveURL: ['https://archive.org/details/ces_2'],
     framesURL: ['https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ces_2'],
-    youtubeURL: 'https://www.youtube.com/watch?v=KD4Kw9F0OJ8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3110,7 +3106,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_medicalcare',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Pufguf4KJfI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3126,7 +3122,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_scanners',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=SyTiOCqfH8I',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3142,7 +3138,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_846',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Z-mjPHN1iHc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3158,7 +3154,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_schoolsw',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=A37yg1YWk3I',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3174,7 +3170,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_fonts_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=zQgzRBHL7LQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3190,7 +3186,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_networksecur',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=CTiIwne5sNY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3206,7 +3202,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_computerbowl',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=p-FFvsRLghw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3222,7 +3218,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_851',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=aYGllfswfuA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3238,7 +3234,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_neuralnetwor',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=LbZa-8_01Wo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3254,7 +3250,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_909',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=3OPqVHP00tc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3270,7 +3266,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_windowsapps',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Q7AQVdmnZi4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3286,7 +3282,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_filecompress',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ALfkAjCUSLg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3318,7 +3314,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_920',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=0X57aS_ravE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3331,7 +3327,7 @@ const chronsEpisodes = [
     titles: ['Tandy/Radio Shack Computers'],
     date: 689299200000,
     internetArchiveURL: ['https://archive.org/details/episode_921'],
-    youtubeURL: 'https://www.youtube.com/watch?v=lAlqEOoBpOg',
+    youtubeURL: 'https://www.youtube.com/watch?v=sb5JGdKOHlA',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_921',
     ],
@@ -3350,7 +3346,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_929',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=2i0cEO2UeBg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3366,7 +3362,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_932',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=AdkD4lZqV0o',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3393,7 +3389,8 @@ const chronsEpisodes = [
     titles: ['Consumer Buying Guide (1991)'],
     date: 692323200000,
     internetArchiveURL: ['https://archive.org/details/episode_937'],
-    youtubeURL: 'https://www.youtube.com/watch?v=3-nHT-hpqh4',
+    youtubeURL:
+      'https://www.youtube.com/watch?v=3-nHT-hpqh4&ab_channel=TheComputerChronicles',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_937',
     ],
@@ -3412,7 +3409,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_groupware_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=kkCs3fR_iYw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3428,7 +3425,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_integratedso',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=-wou5-Cq9KM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3444,7 +3441,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_940',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=J5_doCwi608',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3460,7 +3457,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_941',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=OR75XcJbfrc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3476,7 +3473,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_927',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=sOZ9dsAYvVk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3492,7 +3489,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_midimusic',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=eitBQT8zOIg',
+    youtubeURL: 'https://www.youtube.com/watch?v=lOvkuPzXmnI',
     watched: true,
     streamTitle: 'Upscaled Cruelty',
     streamDate: 1733356800000,
@@ -3508,7 +3505,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_disabled_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=84C5SFRh81M',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3524,7 +3521,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_intel486',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=BdFJZKJMerA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3540,7 +3537,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_cdromsw',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=9GGs0jidmj4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3556,7 +3553,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_946',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=XTa3tgCIoFE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3572,7 +3569,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_947',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=_A2K17uFYaI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3604,7 +3601,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_949',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=0WwGRxEJgRM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3620,7 +3617,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_950',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=f3ugQKKbUQY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3652,7 +3649,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_diagnosticso',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=maylZmLHfnk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3668,7 +3665,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=LbeFG-G2eSY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3684,7 +3681,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_connectivity_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=UwdFtQ-te_s',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3700,7 +3697,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=zePy8SkbSh8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3714,7 +3711,7 @@ const chronsEpisodes = [
     date: 719535600000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=B0S8SUzgViI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3743,7 +3740,8 @@ const chronsEpisodes = [
     titles: ['Windows Enhancements: Hardware'],
     date: 720748800000,
     internetArchiveURL: ['https://archive.org/details/WindowsE_2'],
-    youtubeURL: 'https://www.youtube.com/watch?v=d98Xyssu_oM',
+    youtubeURL:
+      'https://www.youtube.com/watch?v=d98Xyssu_oM&ab_channel=TheComputerChronicles',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WindowsE_2',
     ],
@@ -3762,7 +3760,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GlobalSo',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=3S3WCA840_U',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3778,7 +3776,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Secretso',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=kHel_aqMOb8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3794,7 +3792,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer_6',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Vj45Ny19Vgc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3810,7 +3808,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1021',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=evMilwVBHAQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3830,7 +3828,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_notebooks_2',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Notebook_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=i_AB-es1pFk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3846,7 +3844,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewAgeSp',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=5_KZbvICpqk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3859,7 +3857,7 @@ const chronsEpisodes = [
     titles: ['Computer Art'],
     date: 726796800000,
     internetArchiveURL: ['https://archive.org/details/Computer_7'],
-    youtubeURL: 'https://www.youtube.com/watch?v=lMffw86QRpE',
+    youtubeURL: null,
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer_7',
     ],
@@ -3878,7 +3876,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1040',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=4OPT2fPq7S4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3894,7 +3892,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Electron',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=TJYegKYnDW0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3914,7 +3912,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer_4',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer_8',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=83IxRHJPDd8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3946,7 +3944,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1023',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=YVViepyE0ug',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3976,7 +3974,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Electron10.2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=f3TixwM3cFA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -3992,7 +3990,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1046',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=zApktGYRPac',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4008,7 +4006,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewMacs',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=JjHzPuGi5Js',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4056,7 +4054,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_VisualPr',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=AEkweKSdnHM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4085,7 +4083,7 @@ const chronsEpisodes = [
     titles: ['Computer Bowl V: Part 1'],
     date: 738284400000,
     internetArchiveURL: ['https://archive.org/details/episode_1051'],
-    youtubeURL: 'https://www.youtube.com/watch?v=zBh5O9pffJc',
+    youtubeURL: 'https://www.youtube.com/watch?v=TPY6g_reWgs',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1051',
     ],
@@ -4104,7 +4102,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1052',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=9AXan76UEYw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4136,7 +4134,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Baseball',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=WhxHLG4FsWQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4152,7 +4150,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1113',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KsSilNkU2yM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4188,7 +4186,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1149',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DOS62',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Zd5Bqxa5Gfw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4204,7 +4202,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1106',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=VpKGhCPk8PU',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4220,7 +4218,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1232_internet',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=U_o8gerare0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4236,7 +4234,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WindowsN',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=cHkdQ5CG0PY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4252,7 +4250,7 @@ const chronsEpisodes = [
       'https://archive.org/details/Consumer_3',
       'https://archive.org/details/episode_1136',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=CJmv0o3w8SU',
+    youtubeURL: 'https://www.youtube.com/watch?v=_M_Vt_7CEKk',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Consumer_3',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1136',
@@ -4272,7 +4270,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BuyingaN',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=2EBaj3kJNGI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4304,7 +4302,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DigitalJ',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=18u68dckcMc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4320,7 +4318,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ColorPri',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ozcE24FVqZg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4336,7 +4334,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TaxSoftw',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=sOZ9dsAYvVk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4368,7 +4366,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1119',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=CnzzxY5QO3I',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4384,7 +4382,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SmallBus',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=kR6PhctH_K0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4400,7 +4398,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Software_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=goGlbHY8vMQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4416,7 +4414,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SlotsLoc',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=7CHRe7ZZEes',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4432,7 +4430,7 @@ const chronsEpisodes = [
       'https://archive.org/details/Computer_Chronicles/Season+11/Computer+Chronicles+-+11x23+-+Consumer+Electronics+Show+(CES)+(1994).mpeg',
     ],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=9BLm_1ZpckE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4448,7 +4446,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_episode_1124',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=7Hm7gi5pGeM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4462,7 +4460,7 @@ const chronsEpisodes = [
     date: 763689600000,
     internetArchiveURL: ['https://archive.org/details/1125'],
     framesURL: ['https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_1125'],
-    youtubeURL: 'https://www.youtube.com/watch?v=N01taAm2mF4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4492,7 +4490,7 @@ const chronsEpisodes = [
     date: 766105200000,
     internetArchiveURL: ['https://archive.org/details/CDRom'],
     framesURL: ['https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CDRom'],
-    youtubeURL: 'https://www.youtube.com/watch?v=8aDI0-ymJe8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4508,7 +4506,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ForeignL',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=aDhKuTK4MbM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4524,7 +4522,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer_9',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=N6QwOlU8y8Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4542,7 +4540,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC-ComputerBowl1994_2-Episode1152',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PGKRqwtc9mY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4562,7 +4560,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_PCExpo',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1201_pc_expo',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=D0dBOcVUIbQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4582,7 +4580,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_1202',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_MacWorld_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=vL3De_I0Kko',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4598,7 +4596,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_sp_cc166_etre_special',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Wjj4vn8tLbw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4614,7 +4612,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_PowerPC10.1',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Ic0dkf1iFOY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4630,7 +4628,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1205_computer_art',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=lMffw86QRpE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4662,7 +4660,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Windows4',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Vai9bdnw_uo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4678,7 +4676,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_VirtualM',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=yvmpokkTQ1g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4728,7 +4726,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TalkingC',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=yCOW_BOOA2A',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4746,7 +4744,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1238_interactive_music',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Rx8NTmiQ_us',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4762,7 +4760,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Photofin',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=rjK4nZ-0Jjk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4775,7 +4773,7 @@ const chronsEpisodes = [
     titles: ['Computer Games (1995)', 'Greatest Computer Games'],
     date: 788918400000,
     internetArchiveURL: ['https://archive.org/details/CC1308_greatest_games'],
-    youtubeURL: 'https://www.youtube.com/watch?v=e-wieD_-PYo',
+    youtubeURL: 'https://www.youtube.com/watch?v=41rIJBgIJkA',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1308_greatest_games',
     ],
@@ -4798,7 +4796,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_PCSports',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1219_pc_sports',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=UPH1fB2OoxM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4814,7 +4812,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC-CES1994-Episode1123',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=WC0AbwegEtk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4830,7 +4828,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OS2Warp',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=mmxabyk0S2M',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4850,7 +4848,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1224_investment_software',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Investme',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=NI_dmKo0CoQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4868,7 +4866,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1226_learning_on_a_computer',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=B4daqfzBcjs',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4884,7 +4882,7 @@ const chronsEpisodes = [
       'https://archive.org/details/LosingMe',
       'https://archive.org/details/CC1227_losing_memory',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=J22DtcRAypc',
+    youtubeURL: 'https://www.youtube.com/watch?v=YxM-sHRJh3E',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_LosingMe',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1227_losing_memory',
@@ -4904,7 +4902,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SPAAward',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=pYBAhsw-cGE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4968,7 +4966,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1236_computer_bowl',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=seHLeIC-RlA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -4984,7 +4982,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GaryKild',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Tdj8gh9GPc4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5016,7 +5014,7 @@ const chronsEpisodes = [
       'https://archive.org/details/MacClone95',
       'https://archive.org/details/MacClone',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=dZoom2u8lhY',
+    youtubeURL: 'https://www.youtube.com/watch?v=sAwWJ_mShGk',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_MacClone95',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_MacClone',
@@ -5040,7 +5038,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SmartTV95',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SmartTV',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=1K7TB1jpcc8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5056,7 +5054,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1930HEALTH',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=cJaVdDDyKaY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5074,7 +5072,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1324_research_in_silicon_glen',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=rU4nu1L64S4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5092,7 +5090,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1327_computing_seniors',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=gw5W_Mmtfkc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5105,7 +5103,8 @@ const chronsEpisodes = [
     titles: ['Buy or Upgrade?'],
     date: 788918400000,
     internetArchiveURL: ['https://archive.org/details/BuyOrUpg'],
-    youtubeURL: 'https://www.youtube.com/watch?v=sQLGktlAJzw',
+    youtubeURL:
+      'https://www.youtube.com/watch?v=sQLGktlAJzw&ab_channel=TheComputerChronicles',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BuyOrUpg',
     ],
@@ -5141,7 +5140,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1310_etre',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=k6_4e8N1s3w',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5157,7 +5156,7 @@ const chronsEpisodes = [
       'https://archive.org/details/CC1311_holiday_buying_guide',
       'https://archive.org/details/HolidayB',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=mV4F_bD5nUU',
+    youtubeURL: 'https://www.youtube.com/watch?v=TpZuQ819ylg',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1311_holiday_buying_guide',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HolidayB',
@@ -5177,7 +5176,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_FallComd',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Oxj4CRoySb8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5193,7 +5192,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_PCTroubl',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=UMXaJHnEkWc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5209,7 +5208,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Informat96',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PJD-rcQPnP0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5225,7 +5224,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Komputer',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Py7f-iYhCX4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5241,7 +5240,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_EtrePt2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=7XDOR861460',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5261,7 +5260,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SohoSoft',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1319_soho_software',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=tCj_zsrt-fk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5281,7 +5280,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WinterCE',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1320_winter_ces_1996',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=rLTBH34bLV8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5303,7 +5302,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_undefined',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineTi',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=inv4wwQZPb8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5323,7 +5322,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_cc1345_finance_banking_software',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BankingF',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=EIcyBKcTeuE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5341,7 +5340,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1324_research_in_silicon_glen',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=J_rT9Cs62Xk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5359,7 +5358,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1325_software_thinking_tools',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PVuN5ZJpNSg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5375,7 +5374,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CarsComp',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=2sWmj6IkFp0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5391,7 +5390,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1349_codies_special',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=pYBAhsw-cGE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5407,7 +5406,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1331_new_pcs',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=cElVxDoCEsI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5423,7 +5422,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_E3Specia',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=9dVmDQfImk8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5439,7 +5438,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_MacWorld',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ZTd6dDw6P_Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5471,7 +5470,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Internet_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=xltMwmLqRAI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5489,7 +5488,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ComputerChronicles-SearchEngines_861',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=MHEIXv2J2x8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5539,7 +5538,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnLineSh',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1407OnlineShopping',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=IM_zNE58R2k',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5555,7 +5554,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ETRE1997',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Eb3ZbwBKZj0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5591,7 +5590,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1412_digital_photography',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=6uHP64AVaYo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5623,7 +5622,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1416_internet_tv',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=8Oqy-qd4o28',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5643,7 +5642,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1417_best_of_comdex',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BestofCo',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ZZYXEc22w0U',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5659,8 +5658,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Wireless_2',
     ],
-    youtubeURL:
-      'https://www.youtube.com/watch?v=LdrV6x4byqY&pp=ygUmY29tcHV0ZXIgY2hyb25pY2xlcyB3aXJlbGVzcyBjb21wdXRpbmc%3D',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5676,7 +5674,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SportsSi',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=YR5ld3XHV1M',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5692,7 +5690,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CyberDat',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=IrgM0IWSueQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5708,7 +5706,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1421_ces',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=jV2O9_xNsX8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5724,7 +5722,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1423_email',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=8xi1Mz7KPk0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5742,7 +5740,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1424_computers_and_the_disabled',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=CiY4jRzUWmE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5790,7 +5788,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1430_computer_art',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=hCN3bSej9wA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5806,7 +5804,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CyberSec',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=SPh23zOu2xM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5822,7 +5820,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WebSiteC',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=wV8x6qy6_3Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5836,7 +5834,7 @@ const chronsEpisodes = [
     date: 852076800000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=qDCUsAas1XE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5850,7 +5848,7 @@ const chronsEpisodes = [
     date: 852076800000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=KKjqPWmyRcA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5864,8 +5862,7 @@ const chronsEpisodes = [
     date: 852076800000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL:
-      'https://www.youtube.com/watch?v=LdrV6x4byqY&pp=ygUmY29tcHV0ZXIgY2hyb25pY2xlcyB3aXJlbGVzcyBjb21wdXRpbmc%3D',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5881,7 +5878,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Internet_4',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PtMlH1Lofhc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5897,7 +5894,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Pushtech98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=aODr4F2PqoI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5911,7 +5908,7 @@ const chronsEpisodes = [
     date: 852076800000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=wf6kVEN1lbk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5927,7 +5924,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_JAVATool',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=sNcb62UTFjQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5943,7 +5940,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_VirtualU98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KMsbNbzEFIM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5959,7 +5956,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Cyberfic98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=pdHpEbNB7Ns',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -5975,7 +5972,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1535ECOMMERCE',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=on5NjoFWw0Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6009,7 +6006,7 @@ const chronsEpisodes = [
     date: 852076800000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=ufmx_1mMnBA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6025,7 +6022,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BestofCo98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=OZH8AEILdMo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6057,7 +6054,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CyberPri98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=qz718OZRA2A',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6073,7 +6070,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1541BUSONLINE',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=QiLYIwqjsUU',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6093,7 +6090,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BestComp98',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1542ONLINEGAMES',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=EMTXgOcAMbg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6109,7 +6106,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Homedesi98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=vmMMpw7oA6U',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6125,7 +6122,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Storages98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KP-4C_CB7Qg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6139,7 +6136,7 @@ const chronsEpisodes = [
     date: 883612800000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=T1LjKrl8vMQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6187,7 +6184,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Travelpl98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ng4aXdJgD5g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6219,7 +6216,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Docinabo98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=NZ8sldy8v0o',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6235,7 +6232,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=qDCUsAas1XE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6251,7 +6248,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_AnnualCo98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KKjqPWmyRcA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6267,7 +6264,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BestofCo98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=4HM-Y-qA86s',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6315,7 +6312,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Macupdat98',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KQdcLeTGdLA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6331,7 +6328,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Software99',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=A1cyKhRiquA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6351,7 +6348,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Internet99',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1635TELEPHONY',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=MzNf-_1u8i0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6367,7 +6364,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ETRE1999_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=qeQCy3F53fA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6383,7 +6380,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ETRE1999',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Bi3Ggy2zcVQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6426,7 +6423,7 @@ const chronsEpisodes = [
     titles: ['PDAs and Handhelds'],
     date: 912470400000,
     internetArchiveURL: ['https://archive.org/details/CC1638PDAS'],
-    youtubeURL: 'https://www.youtube.com/watch?v=he3LuTfKVoU',
+    youtubeURL: 'https://www.youtube.com/watch?v=KsSilNkU2yM',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1638PDAS',
     ],
@@ -6445,7 +6442,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BillGate99',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=a2lt584x6qI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6481,7 +6478,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1639ECOMMERCE',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ZKNOQ_FVvCM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6497,7 +6494,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_3DGraphi',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=afLmM4bBbpI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6513,7 +6510,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DigtalPh',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=lE4vH4SmP8k',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6533,7 +6530,7 @@ const chronsEpisodes = [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Parentin99',
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1644PARENTING',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=_jzGMBhwI1I',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6549,7 +6546,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Taxprepa99',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=sOZ9dsAYvVk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6565,7 +6562,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_FixingYo99',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=79W2Vn793O0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6581,7 +6578,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpeechTe99',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=DODWzfs-d1Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6597,7 +6594,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1623SHOWCASE',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=dlPKEWPI8No',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6653,7 +6650,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Programm99',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=BDGmiagP2Pg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6667,7 +6664,7 @@ const chronsEpisodes = [
     date: 924562800000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=4x7WkwAeW5Q',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6681,7 +6678,7 @@ const chronsEpisodes = [
     date: 925167600000,
     internetArchiveURL: ['https://archive.org/details/1652'],
     framesURL: ['https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_1652'],
-    youtubeURL: 'https://www.youtube.com/watch?v=v1C2lGT9hdg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6694,7 +6691,7 @@ const chronsEpisodes = [
     titles: ['Computer Games (1999)'],
     date: 939682800000,
     internetArchiveURL: ['https://archive.org/details/Gaming1999'],
-    youtubeURL: 'https://www.youtube.com/watch?v=0cID3JGY4JM',
+    youtubeURL: 'https://www.youtube.com/watch?v=fdPHFx3rLCg',
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Gaming1999',
     ],
@@ -6713,7 +6710,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DVD1011999',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=DA9VI5LTv-g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6729,7 +6726,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TVMeetsP2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=tATjQDYRKR0',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6745,7 +6742,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1999',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=WOTeaZVxYFg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6761,7 +6758,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DigitalH1999',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Mjwxh1UyrYU',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6777,7 +6774,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Robots1999',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Q8CBE7vJzRc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6809,7 +6806,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ETREEuro1999',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=z1g-BxMm_3w',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6825,7 +6822,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ETREEuro1999_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=neiZ-CBMvKs',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6857,7 +6854,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Copyrigh2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=jfyP7SLQhrc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6873,7 +6870,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HomeNetw2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ZnWBjO7Upy8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6889,7 +6886,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ETREEuro2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=xUgBppHAJTc',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6905,7 +6902,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_FasterNe2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=mERTLBl3LG4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6921,7 +6918,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Musicont2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=_oCutHjtiAY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6937,7 +6934,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=O4ls8_zqq9M',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6953,7 +6950,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Showcase2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KkvKP2sR2EA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6969,7 +6966,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Showcase2000_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=jP3s7HWjU50',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -6985,7 +6982,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Cookingw2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=sAg0Zolthfw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7001,7 +6998,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineIn2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=a_gTjoV9zPQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7017,7 +7014,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer2000_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Ot7PmLTkCuE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7033,7 +7030,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_UsersGro2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ocrhLUJLTQk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7049,7 +7046,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DigitalL2000',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=NXn054G2jRk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7081,7 +7078,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ETREEuro2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=u57GbdecL-w',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7097,7 +7094,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ETREEuro2001_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=PPgJFpeA6Cg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7129,7 +7126,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_MP3Secre2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=uh9H7adUwwE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7145,7 +7142,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1815ETRE2000THREE',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=QU1Y8j0WZJ8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7181,7 +7178,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_PrivacyO2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=FeeCKGYAenA',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7197,7 +7194,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_EasyWebC2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=e4mxg4pBgIw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7213,7 +7210,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1820HAWAIIONE',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=eTotBTVn7Y4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7229,7 +7226,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HiTechHa2002',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=F1bsb1_47Ak',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7245,7 +7242,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HiTechHa2001_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=GmhOUgMbLek',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7261,7 +7258,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HiTechHa2001_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=VMgoRO_bIV4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7309,7 +7306,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Wireless2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=n9rUw-Jls8w',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7325,7 +7322,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Findinga2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=Eg8wpiQPVK8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7341,7 +7338,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Security2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=VNkMwKDRLPw',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7357,7 +7354,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineUn2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KMsbNbzEFIM',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7373,7 +7370,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GuidetoO2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=a_gTjoV9zPQ',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7389,7 +7386,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1851ULTIMATE',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=1VzyG-wYwVI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7423,7 +7420,7 @@ const chronsEpisodes = [
     date: 1000767600000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=dcYRI1Lo-OI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7471,7 +7468,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer2001_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=V1x8zyYlkK4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7487,7 +7484,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer2001_3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=OXigSfn13yk',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7503,7 +7500,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_European2001',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=M326NuVVups',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7519,7 +7516,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_European2001_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=UvB8QAz7hxo',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7535,7 +7532,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_European2002',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=3h6tiA4__5A',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7551,7 +7548,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_European2002_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=tIeztS9Hg4g',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7567,7 +7564,7 @@ const chronsEpisodes = [
       'https://archive.org/details/Computer_Chronicles/Season+19/Computer+Chronicles+-+19x18+-+Medical+Technology%3A+Part+1.mpeg',
     ],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=yHBJcVAIvCs',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7583,7 +7580,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1934MEDTECH',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=74N87_JQ6J4',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7599,7 +7596,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OSBrowse2002',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=5fXxuTA_Eao',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7615,7 +7612,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Olympics2002',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=TvbfcwR_4Mg',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7631,7 +7628,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Olympics2002_2',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=pJ4J6cshdmI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7647,7 +7644,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineTr2002',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=ItsbMJjo9S8',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7663,7 +7660,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Preventi2002',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=z5EHJ0bxPfU',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7679,7 +7676,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1930HEALTH',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=cJaVdDDyKaY',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7695,7 +7692,7 @@ const chronsEpisodes = [
       'https://archive.org/details/Computer_Chronicles/Season+19/Computer+Chronicles+-+19x21+-+Windows+XP.mpeg',
     ],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=P7VPJIvcnXI',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7711,7 +7708,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1939SING1',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=KcniJzyk-9c',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7725,7 +7722,7 @@ const chronsEpisodes = [
     date: 1024354800000,
     internetArchiveURL: [],
     framesURL: [],
-    youtubeURL: 'https://www.youtube.com/watch?v=KcniJzyk-9c',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -7741,7 +7738,7 @@ const chronsEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1940SING3',
     ],
-    youtubeURL: 'https://www.youtube.com/watch?v=aqrFzb68HlE',
+    youtubeURL: null,
     watched: false,
     streamTitle: null,
     streamDate: null,

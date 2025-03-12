@@ -1,8 +1,4 @@
-/*
-watched = false / true / 'partial'
- */
 
-const chronsEpisodes = [
   {
     index: 0,
     season: 1,
@@ -7747,6 +7743,3 @@ const chronsEpisodes = [
     streamDate: null,
     streamURL: null,
   },
-];
-
-module.exports = chronsEpisodes;

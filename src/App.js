@@ -6,6 +6,7 @@ import netcafeEpisodes from './netcafeData.js'; // Adjust the path to your data.
 import Table from './Table';
 import ChronsCategory from './ChronsCategory'; // Add this line to import ChronsCategory
 import NetcafeCategory from './NetcafeCategory'; // Add this line to import NetcafeCategory
+import Getter from './Getter';
 
 function App() {
   const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
@@ -171,7 +172,7 @@ function App() {
     };
 
     if (isGapiLoaded) {
-      updateVideosWithThumbnails(); // Only fetch thumbnails when gapi is loaded
+      // updateVideosWithThumbnails();
     }
   }, [isGapiLoaded]); // Only re-run when gapi is loaded
 
@@ -197,8 +198,19 @@ function App() {
     setWatchedFilter((prevState) => !prevState);
   };
 
+  // const [showGetter, setShowGetter] = useState(false);
+
+  // const handleGet = () => {
+  //   if (!showGetter) {
+  //     setShowGetter(true);
+  //   }
+  // };
+
   return (
     <div className="App">
+      {/* <button onClick={handleGet}>GET</button>
+      {showGetter && <Getter />} */}
+
       <div className="pageHeader">
         <div className="windowPicContainer">
           <img className="bannerGif" src="/banner.gif" />

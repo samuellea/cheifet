@@ -1,6 +1,27 @@
-/*
-watched = false / true / 'partial'
- */
+const fs = require('fs');
+
+// Function to clean a string by removing non-alphanumeric characters
+function cleanTitle(title) {
+  return title.replace(/[^a-zA-Z0-9 ]/g, ''); // Removes all non-alphanumeric characters
+}
+
+// Function to process the array of objects
+function cleanTitlesArray(inputArray) {
+  const outputArray = inputArray.map((item) => {
+    const cleanedTitle = cleanTitle(item.titles[0]);
+    return { title: cleanedTitle };
+  });
+
+  // Save the cleaned titles to a JavaScript file
+  const fileContent = `const cleanedTitles = ${JSON.stringify(
+    outputArray,
+    null,
+    2
+  )};`;
+  fs.writeFileSync('cleanedTitles.js', fileContent, 'utf8');
+
+  console.log('Cleaned titles saved to cleanedTitles.js');
+}
 
 const chronsEpisodes = [
   {
@@ -845,9 +866,9 @@ const chronsEpisodes = [
     episodeOfSeason: 11,
     titles: ['Computers and Medicine'],
     date: 500601600000,
-    internetArchiveURL: ['https://archive.org/details/medicalcare'],
+    internetArchiveURL: ['https://archive.org/details/Computer1985_5'],
     framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_medicalcare',
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer1985_5',
     ],
     youtubeURL: null,
     watched: false,
@@ -973,13 +994,9 @@ const chronsEpisodes = [
     episodeOfSeason: 19,
     titles: ['Investment Software'],
     date: 507859200000,
-    internetArchiveURL: [
-      'https://archive.org/details/CC1224_investment_software',
-      'https://archive.org/details/Investme',
-    ],
+    internetArchiveURL: ['https://archive.org/details/Investme1986'],
     framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1224_investment_software',
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Investme',
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Investme1986',
     ],
     youtubeURL: null,
     watched: false,
@@ -1135,9 +1152,9 @@ const chronsEpisodes = [
     episodeOfSeason: 3,
     titles: ['MIDI Music'],
     date: 528418800000,
-    internetArchiveURL: ['https://archive.org/details/midimusic'],
+    internetArchiveURL: ['https://archive.org/details/MIDIMusi1986'],
     framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_midimusic',
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_MIDIMusi1986',
     ],
     youtubeURL: null,
     watched: false,
@@ -1151,10 +1168,8 @@ const chronsEpisodes = [
     episodeOfSeason: 4,
     titles: ['RISC', 'RISC Processors'],
     date: 529023600000,
-    internetArchiveURL: ['https://archive.org/details/RISC1986'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_RISC1986',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1231,10 +1246,8 @@ const chronsEpisodes = [
     episodeOfSeason: 9,
     titles: ['Guide to Macros', 'Software Macros'],
     date: 532051200000,
-    internetArchiveURL: ['https://archive.org/details/GuidetoM1986'],
-    framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GuidetoM1986',
-    ],
+    internetArchiveURL: [],
+    framesURL: [],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1311,8 +1324,10 @@ const chronsEpisodes = [
     episodeOfSeason: 14,
     titles: ['Electronic Mail', 'E-Mail Applications'],
     date: 535075200000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/Electron1986'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Electron1986',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1325,8 +1340,10 @@ const chronsEpisodes = [
     episodeOfSeason: 15,
     titles: ['386: The Fast Lane', 'Intel 386 Microprocessor'],
     date: 535680000000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/Intel3861987'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Intel3861987',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1433,8 +1450,10 @@ const chronsEpisodes = [
     episodeOfSeason: 22,
     titles: ['Portable Computers'],
     date: 540518400000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/Portable1987'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Portable1987',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1447,8 +1466,10 @@ const chronsEpisodes = [
     episodeOfSeason: 23,
     titles: ['Computers and Kids (1987)', 'Computer Kids'],
     date: 541123200000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/Komputer1987'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Komputer1987',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1509,8 +1530,10 @@ const chronsEpisodes = [
     episodeOfSeason: 27,
     titles: ['Business Applications: Part 1 – Word Processors'],
     date: 543542400000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/Business1987'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1987',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1523,8 +1546,10 @@ const chronsEpisodes = [
     episodeOfSeason: 28,
     titles: ['Business Applications: Part 2 – Spreadsheets 1'],
     date: 544143600000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/Business1987_2'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1987_2',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1537,8 +1562,10 @@ const chronsEpisodes = [
     episodeOfSeason: 29,
     titles: ['Business Applications: Part 3 – Spreadsheets 2'],
     date: 544748400000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/Business1987_3'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1987_3',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1551,8 +1578,10 @@ const chronsEpisodes = [
     episodeOfSeason: 30,
     titles: ['Business Applications: Part 4 – Database Management Software'],
     date: 545353200000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/Business1987_4'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Business1987_4',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1677,8 +1706,10 @@ const chronsEpisodes = [
     episodeOfSeason: 4,
     titles: ['Local Area Networks: Part 1 – IBM Compatibles'],
     date: 564192000000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/networks1'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_networks1',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -1691,8 +1722,10 @@ const chronsEpisodes = [
     episodeOfSeason: 5,
     titles: ['Local Area Networks: Part 2 – Apple'],
     date: 564796800000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/networks2'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_networks2',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -2007,8 +2040,12 @@ const chronsEpisodes = [
     episodeOfSeason: 25,
     titles: ['Investment Software'],
     date: 581122800000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: [
+      'https://archive.org/details/CC525_investment_software',
+    ],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC525_investment_software',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -2545,7 +2582,9 @@ const chronsEpisodes = [
     episodeOfSeason: 10,
     titles: ['Software Piracy'],
     date: 631411200000,
-    internetArchiveURL: [null],
+    internetArchiveURL: [
+      'https://archive.org/details/Computer_Chronicles/Season+07/Computer+Chronicles+-+07x10+-+Software+Piracy.mpeg',
+    ],
     framesURL: [],
     youtubeURL: null,
     watched: false,
@@ -2607,7 +2646,7 @@ const chronsEpisodes = [
     episodeOfSeason: 14,
     titles: ['Computers and the Law'],
     date: 633830400000,
-    internetArchiveURL: [null],
+    internetArchiveURL: [],
     framesURL: [],
     youtubeURL: null,
     watched: false,
@@ -2893,8 +2932,10 @@ const chronsEpisodes = [
     episodeOfSeason: 6,
     titles: ['Input Devices'],
     date: 657849600000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/inputdevices'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_inputdevices',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -2988,9 +3029,9 @@ const chronsEpisodes = [
     episodeOfSeason: 12,
     titles: ['Speech Technology'],
     date: 663292800000,
-    internetArchiveURL: ['https://archive.org/details/SpeechTe99'],
+    internetArchiveURL: ['https://archive.org/details/speech_2'],
     framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpeechTe99',
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_speech_2',
     ],
     youtubeURL: null,
     watched: false,
@@ -3082,8 +3123,10 @@ const chronsEpisodes = [
     episodeOfSeason: 18,
     titles: ['Computers and Medicine'],
     date: 669340800000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/medicalcare'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_medicalcare',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -3464,8 +3507,10 @@ const chronsEpisodes = [
     titles: ['MIDI Music', 'MIDI Music 2 (1992)'],
     date: 698976000000,
     internetArchiveURL: ['https://archive.org/details/midimusic'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_midimusic',
+    ],
     youtubeURL: 'https://www.youtube.com/watch?v=lOvkuPzXmnI',
-    framesURL: [],
     watched: true,
     streamTitle: 'Upscaled Cruelty',
     streamDate: 1733356800000,
@@ -3816,8 +3861,10 @@ const chronsEpisodes = [
     episodeOfSeason: 11,
     titles: ['New Age Spreadsheets', 'New Generation Spreadsheets'],
     date: 726192000000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/NewAgeSp'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewAgeSp',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -3830,10 +3877,10 @@ const chronsEpisodes = [
     episodeOfSeason: 12,
     titles: ['Computer Art'],
     date: 726796800000,
-    internetArchiveURL: ['https://archive.org/details/CC1205_computer_art'],
-    youtubeURL: 'https://www.youtube.com/watch?v=q2I0IOfnho0',
+    internetArchiveURL: ['https://archive.org/details/Computer_7'],
+    youtubeURL: null,
     framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1205_computer_art',
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Computer_7',
     ],
     watched: true,
     streamTitle: 'Resident Cheifet. Est. 1892',
@@ -3944,9 +3991,9 @@ const chronsEpisodes = [
     episodeOfSeason: 19,
     titles: ['Digital Photography'],
     date: 732844800000,
-    internetArchiveURL: ['https://archive.org/details/DigtalPh'],
+    internetArchiveURL: ['https://archive.org/details/Electron10.2'],
     framesURL: [
-      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DigtalPh',
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Electron10.2',
     ],
     youtubeURL: null,
     watched: false,
@@ -3976,8 +4023,10 @@ const chronsEpisodes = [
     episodeOfSeason: 21,
     titles: ['The New Macs'],
     date: 734655600000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/NewMacs'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_NewMacs',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -4382,8 +4431,10 @@ const chronsEpisodes = [
     episodeOfSeason: 19,
     titles: ['Slots – Local Bus Video'],
     date: 761875200000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/SlotsLoc'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SlotsLoc',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -4396,7 +4447,9 @@ const chronsEpisodes = [
     episodeOfSeason: 20,
     titles: ['Consumer Electronics Show (CES) (1994)'],
     date: 762480000000,
-    internetArchiveURL: [],
+    internetArchiveURL: [
+      'https://archive.org/details/Computer_Chronicles/Season+11/Computer+Chronicles+-+11x23+-+Consumer+Electronics+Show+(CES)+(1994).mpeg',
+    ],
     framesURL: [],
     youtubeURL: null,
     watched: false,
@@ -4560,8 +4613,10 @@ const chronsEpisodes = [
     episodeOfSeason: 3,
     titles: ['ETRE Conference Barcelona (1994)'],
     date: 757382400000,
-    internetArchiveURL: [],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/sp_cc166_etre_special'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_sp_cc166_etre_special',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -4590,8 +4645,10 @@ const chronsEpisodes = [
     episodeOfSeason: 5,
     titles: ['Computer Art'],
     date: 757382400000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/CC1205_computer_art'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1205_computer_art',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -4804,8 +4861,14 @@ const chronsEpisodes = [
     episodeOfSeason: 18,
     titles: ['Investment Software'],
     date: 788918400000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: [
+      'https://archive.org/details/CC1224_investment_software',
+      'https://archive.org/details/Investme',
+    ],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1224_investment_software',
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Investme',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -4906,7 +4969,9 @@ const chronsEpisodes = [
     date: 788918400000,
     internetArchiveURL: ['https://archive.org/details/CC1232_internet'],
     youtubeURL: 'https://www.youtube.com/watch?v=wf6kVEN1lbk',
-    framesURL: [],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1232_internet',
+    ],
     watched: true,
     streamTitle: 'Voyeur / Bill Clinton in Limerick, Compu Chrons',
     streamDate: 1600210800000,
@@ -5020,10 +5085,14 @@ const chronsEpisodes = [
     index: 314,
     season: 13,
     episodeOfSeason: 5,
-    titles: ['Silicon Glen'],
+    titles: ['Silicon Glen', 'High Tech Scotland'],
     date: 788918400000,
-    internetArchiveURL: [],
-    framesURL: [],
+    internetArchiveURL: [
+      'https://archive.org/details/CC1324_research_in_silicon_glen',
+    ],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1324_research_in_silicon_glen',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -5073,7 +5142,9 @@ const chronsEpisodes = [
     date: 810255600000,
     internetArchiveURL: ['https://archive.org/details/CC1308_greatest_games'],
     youtubeURL: 'https://www.youtube.com/watch?v=e-wieD_-PYo',
-    framesURL: [],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1308_greatest_games',
+    ],
     watched: true,
     streamTitle:
       'MS- DOS / FAT 32 / BACK IN THE HABIT STARRING STEWBABY CHEFFMAN',
@@ -5534,8 +5605,12 @@ const chronsEpisodes = [
     episodeOfSeason: 10,
     titles: ['Digital Photography'],
     date: 825033600000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: [
+      'https://archive.org/details/CC1412_digital_photography',
+    ],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1412_digital_photography',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -5806,7 +5881,7 @@ const chronsEpisodes = [
     episodeOfSeason: 1,
     titles: ['Wireless Computing'],
     date: 852076800000,
-    internetArchiveURL: [null],
+    internetArchiveURL: [],
     framesURL: [],
     youtubeURL: null,
     watched: false,
@@ -6112,7 +6187,9 @@ const chronsEpisodes = [
     date: 902790000000,
     internetArchiveURL: ['https://archive.org/details/Desktopv98'],
     youtubeURL: 'https://www.youtube.com/watch?v=_au_U6VJlZA',
-    framesURL: [],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Desktopv98',
+    ],
     watched: true,
     streamTitle: 'Silent Hill 2 - Part 4',
     streamDate: 1670803200000,
@@ -6156,8 +6233,10 @@ const chronsEpisodes = [
     episodeOfSeason: 23,
     titles: ['Doc in a Box – Healthcare Software'],
     date: 904604400000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/Docinabo98'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Docinabo98',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -6448,8 +6527,10 @@ const chronsEpisodes = [
     episodeOfSeason: 14,
     titles: ['Digital Photography'],
     date: 916704000000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/DigtalPh'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_DigtalPh',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -6514,8 +6595,10 @@ const chronsEpisodes = [
     episodeOfSeason: 18,
     titles: ['Speech Technology'],
     date: 919123200000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/SpeechTe99'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpeechTe99',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -6600,7 +6683,7 @@ const chronsEpisodes = [
     episodeOfSeason: 23,
     titles: ['Creativity Software'],
     date: 924562800000,
-    internetArchiveURL: [null],
+    internetArchiveURL: [],
     framesURL: [],
     youtubeURL: null,
     watched: false,
@@ -7334,7 +7417,7 @@ const chronsEpisodes = [
     index: 456,
     season: 18,
     episodeOfSeason: 21,
-    titles: ['Interactive TV'],
+    titles: ['Interactive TV', 'Interactive Televesion (2001)'],
     date: 992300400000,
     internetArchiveURL: [
       'https://archive.org/details/CC1852INTERACTIVE',
@@ -7498,7 +7581,9 @@ const chronsEpisodes = [
     episodeOfSeason: 10,
     titles: ['Medical Technology: Part 1'],
     date: 1011052800000,
-    internetArchiveURL: [],
+    internetArchiveURL: [
+      'https://archive.org/details/Computer_Chronicles/Season+19/Computer+Chronicles+-+19x18+-+Medical+Technology%3A+Part+1.mpeg',
+    ],
     framesURL: [],
     youtubeURL: null,
     watched: false,
@@ -7608,8 +7693,10 @@ const chronsEpisodes = [
     episodeOfSeason: 17,
     titles: ['Computers and Healthcare'],
     date: 1009843200000,
-    internetArchiveURL: [null],
-    framesURL: [],
+    internetArchiveURL: ['https://archive.org/details/CC1930HEALTH'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CC1930HEALTH',
+    ],
     youtubeURL: null,
     watched: false,
     streamTitle: null,
@@ -7622,7 +7709,9 @@ const chronsEpisodes = [
     episodeOfSeason: 18,
     titles: ['Windows XP'],
     date: 1021935600000,
-    internetArchiveURL: [],
+    internetArchiveURL: [
+      'https://archive.org/details/Computer_Chronicles/Season+19/Computer+Chronicles+-+19x21+-+Windows+XP.mpeg',
+    ],
     framesURL: [],
     youtubeURL: null,
     watched: false,
@@ -7678,19 +7767,5 @@ const chronsEpisodes = [
   },
 ];
 
-function getTitlesWithMissingURLs(objects) {
-  return objects
-    .filter(
-      (obj) =>
-        !obj.internetArchiveURL ||
-        obj.internetArchiveURL.length === 0 ||
-        obj.internetArchiveURL.includes(null) ||
-        !obj.framesURL ||
-        obj.framesURL.length === 0 ||
-        obj.framesURL.includes(null)
-    )
-    .map((obj) => obj.titles?.[0])
-    .filter((title) => title !== undefined);
-}
-
-console.log(getTitlesWithMissingURLs(chronsEpisodes)); // Output: ["Title 1", "Title 2", "Title 3", "Title 5"]
+// Call the function with the example input
+cleanTitlesArray(chronsEpisodes);
