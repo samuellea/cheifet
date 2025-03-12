@@ -37,10 +37,6 @@ function App() {
   const [thumbnails, setThumbnails] = useState({}); // Store fetched thumbnails
   const [series, setSeries] = useState('chrons'); // chrons or netcafe
   const [watchedFilter, setWatchedFilter] = useState(false);
-
-  const [stuImage, setStuImage] = useState(null);
-  const [janeImage, setJaneImage] = useState(null);
-
   const [searchTerm, setSearchTerm] = useState('');
 
   // Function to extract video ID from YouTube URL
@@ -191,6 +187,34 @@ function App() {
     setSearchTerm(e.target.value);
   };
 
+  useEffect(() => {
+    if (!searchTerm.length) {
+    } else {
+    }
+  }, [searchTerm]);
+
+  // onClick handler for the column headers
+  const handleColumnClick = (column) => {
+    console.log('!');
+    if (sortOn === column) {
+      // If the same column is clicked again, toggle the order (ascending <-> descending)
+      if (order === 1) {
+        setOrder(-1); // Set to descending order
+      } else if (order === -1) {
+        setSortOn(null); // Reset sortOn
+        setOrder(1); // Reset order to ascending
+      }
+    } else {
+      // Set the new column to sort on, default to ascending order
+      setSortOn(column);
+      setOrder(1); // Always start with ascending order for a new column
+    }
+  };
+
+  useEffect(() => {
+    console.log({ sortOn, order });
+  }, [sortOn, order]);
+
   return (
     <div className="App">
       <div className="pageHeader">
@@ -227,7 +251,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
               className="header-link"
-              style={{ marginLeft: '5px' }}
+              style={{ marginLeft: '5px', marginRight: '5px' }}
             >
               francis_higgins
             </a>
@@ -240,7 +264,10 @@ function App() {
           >
             <img className="youtubeImg" src="/youtubeicon.png" />
           </a>
-          <p className="followText">
+          <p
+            className="followText"
+            style={{ marginLeft: '5px', marginRight: '5px' }}
+          >
             Webmaster:
             <a
               href="https://soundcloud.com/samlea"
@@ -283,18 +310,10 @@ function App() {
           </div>
 
           <div style={{ display: series === 'chrons' ? 'block' : 'none' }}>
-            <ChronsCategory
-              progress={progress}
-              series={series}
-              janeImage={janeImage}
-            />
+            <ChronsCategory progress={progress} series={series} />
           </div>
           <div style={{ display: series === 'netcafe' ? 'block' : 'none' }}>
-            <NetcafeCategory
-              progress={progress}
-              series={series}
-              stuImage={stuImage}
-            />
+            <NetcafeCategory progress={progress} series={series} />
           </div>
         </div>
         <div className="toolbar">
@@ -320,33 +339,68 @@ function App() {
                   type="text"
                   placeholder="Search..."
                   onChange={handleSearch}
+                  value={searchTerm}
                 />
               </div>
             </div>
             <button className="clearButton" type="button" onClick={() => {}}>
-              <div className="clearButtonInside">Clear</div>
+              <div
+                className="clearButtonInside"
+                onClick={() => setSearchTerm('')}
+              >
+                Clear
+              </div>
             </button>
           </div>
         </div>
 
         <div className="columnHeaders">
-          <div className="cell epColumn">Ep.</div>
-          <div className="cell titleColumn">Title</div>
-          <div className="cell dateColumn">Air Date</div>
+          <div
+            className="cell epColumn"
+            onClick={() => handleColumnClick('index')}
+          >
+            Ep.
+          </div>
+          <div
+            className="cell titleColumn"
+            onClick={() => handleColumnClick('titles')}
+          >
+            Title
+          </div>
+          <div
+            className="cell dateColumn"
+            onClick={() => handleColumnClick('date')}
+          >
+            Air Date
+          </div>
           <div className="cell youtubeColumn">YT Link</div>
           <div className="cell internetArchiveColumn">I.A. Link</div>
           <div className="cell framesColumn">Frames</div>
-          <div className="cell streamDateColumn">Streamed</div>
-          <div className="cell streamTitleColumn">Stream Title</div>
+          <div
+            className="cell streamDateColumn"
+            onClick={() => handleColumnClick('streamDate')}
+          >
+            Streamed
+          </div>
+          <div
+            className="cell streamTitleColumn"
+            onClick={() => handleColumnClick('streamTitle')}
+          >
+            Stream Title
+          </div>
         </div>
-        <Table
-          episodeObjs={episodeObjs[series]}
-          sortOn={sortOn}
-          order={order}
-          watchedFilter={watchedFilter}
-          series={series}
-        />
+        {episodeObjs.chrons.length && episodeObjs.netcafe.length && (
+          <Table
+            episodeObjs={episodeObjs[series]}
+            sortOn={sortOn}
+            order={order}
+            watchedFilter={watchedFilter}
+            series={series}
+            searchTerm={searchTerm}
+          />
+        )}
       </div>
+      <div className="bottomSpace" style={{ height: '500px' }} />
     </div>
   );
 }

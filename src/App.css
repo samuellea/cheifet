@@ -772,7 +772,7 @@ a:active {
   cursor: pointer;
   user-select: none;
   font-size: 14px;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .internetArchive {
@@ -1018,6 +1018,7 @@ a:active {
 
 .season2000 {
   background-color: black;
+  color: white;
 }
 
 .season2001 {
