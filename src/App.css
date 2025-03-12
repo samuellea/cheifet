@@ -1070,7 +1070,7 @@ a:active {
 }
 
 .toolbar {
-  border: 5px solid red;
+  /* border: 5px solid red; */
   border-top: 5px solid #f2f2f2;
 
   width: 100%;
