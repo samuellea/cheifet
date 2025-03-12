@@ -43,6 +43,7 @@ const netcafeEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST',
     streamDate: 1666220400000,
     streamURL: 'https://www.youtube.com/watch?v=CpZC91gwpUw',
+    streamThumbURL: 'https://i.ytimg.com/vi/CpZC91gwpUw/default.jpg',
   },
   {
     index: 2,
@@ -60,6 +61,7 @@ const netcafeEpisodes = [
     streamTitle: 'FAT 32 QUICKBLAST',
     streamDate: 1630191600000,
     streamURL: 'https://www.youtube.com/watch?v=erRqLICGTV8',
+    streamThumbURL: 'https://i.ytimg.com/vi/erRqLICGTV8/default.jpg',
   },
   {
     index: 3,
@@ -77,6 +79,7 @@ const netcafeEpisodes = [
     streamTitle: 'More Disturbance',
     streamDate: 1730937600000,
     streamURL: 'https://www.youtube.com/watch?v=MugtdW2NP-E',
+    streamThumbURL: 'https://i.ytimg.com/vi/MugtdW2NP-E/default.jpg',
   },
   {
     index: 4,
@@ -96,6 +99,7 @@ const netcafeEpisodes = [
     streamTitle: 'StreamZONE',
     streamDate: 1705881600000,
     streamURL: 'https://www.youtube.com/watch?v=qRwHNaFhsEI',
+    streamThumbURL: 'https://i.ytimg.com/vi/qRwHNaFhsEI/default.jpg',
   },
   {
     index: 5,
@@ -209,6 +213,7 @@ const netcafeEpisodes = [
     streamTitle: 'Silent Hill 2 - Part 4',
     streamDate: 1670803200000,
     streamURL: 'https://www.youtube.com/watch?v=axkKe_lfVdQ',
+    streamThumbURL: 'https://i.ytimg.com/vi/axkKe_lfVdQ/default.jpg',
   },
   {
     index: 12,
@@ -226,6 +231,7 @@ const netcafeEpisodes = [
     streamTitle: 'Unending Cruelty 2025',
     streamDate: 1736035200000,
     streamURL: 'https://www.youtube.com/watch?v=phrYsVgQRs0',
+    streamThumbURL: 'https://i.ytimg.com/vi/phrYsVgQRs0/default.jpg',
   },
   {
     index: 13,
@@ -321,6 +327,7 @@ const netcafeEpisodes = [
     streamTitle: 'StreamZONE',
     streamDate: 1709683200000,
     streamURL: 'https://www.youtube.com/watch?v=M-o_ppS1pNI',
+    streamThumbURL: 'https://i.ytimg.com/vi/M-o_ppS1pNI/default.jpg',
   },
   {
     index: 19,
@@ -385,6 +392,7 @@ const netcafeEpisodes = [
     streamTitle: 'New Vegas (Pt.3) quickblast',
     streamDate: 1712444400000,
     streamURL: 'https://www.youtube.com/watch?v=tJ7ES9NJDIU',
+    streamThumbURL: 'https://i.ytimg.com/vi/tJ7ES9NJDIU/default.jpg',
   },
   {
     index: 22,
@@ -450,6 +458,7 @@ const netcafeEpisodes = [
     streamTitle: 'Roachzone Part 2',
     streamDate: 1706832000000,
     streamURL: 'https://www.youtube.com/watch?v=NbXF06F-e9E',
+    streamThumbURL: 'https://i.ytimg.com/vi/NbXF06F-e9E/default.jpg',
   },
   {
     index: 26,
@@ -515,6 +524,7 @@ const netcafeEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST - CHEIFEIT-M (A.M.)',
     streamDate: 1671494400000,
     streamURL: 'https://www.youtube.com/watch?v=p1dc-7pkXlk',
+    streamThumbURL: 'https://i.ytimg.com/vi/p1dc-7pkXlk/default.jpg',
   },
   {
     index: 30,
@@ -580,6 +590,7 @@ const netcafeEpisodes = [
     streamTitle: 'Resident Evil Village F.C. est. 1894',
     streamDate: 1630018800000,
     streamURL: 'https://www.youtube.com/watch?v=8x8kNFjpwsE',
+    streamThumbURL: 'https://i.ytimg.com/vi/8x8kNFjpwsE/default.jpg',
   },
   {
     index: 35,
@@ -629,6 +640,7 @@ const netcafeEpisodes = [
     streamTitle: 'Resident Stephen 3 (pt. 2)',
     streamDate: 1711324800000,
     streamURL: 'https://www.youtube.com/watch?v=1ej4D13UyqM',
+    streamThumbURL: 'https://i.ytimg.com/vi/1ej4D13UyqM/default.jpg',
   },
   {
     index: 38,
@@ -662,6 +674,7 @@ const netcafeEpisodes = [
     streamTitle: 'Roachzone Part 2',
     streamDate: 1706832000000,
     streamURL: 'https://www.youtube.com/watch?v=NbXF06F-e9E',
+    streamThumbURL: 'https://i.ytimg.com/vi/NbXF06F-e9E/default.jpg',
   },
   {
     index: 40,
@@ -679,6 +692,7 @@ const netcafeEpisodes = [
     streamTitle: 'Cruel Situations',
     streamDate: 1733270400000,
     streamURL: 'https://www.youtube.com/watch?v=VGyDS8ag0zM',
+    streamThumbURL: 'https://i.ytimg.com/vi/VGyDS8ag0zM/default.jpg',
   },
   {
     index: 41,
@@ -763,6 +777,7 @@ const netcafeEpisodes = [
     streamTitle: 'THE END OF SILENT HILL 3',
     streamDate: 1736121600000,
     streamURL: 'https://www.youtube.com/watch?v=W2WJNgdAGHM',
+    streamThumbURL: 'https://i.ytimg.com/vi/W2WJNgdAGHM/default.jpg',
   },
   {
     index: 46,
@@ -898,6 +913,7 @@ const netcafeEpisodes = [
     streamTitle: 'FACE of WAR: Chaos Theory',
     streamDate: 1710460800000,
     streamURL: 'https://www.youtube.com/watch?v=TnZWb6DMPoE',
+    streamThumbURL: 'https://i.ytimg.com/vi/TnZWb6DMPoE/default.jpg',
   },
   {
     index: 54,
@@ -950,6 +966,7 @@ const netcafeEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST LISP MICROPHONE FILTER EXTREME EDITION',
     streamDate: 1665529200000,
     streamURL: 'https://www.youtube.com/watch?v=f_0mBHx6afc',
+    streamThumbURL: 'https://i.ytimg.com/vi/f_0mBHx6afc/default.jpg',
   },
   {
     index: 57,
@@ -1222,6 +1239,7 @@ const netcafeEpisodes = [
     streamTitle: 'StreamZONE',
     streamDate: 1705881600000,
     streamURL: 'https://www.youtube.com/watch?v=qRwHNaFhsEI',
+    streamThumbURL: 'https://i.ytimg.com/vi/qRwHNaFhsEI/default.jpg',
   },
   {
     index: 74,
@@ -1285,6 +1303,7 @@ const netcafeEpisodes = [
     streamTitle: 'Resident Stephen 3 (pt. 2)',
     streamDate: 1711324800000,
     streamURL: 'https://www.youtube.com/watch?v=1ej4D13UyqM',
+    streamThumbURL: 'https://i.ytimg.com/vi/1ej4D13UyqM/default.jpg',
   },
   {
     index: 78,
@@ -1460,6 +1479,7 @@ const netcafeEpisodes = [
     streamTitle: 'FACE of WAR: Chaos Theory',
     streamDate: 1710460800000,
     streamURL: 'https://www.youtube.com/watch?v=TnZWb6DMPoE',
+    streamThumbURL: 'https://i.ytimg.com/vi/TnZWb6DMPoE/default.jpg',
   },
   {
     index: 89,
@@ -1584,6 +1604,7 @@ const netcafeEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST - CHEIFEIT-M (A.M.)',
     streamDate: 1671494400000,
     streamURL: 'https://www.youtube.com/watch?v=p1dc-7pkXlk',
+    streamThumbURL: 'https://i.ytimg.com/vi/p1dc-7pkXlk/default.jpg',
   },
   {
     index: 96,
@@ -1633,6 +1654,7 @@ const netcafeEpisodes = [
     streamTitle: 'Stream',
     streamDate: 1713826800000,
     streamURL: 'https://www.youtube.com/watch?v=gzZchH67HQo',
+    streamThumbURL: 'https://i.ytimg.com/vi/gzZchH67HQo/default.jpg',
   },
   {
     index: 99,

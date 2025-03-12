@@ -16,6 +16,7 @@ const Row = ({ episode, index, lastInSeason }) => {
     streamTitle,
     streamDate,
     streamURL,
+    streamThumbURL,
   } = episode;
 
   const [showFrames, setShowFrames] = useState(false);
@@ -119,7 +120,7 @@ const Row = ({ episode, index, lastInSeason }) => {
         >
           {watched === true || watched === 'partial' ? (
             <>
-              <img src={youtubeThumbnail} />
+              <img src={streamThumbURL} />
               <p>
                 {' '}
                 <a target="_blank" href={streamURL} rel="noreferrer">

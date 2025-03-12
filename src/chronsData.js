@@ -227,6 +227,7 @@ const chronsEpisodes = [
     streamTitle: 'Cruel Situations',
     streamDate: 1733270400000,
     streamURL: 'https://www.youtube.com/watch?v=VGyDS8ag0zM',
+    streamThumbURL: 'https://i.ytimg.com/vi/VGyDS8ag0zM/default.jpg',
   },
   {
     index: 14,
@@ -339,6 +340,7 @@ const chronsEpisodes = [
     streamTitle: 'Spycrash',
     streamDate: 1709769600000,
     streamURL: 'https://www.youtube.com/watch?v=YcG01VbCRrQ',
+    streamThumbURL: 'https://i.ytimg.com/vi/YcG01VbCRrQ/default.jpg',
   },
   {
     index: 21,
@@ -619,6 +621,7 @@ const chronsEpisodes = [
     streamTitle: 'Morezone',
     streamDate: 1703980800000,
     streamURL: 'https://www.youtube.com/watch?v=Ft5-pWqp15Q',
+    streamThumbURL: 'https://i.ytimg.com/vi/Ft5-pWqp15Q/default.jpg',
   },
   {
     index: 38,
@@ -667,6 +670,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST - CHEIFEIT-M (A.M.)',
     streamDate: 1671494400000,
     streamURL: 'https://www.youtube.com/watch?v=p1dc-7pkXlk',
+    streamThumbURL: 'https://i.ytimg.com/vi/p1dc-7pkXlk/default.jpg',
   },
   {
     index: 41,
@@ -903,6 +907,7 @@ const chronsEpisodes = [
     streamTitle: 'Upscaled Cruelty',
     streamDate: 1733356800000,
     streamURL: 'https://www.youtube.com/watch?v=JDZou48oGSA',
+    streamThumbURL: 'https://i.ytimg.com/vi/JDZou48oGSA/default.jpg',
   },
   {
     index: 56,
@@ -919,6 +924,7 @@ const chronsEpisodes = [
     streamTitle: 'Upscaled Cruelty',
     streamDate: 1733356800000,
     streamURL: 'https://www.youtube.com/watch?v=JDZou48oGSA',
+    streamThumbURL: 'https://i.ytimg.com/vi/JDZou48oGSA/default.jpg',
   },
   {
     index: 57,
@@ -1297,6 +1303,7 @@ const chronsEpisodes = [
     streamTitle: 'GAMEZVILLE (Warzone / The Exit 8 / Fat - 32)',
     streamDate: 1702944000000,
     streamURL: 'https://www.youtube.com/watch?v=CNYN5K0J8IQ',
+    streamThumbURL: 'https://i.ytimg.com/vi/CNYN5K0J8IQ/default.jpg',
   },
   {
     index: 81,
@@ -1583,6 +1590,7 @@ const chronsEpisodes = [
     streamTitle: 'Cruel Situations',
     streamDate: 1733270400000,
     streamURL: 'https://www.youtube.com/watch?v=VGyDS8ag0zM',
+    streamThumbURL: 'https://i.ytimg.com/vi/VGyDS8ag0zM/default.jpg',
   },
   {
     index: 99,
@@ -1631,6 +1639,7 @@ const chronsEpisodes = [
     streamTitle: 'Upscaled Cruelty',
     streamDate: 1733356800000,
     streamURL: 'https://www.youtube.com/watch?v=JDZou48oGSA',
+    streamThumbURL: 'https://i.ytimg.com/vi/JDZou48oGSA/default.jpg',
   },
   {
     index: 102,
@@ -2940,6 +2949,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST - CHEIFEIT-M (A.M.)',
     streamDate: 1671494400000,
     streamURL: 'https://www.youtube.com/watch?v=p1dc-7pkXlk',
+    streamThumbURL: 'https://i.ytimg.com/vi/p1dc-7pkXlk/default.jpg',
   },
   {
     index: 184,
@@ -2956,6 +2966,7 @@ const chronsEpisodes = [
     streamTitle: 'CHEIFEIT',
     streamDate: 1671408000000,
     streamURL: 'https://www.youtube.com/watch?v=qGXdpK1AAuU',
+    streamThumbURL: 'https://i.ytimg.com/vi/qGXdpK1AAuU/default.jpg',
   },
   {
     index: 185,
@@ -3004,6 +3015,7 @@ const chronsEpisodes = [
     streamTitle: 'Computerliments to the Cheifet (1)',
     streamDate: 1600815600000,
     streamURL: 'https://www.youtube.com/watch?v=JMZfL8UyMxE',
+    streamThumbURL: 'https://i.ytimg.com/vi/JMZfL8UyMxE/default.jpg',
   },
   {
     index: 188,
@@ -3307,6 +3319,7 @@ const chronsEpisodes = [
     streamTitle: 'Boone Dust',
     streamDate: 1741478400000,
     streamURL: 'https://www.youtube.com/watch?v=MoaMBv70vTQ',
+    streamThumbURL: 'https://i.ytimg.com/vi/MoaMBv70vTQ/default.jpg',
   },
   {
     index: 207,
@@ -3339,6 +3352,7 @@ const chronsEpisodes = [
     streamTitle: 'Windows 98',
     streamDate: 1597532400000,
     streamURL: 'https://www.youtube.com/watch?v=uGk6lrox8rU',
+    streamThumbURL: 'https://i.ytimg.com/vi/uGk6lrox8rU/default.jpg',
   },
   {
     index: 209,
@@ -3401,6 +3415,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST - CHEIFEIT-M (A.M.)',
     streamDate: 1671494400000,
     streamURL: 'https://www.youtube.com/watch?v=p1dc-7pkXlk',
+    streamThumbURL: 'https://i.ytimg.com/vi/p1dc-7pkXlk/default.jpg',
   },
   {
     index: 213,
@@ -3497,6 +3512,7 @@ const chronsEpisodes = [
     streamTitle: 'Upscaled Cruelty',
     streamDate: 1733356800000,
     streamURL: 'https://www.youtube.com/watch?v=JDZou48oGSA',
+    streamThumbURL: 'https://i.ytimg.com/vi/JDZou48oGSA/default.jpg',
   },
   {
     index: 219,
@@ -3593,6 +3609,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 QUICKBLAST',
     streamDate: 1629586800000,
     streamURL: 'https://www.youtube.com/watch?v=d-7PB09qClQ',
+    streamThumbURL: 'https://i.ytimg.com/vi/d-7PB09qClQ/default.jpg',
   },
   {
     index: 225,
@@ -3641,6 +3658,7 @@ const chronsEpisodes = [
     streamTitle: 'More Disturbance',
     streamDate: 1730937600000,
     streamURL: 'https://www.youtube.com/watch?v=MugtdW2NP-E',
+    streamThumbURL: 'https://i.ytimg.com/vi/MugtdW2NP-E/default.jpg',
   },
   {
     index: 228,
@@ -3735,6 +3753,7 @@ const chronsEpisodes = [
     streamTitle: '2nd Jab Feverstream - FAT 32 - Pfizer Biontech',
     streamDate: 1628722800000,
     streamURL: 'https://www.youtube.com/watch?v=N8vHB4QwMFc',
+    streamThumbURL: 'https://i.ytimg.com/vi/N8vHB4QwMFc/default.jpg',
   },
   {
     index: 234,
@@ -3751,6 +3770,7 @@ const chronsEpisodes = [
     streamTitle: '2nd Jab Feverstream - FAT 32 - Pfizer Biontech',
     streamDate: 1628722800000,
     streamURL: 'https://www.youtube.com/watch?v=N8vHB4QwMFc',
+    streamThumbURL: 'https://i.ytimg.com/vi/N8vHB4QwMFc/default.jpg',
   },
   {
     index: 235,
@@ -3867,6 +3887,7 @@ const chronsEpisodes = [
     streamTitle: 'Resident Cheifet. Est. 1892',
     streamDate: 1629759600000,
     streamURL: 'https://www.youtube.com/watch?v=mJAeL2dbPeo',
+    streamThumbURL: 'https://i.ytimg.com/vi/mJAeL2dbPeo/default.jpg',
   },
   {
     index: 242,
@@ -3935,6 +3956,7 @@ const chronsEpisodes = [
     streamTitle: 'GADGET (1995)',
     streamDate: 1736380800000,
     streamURL: 'https://www.youtube.com/watch?v=9KvsAj0ukt0',
+    streamThumbURL: 'https://i.ytimg.com/vi/9KvsAj0ukt0/default.jpg',
   },
   {
     index: 246,
@@ -3965,6 +3987,7 @@ const chronsEpisodes = [
     streamTitle: 'Resi 4 Remake | Part 2',
     streamDate: 1683759600000,
     streamURL: 'https://www.youtube.com/watch?v=TU8yGAtl8cE',
+    streamThumbURL: 'https://i.ytimg.com/vi/TU8yGAtl8cE/default.jpg',
   },
   {
     index: 248,
@@ -4029,6 +4052,7 @@ const chronsEpisodes = [
     streamTitle: 'Resi 4 Remake | Part 2',
     streamDate: 1683759600000,
     streamURL: 'https://www.youtube.com/watch?v=TU8yGAtl8cE',
+    streamThumbURL: 'https://i.ytimg.com/vi/TU8yGAtl8cE/default.jpg',
   },
   {
     index: 252,
@@ -4045,6 +4069,7 @@ const chronsEpisodes = [
     streamTitle: 'Disturbing and Unacceptable Scenes',
     streamDate: 1728946800000,
     streamURL: 'https://www.youtube.com/watch?v=pEmI8JrUTQ8',
+    streamThumbURL: 'https://i.ytimg.com/vi/pEmI8JrUTQ8/default.jpg',
   },
   {
     index: 253,
@@ -4077,6 +4102,7 @@ const chronsEpisodes = [
     streamTitle: 'Resi 4 Remake | Part 2',
     streamDate: 1683759600000,
     streamURL: 'https://www.youtube.com/watch?v=TU8yGAtl8cE',
+    streamThumbURL: 'https://i.ytimg.com/vi/TU8yGAtl8cE/default.jpg',
   },
   {
     index: 255,
@@ -4093,6 +4119,7 @@ const chronsEpisodes = [
     streamTitle: 'Resident Evil 4 HD Project - The Final Beast // FAT 32',
     streamDate: 1667347200000,
     streamURL: 'https://www.youtube.com/watch?v=jgbTG_W0ZNI',
+    streamThumbURL: 'https://i.ytimg.com/vi/jgbTG_W0ZNI/default.jpg',
   },
   {
     index: 256,
@@ -4125,6 +4152,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST (after 1 warzone)',
     streamDate: 1670198400000,
     streamURL: 'https://www.youtube.com/watch?v=3lUjVa3R9UA',
+    streamThumbURL: 'https://i.ytimg.com/vi/3lUjVa3R9UA/default.jpg',
   },
   {
     index: 258,
@@ -4173,6 +4201,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST (after 1 warzone)',
     streamDate: 1670198400000,
     streamURL: 'https://www.youtube.com/watch?v=3lUjVa3R9UA',
+    streamThumbURL: 'https://i.ytimg.com/vi/3lUjVa3R9UA/default.jpg',
   },
   {
     index: 261,
@@ -4261,6 +4290,7 @@ const chronsEpisodes = [
     streamTitle: 'Resident Evil 4 HD Project - The Final Beast // FAT 32',
     streamDate: 1667347200000,
     streamURL: 'https://www.youtube.com/watch?v=jgbTG_W0ZNI',
+    streamThumbURL: 'https://i.ytimg.com/vi/jgbTG_W0ZNI/default.jpg',
   },
   {
     index: 266,
@@ -4293,6 +4323,7 @@ const chronsEpisodes = [
     streamTitle: 'Fast VegasBLAST 2: Blast Harder',
     streamDate: 1741132800000,
     streamURL: 'https://www.youtube.com/watch?v=h6sTfhblvP0',
+    streamThumbURL: 'https://i.ytimg.com/vi/h6sTfhblvP0/default.jpg',
   },
   {
     index: 268,
@@ -4357,6 +4388,7 @@ const chronsEpisodes = [
     streamTitle: 'Resi 4 Remake | Part 2',
     streamDate: 1683759600000,
     streamURL: 'https://www.youtube.com/watch?v=TU8yGAtl8cE',
+    streamThumbURL: 'https://i.ytimg.com/vi/TU8yGAtl8cE/default.jpg',
   },
   {
     index: 272,
@@ -4483,6 +4515,7 @@ const chronsEpisodes = [
     streamTitle: 'Blast Vegas™',
     streamDate: 1741305600000,
     streamURL: 'https://www.youtube.com/watch?v=Nit4QVjdmGM',
+    streamThumbURL: 'https://i.ytimg.com/vi/Nit4QVjdmGM/default.jpg',
   },
   {
     index: 280,
@@ -4651,6 +4684,7 @@ const chronsEpisodes = [
     streamTitle: 'GADGET (1995)',
     streamDate: 1736380800000,
     streamURL: 'https://www.youtube.com/watch?v=9KvsAj0ukt0',
+    streamThumbURL: 'https://i.ytimg.com/vi/9KvsAj0ukt0/default.jpg',
   },
   {
     index: 290,
@@ -4701,6 +4735,7 @@ const chronsEpisodes = [
     streamTitle: 'Warzone QUICKBLAST & Cheifet QUICKBLAST',
     streamDate: 1671753600000,
     streamURL: 'https://www.youtube.com/watch?v=BOgiaF8G52M',
+    streamThumbURL: 'https://i.ytimg.com/vi/BOgiaF8G52M/default.jpg',
   },
   {
     index: 293,
@@ -4717,6 +4752,7 @@ const chronsEpisodes = [
     streamTitle: 'MICHAEL BAYS NAUGHTY BOYZ II',
     streamDate: 1668038400000,
     streamURL: 'https://www.youtube.com/watch?v=53_vBudEJik',
+    streamThumbURL: 'https://i.ytimg.com/vi/53_vBudEJik/default.jpg',
   },
   {
     index: 294,
@@ -4783,6 +4819,7 @@ const chronsEpisodes = [
     streamTitle: 'Fat 32 - more computer chronicles',
     streamDate: 1598828400000,
     streamURL: 'https://www.youtube.com/watch?v=JLYY6jqWfZo',
+    streamThumbURL: 'https://i.ytimg.com/vi/JLYY6jqWfZo/default.jpg',
   },
   {
     index: 298,
@@ -4893,6 +4930,7 @@ const chronsEpisodes = [
     streamTitle: 'New Vegas',
     streamDate: 1740787200000,
     streamURL: 'https://www.youtube.com/watch?v=JvhOOQSKvcs',
+    streamThumbURL: 'https://i.ytimg.com/vi/JvhOOQSKvcs/default.jpg',
   },
   {
     index: 304,
@@ -4941,6 +4979,7 @@ const chronsEpisodes = [
     streamTitle: 'THE END OF SILENT HILL 3',
     streamDate: 1736121600000,
     streamURL: 'https://www.youtube.com/watch?v=W2WJNgdAGHM',
+    streamThumbURL: 'https://i.ytimg.com/vi/W2WJNgdAGHM/default.jpg',
   },
   {
     index: 307,
@@ -4957,6 +4996,7 @@ const chronsEpisodes = [
     streamTitle: 'Voyeur / Bill Clinton in Limerick, Compu Chrons',
     streamDate: 1600210800000,
     streamURL: 'https://www.youtube.com/watch?v=tRk-Vafvm-I',
+    streamThumbURL: 'https://i.ytimg.com/vi/tRk-Vafvm-I/default.jpg',
   },
   {
     index: 308,
@@ -5005,6 +5045,7 @@ const chronsEpisodes = [
     streamTitle: 'Fat 32 - more computer chronicles again',
     streamDate: 1599606000000,
     streamURL: 'https://www.youtube.com/watch?v=SWTkRaEQhl8',
+    streamThumbURL: 'https://i.ytimg.com/vi/SWTkRaEQhl8/default.jpg',
   },
   {
     index: 311,
@@ -5025,6 +5066,7 @@ const chronsEpisodes = [
     streamTitle: 'THE END OF SILENT HILL 3',
     streamDate: 1736121600000,
     streamURL: 'https://www.youtube.com/watch?v=W2WJNgdAGHM',
+    streamThumbURL: 'https://i.ytimg.com/vi/W2WJNgdAGHM/default.jpg',
   },
   {
     index: 312,
@@ -5113,6 +5155,7 @@ const chronsEpisodes = [
     streamTitle: 'QUICKBLAST',
     streamDate: 1670457600000,
     streamURL: 'https://www.youtube.com/watch?v=fAYeAy98kPw',
+    streamThumbURL: 'https://i.ytimg.com/vi/fAYeAy98kPw/default.jpg',
   },
   {
     index: 317,
@@ -5130,6 +5173,7 @@ const chronsEpisodes = [
       'MS- DOS / FAT 32 / BACK IN THE HABIT STARRING STEWBABY CHEFFMAN',
     streamDate: 1627772400000,
     streamURL: 'https://www.youtube.com/watch?v=M8teMs6PbFo',
+    streamThumbURL: 'https://i.ytimg.com/vi/M8teMs6PbFo/default.jpg',
   },
   {
     index: 318,
@@ -5166,6 +5210,7 @@ const chronsEpisodes = [
     streamTitle: 'QUICKBLAST',
     streamDate: 1670457600000,
     streamURL: 'https://www.youtube.com/watch?v=fAYeAy98kPw',
+    streamThumbURL: 'https://i.ytimg.com/vi/fAYeAy98kPw/default.jpg',
   },
   {
     index: 320,
@@ -5460,6 +5505,7 @@ const chronsEpisodes = [
     streamTitle: 'More Disturbance',
     streamDate: 1730937600000,
     streamURL: 'https://www.youtube.com/watch?v=MugtdW2NP-E',
+    streamThumbURL: 'https://i.ytimg.com/vi/MugtdW2NP-E/default.jpg',
   },
   {
     index: 337,
@@ -5524,6 +5570,7 @@ const chronsEpisodes = [
     streamTitle: 'More Disturbance',
     streamDate: 1730937600000,
     streamURL: 'https://www.youtube.com/watch?v=MugtdW2NP-E',
+    streamThumbURL: 'https://i.ytimg.com/vi/MugtdW2NP-E/default.jpg',
   },
   {
     index: 341,
@@ -5578,6 +5625,7 @@ const chronsEpisodes = [
     streamTitle: 'StreamZONE',
     streamDate: 1709683200000,
     streamURL: 'https://www.youtube.com/watch?v=M-o_ppS1pNI',
+    streamThumbURL: 'https://i.ytimg.com/vi/M-o_ppS1pNI/default.jpg',
   },
   {
     index: 344,
@@ -5612,6 +5660,7 @@ const chronsEpisodes = [
     streamTitle: 'Fat 32 - more computer chronicles again',
     streamDate: 1599606000000,
     streamURL: 'https://www.youtube.com/watch?v=SWTkRaEQhl8',
+    streamThumbURL: 'https://i.ytimg.com/vi/SWTkRaEQhl8/default.jpg',
   },
   {
     index: 346,
@@ -5763,6 +5812,7 @@ const chronsEpisodes = [
     streamTitle: 'QUICKBLAST',
     streamDate: 1670457600000,
     streamURL: 'https://www.youtube.com/watch?v=fAYeAy98kPw',
+    streamThumbURL: 'https://i.ytimg.com/vi/fAYeAy98kPw/default.jpg',
   },
   {
     index: 355,
@@ -5779,6 +5829,7 @@ const chronsEpisodes = [
     streamTitle: 'Disturbing and Unacceptable Scenes',
     streamDate: 1728946800000,
     streamURL: 'https://www.youtube.com/watch?v=pEmI8JrUTQ8',
+    streamThumbURL: 'https://i.ytimg.com/vi/pEmI8JrUTQ8/default.jpg',
   },
   {
     index: 356,
@@ -6000,6 +6051,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST',
     streamDate: 1666220400000,
     streamURL: 'https://www.youtube.com/watch?v=CpZC91gwpUw',
+    streamThumbURL: 'https://i.ytimg.com/vi/CpZC91gwpUw/default.jpg',
   },
   {
     index: 370,
@@ -6046,6 +6098,7 @@ const chronsEpisodes = [
     streamTitle: 'GADGET (1995)',
     streamDate: 1736467200000,
     streamURL: 'https://www.youtube.com/watch?v=0UMR9nj8CsM',
+    streamThumbURL: 'https://i.ytimg.com/vi/0UMR9nj8CsM/default.jpg',
   },
   {
     index: 373,
@@ -6160,6 +6213,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST - CHEIFEIT-M (A.M.)',
     streamDate: 1671408000000,
     streamURL: 'https://www.youtube.com/watch?v=HjMtDU4Po6k',
+    streamThumbURL: 'https://i.ytimg.com/vi/HjMtDU4Po6k/default.jpg',
   },
   {
     index: 380,
@@ -6176,6 +6230,7 @@ const chronsEpisodes = [
     streamTitle: 'Silent Hill 2 - Part 4',
     streamDate: 1670803200000,
     streamURL: 'https://www.youtube.com/watch?v=axkKe_lfVdQ',
+    streamThumbURL: 'https://i.ytimg.com/vi/axkKe_lfVdQ/default.jpg',
   },
   {
     index: 381,
@@ -6208,6 +6263,7 @@ const chronsEpisodes = [
     streamTitle: 'Disturbing and Unacceptable Scenes',
     streamDate: 1728860400000,
     streamURL: 'https://www.youtube.com/watch?v=qFqdy4rTck0',
+    streamThumbURL: 'https://i.ytimg.com/vi/qFqdy4rTck0/default.jpg',
   },
   {
     index: 383,
@@ -6288,6 +6344,7 @@ const chronsEpisodes = [
     streamTitle: 'MICHAEL BAYS NAUGHTY BOYZ II',
     streamDate: 1668038400000,
     streamURL: 'https://www.youtube.com/watch?v=53_vBudEJik',
+    streamThumbURL: 'https://i.ytimg.com/vi/53_vBudEJik/default.jpg',
   },
   {
     index: 388,
@@ -6304,6 +6361,7 @@ const chronsEpisodes = [
     streamTitle: 'Windows 98',
     streamDate: 1597532400000,
     streamURL: 'https://www.youtube.com/watch?v=uGk6lrox8rU',
+    streamThumbURL: 'https://i.ytimg.com/vi/uGk6lrox8rU/default.jpg',
   },
   {
     index: 389,
@@ -6404,6 +6462,7 @@ const chronsEpisodes = [
     streamTitle: 'Streamzville',
     streamDate: 1704585600000,
     streamURL: 'https://www.youtube.com/watch?v=yHZzZ5byN-s',
+    streamThumbURL: 'https://i.ytimg.com/vi/yHZzZ5byN-s/default.jpg',
   },
   {
     index: 395,
@@ -6434,6 +6493,7 @@ const chronsEpisodes = [
     streamTitle: 'Mizzlaracroft',
     streamDate: 1710806400000,
     streamURL: 'https://www.youtube.com/watch?v=0i06ifu0tsU',
+    streamThumbURL: 'https://i.ytimg.com/vi/0i06ifu0tsU/default.jpg',
   },
   {
     index: 397,
@@ -6470,6 +6530,7 @@ const chronsEpisodes = [
     streamTitle: 'Computerliments to the Cheifet (1)',
     streamDate: 1600815600000,
     streamURL: 'https://www.youtube.com/watch?v=JMZfL8UyMxE',
+    streamThumbURL: 'https://i.ytimg.com/vi/JMZfL8UyMxE/default.jpg',
   },
   {
     index: 399,
@@ -6622,6 +6683,7 @@ const chronsEpisodes = [
     streamTitle: 'Disturbing and Unacceptable Scenes',
     streamDate: 1728860400000,
     streamURL: 'https://www.youtube.com/watch?v=qFqdy4rTck0',
+    streamThumbURL: 'https://i.ytimg.com/vi/qFqdy4rTck0/default.jpg',
   },
   {
     index: 408,
@@ -6642,6 +6704,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 - CODIE AWARDS 1999',
     streamDate: 1713049200000,
     streamURL: 'https://www.youtube.com/watch?v=WuIyTeYkN6Q',
+    streamThumbURL: 'https://i.ytimg.com/vi/WuIyTeYkN6Q/default.jpg',
   },
   {
     index: 409,
@@ -6702,6 +6765,7 @@ const chronsEpisodes = [
     streamTitle: 'Fat 32 - more computer chronicles',
     streamDate: 1598828400000,
     streamURL: 'https://www.youtube.com/watch?v=JLYY6jqWfZo',
+    streamThumbURL: 'https://i.ytimg.com/vi/JLYY6jqWfZo/default.jpg',
   },
   {
     index: 413,
@@ -6798,6 +6862,7 @@ const chronsEpisodes = [
     streamTitle: 'GAMEZVILLE (Warzone / The Exit 8 / Fat - 32)',
     streamDate: 1702944000000,
     streamURL: 'https://www.youtube.com/watch?v=CNYN5K0J8IQ',
+    streamThumbURL: 'https://i.ytimg.com/vi/CNYN5K0J8IQ/default.jpg',
   },
   {
     index: 419,
@@ -6846,6 +6911,7 @@ const chronsEpisodes = [
     streamTitle: 'Resident Evil 4 HD Project (part three) + FAT 32',
     streamDate: 1666738800000,
     streamURL: 'https://www.youtube.com/watch?v=GnBd3zxN0Jw',
+    streamThumbURL: 'https://i.ytimg.com/vi/GnBd3zxN0Jw/default.jpg',
   },
   {
     index: 422,
@@ -7070,6 +7136,7 @@ const chronsEpisodes = [
     streamTitle: 'Warzone QUICKBLAST & Cheifet QUICKBLAST',
     streamDate: 1671753600000,
     streamURL: 'https://www.youtube.com/watch?v=BOgiaF8G52M',
+    streamThumbURL: 'https://i.ytimg.com/vi/BOgiaF8G52M/default.jpg',
   },
   {
     index: 436,
@@ -7118,6 +7185,7 @@ const chronsEpisodes = [
     streamTitle: 'FAT 32 QUICK BLAST - CHEIFEIT-M (A.M.)',
     streamDate: 1671494400000,
     streamURL: 'https://www.youtube.com/watch?v=p1dc-7pkXlk',
+    streamThumbURL: 'https://i.ytimg.com/vi/p1dc-7pkXlk/default.jpg',
   },
   {
     index: 439,
@@ -7170,6 +7238,7 @@ const chronsEpisodes = [
     streamTitle: 'Computerliments to the Cheifet (1)',
     streamDate: 1600815600000,
     streamURL: 'https://www.youtube.com/watch?v=JMZfL8UyMxE',
+    streamThumbURL: 'https://i.ytimg.com/vi/JMZfL8UyMxE/default.jpg',
   },
   {
     index: 442,
@@ -7282,6 +7351,7 @@ const chronsEpisodes = [
     streamTitle: 'CHEIFEIT',
     streamDate: 1671408000000,
     streamURL: 'https://www.youtube.com/watch?v=qGXdpK1AAuU',
+    streamThumbURL: 'https://i.ytimg.com/vi/qGXdpK1AAuU/default.jpg',
   },
   {
     index: 449,
@@ -7298,6 +7368,7 @@ const chronsEpisodes = [
     streamTitle: 'Morezone',
     streamDate: 1703980800000,
     streamURL: 'https://www.youtube.com/watch?v=Ft5-pWqp15Q',
+    streamThumbURL: 'https://i.ytimg.com/vi/Ft5-pWqp15Q/default.jpg',
   },
   {
     index: 450,
@@ -7414,6 +7485,7 @@ const chronsEpisodes = [
     streamTitle: 'Warzone',
     streamDate: 1704326400000,
     streamURL: 'https://www.youtube.com/watch?v=gUcXUydpUYQ',
+    streamThumbURL: 'https://i.ytimg.com/vi/gUcXUydpUYQ/default.jpg',
   },
   {
     index: 457,
@@ -7444,6 +7516,7 @@ const chronsEpisodes = [
     streamTitle: 'Upscaled Cruelty',
     streamDate: 1733356800000,
     streamURL: 'https://www.youtube.com/watch?v=JDZou48oGSA',
+    streamThumbURL: 'https://i.ytimg.com/vi/JDZou48oGSA/default.jpg',
   },
   {
     index: 459,
@@ -7460,6 +7533,7 @@ const chronsEpisodes = [
     streamTitle: 'Upscaled Cruelty',
     streamDate: 1733356800000,
     streamURL: 'https://www.youtube.com/watch?v=JDZou48oGSA',
+    streamThumbURL: 'https://i.ytimg.com/vi/JDZou48oGSA/default.jpg',
   },
   {
     index: 460,

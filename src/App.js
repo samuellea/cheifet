@@ -80,81 +80,97 @@ function App() {
       });
   };
 
+  const thumbsBin = [];
+
   // Load the gapi client library only once
   useEffect(() => {
     window.gapi.load('client', initGapiClient);
   }, []); // Empty dependency array means this effect runs only once
 
   // Function to fetch the YouTube thumbnail using the YouTube API through gapi
-  const fetchThumbnail = async (videoId) => {
-    if (!videoId || !isGapiLoaded) {
-      return null; // If gapi is not loaded or no videoId, return null
-    }
+  // const fetchThumbnail = async (videoId) => {
+  //   if (!videoId || !isGapiLoaded) {
+  //     return null; // If gapi is not loaded or no videoId, return null
+  //   }
 
-    try {
-      const response = await window.gapi.client.youtube.videos.list({
-        part: 'snippet',
-        id: videoId,
-      });
+  //   try {
+  //     const response = await window.gapi.client.youtube.videos.list({
+  //       part: 'snippet',
+  //       id: videoId,
+  //     });
 
-      const thumbnailUrl =
-        response.result.items?.[0]?.snippet?.thumbnails?.default?.url;
-      return thumbnailUrl || null;
-    } catch (error) {
-      console.error('Error fetching thumbnail with gapi:', error);
-      return null;
-    }
-  };
+  //     const thumbnailUrl =
+  //       response.result.items?.[0]?.snippet?.thumbnails?.default?.url;
+  //     thumbsBin.push({ streamVideoID: videoId, streamThumbURL: thumbnailUrl });
+  //     return thumbnailUrl || null;
+  //   } catch (error) {
+  //     console.error('Error fetching thumbnail with gapi:', error);
+  //     return null;
+  //   }
+  // };
 
   // Fetch thumbnails only if they haven't been fetched yet
-  const getThumbnail = async (videoId) => {
-    if (thumbnails[videoId]) return thumbnails[videoId]; // Return cached thumbnail if already fetched
+  // const getThumbnail = async (videoId) => {
+  //   if (thumbnails[videoId]) return thumbnails[videoId]; // Return cached thumbnail if already fetched
 
-    const thumbnail = await fetchThumbnail(videoId);
+  //   const thumbnail = await fetchThumbnail(videoId);
 
-    // Update the thumbnails state with the new thumbnail
-    setThumbnails((prevThumbnails) => ({
-      ...prevThumbnails,
-      [videoId]: thumbnail,
-    }));
+  //   // Update the thumbnails state with the new thumbnail
+  //   setThumbnails((prevThumbnails) => ({
+  //     ...prevThumbnails,
+  //     [videoId]: thumbnail,
+  //   }));
 
-    return thumbnail;
-  };
+  //   return thumbnail;
+  // };
 
   // This useEffect will run when the component mounts to fetch thumbnails
   useEffect(() => {
-    const updateVideosWithThumbnails = async () => {
-      const updatedChrons = await Promise.all(
-        chronsEpisodes.map(async (video) => {
-          const videoId = extractVideoId(video.streamURL);
-          const youtubeThumbnail = videoId ? await getThumbnail(videoId) : null;
-          return {
-            ...video,
-            youtubeThumbnail,
-          };
-        })
-      );
+    // const updateVideosWithThumbnails = async () => {
+    //   const updatedChrons = await Promise.all(
+    //     chronsEpisodes.map(async (video) => {
+    //       const videoId = extractVideoId(video.streamURL);
+    //       const youtubeThumbnail = videoId ? await getThumbnail(videoId) : null;
+    //       return {
+    //         ...video,
+    //         youtubeThumbnail,
+    //       };
+    //     })
+    //   );
 
-      const updatedNetcafe = await Promise.all(
-        netcafeEpisodes.map(async (video) => {
-          const videoId = extractVideoId(video.streamURL);
-          const youtubeThumbnail = videoId ? await getThumbnail(videoId) : null;
-          return {
-            ...video,
-            youtubeThumbnail,
-          };
-        })
-      );
+    //   const updatedNetcafe = await Promise.all(
+    //     netcafeEpisodes.map(async (video) => {
+    //       const videoId = extractVideoId(video.streamURL);
+    //       const youtubeThumbnail = videoId ? await getThumbnail(videoId) : null;
+    //       return {
+    //         ...video,
+    //         youtubeThumbnail,
+    //       };
+    //     })
+    //   );
 
-      const updatedEpisodeObj = {
-        chrons: updatedChrons,
-        netcafe: updatedNetcafe,
-      };
+    //   const removeDuplicates = (arr) => {
+    //     const seen = new Set();
+    //     return arr.filter((obj) => {
+    //       if (!obj.streamVideoID) return true; // Keep objects without an ID
+    //       if (seen.has(obj.streamVideoID)) return false; // Skip duplicates
+    //       seen.add(obj.streamVideoID);
+    //       return true;
+    //     });
+    //   };
 
-      console.log(updatedEpisodeObj);
+    //   const uniqueThumbs = removeDuplicates(thumbsBin);
+    //   console.log(uniqueThumbs);
 
-      setEpisodeObjs(updatedEpisodeObj);
-    };
+    //   const updatedEpisodeObj = {
+    //     chrons: updatedChrons,
+    //     netcafe: updatedNetcafe,
+    //   };
+
+    //   console.log(updatedEpisodeObj);
+
+    //   setEpisodeObjs(updatedEpisodeObj);
+    // };
 
     if (isGapiLoaded) {
       // updateVideosWithThumbnails();
