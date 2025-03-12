@@ -103,7 +103,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 5,
     titles: ['Women on the Web', 'Women on the Web'],
     date: 846460800000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=4Ii94pqIbDA',
     internetArchiveURL: ['https://archive.org/details/nc105_women'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc105_women',
@@ -119,7 +119,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 6,
     titles: ['Games', 'Games on the Net'],
     date: 847065600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=yPbmMczw1K0',
     internetArchiveURL: ['https://archive.org/details/nc106_games'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc106_games',
@@ -135,7 +135,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 7,
     titles: ['The 3D Web', 'The 3D Web'],
     date: 847843200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=Z5WubOHkgew',
     internetArchiveURL: ['https://archive.org/details/nc107_vrml3d_worlds'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc107_vrml3d_worlds',
@@ -151,7 +151,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 8,
     titles: ['Music', 'Music Web Sites'],
     date: 848275200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=S86sJx16Xso',
     internetArchiveURL: ['https://archive.org/details/nc110_music'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc110_music',
@@ -167,7 +167,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 9,
     titles: ['Movies', 'Movies Online'],
     date: 849571200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=NL299SC8zO8',
     internetArchiveURL: ['https://archive.org/details/nc111_movies'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc111_movies',
@@ -183,7 +183,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 10,
     titles: ['Writers', 'Cyber Writing'],
     date: 850867200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=W8lT3U7MIfo',
     internetArchiveURL: ['https://archive.org/details/nc112_writers'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc112_writers',
@@ -247,7 +247,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 4,
     titles: ['Weird Science', 'Weird Science on the Web'],
     date: 855792000000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=hqCZPT_QCPw',
     internetArchiveURL: ['https://archive.org/details/nc107_weird_science'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc107_weird_science',
@@ -263,7 +263,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 5,
     titles: ['Travel Sites Online', 'Travel Sites Online'],
     date: 856483200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=zPO7DDbnXOk',
     internetArchiveURL: ['https://archive.org/details/nc108_travel'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc108_travel',
@@ -279,7 +279,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 6,
     titles: ['Equality and Diversity', 'Equality & Diversity On Line'],
     date: 857088000000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=S6eOeE8LYqM',
     internetArchiveURL: [
       'https://archive.org/details/nc109_equality-diversity',
     ],
@@ -328,7 +328,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 9,
     titles: ['Health Sites', 'Health Sites'],
     date: 859507200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=oT8Vy8uAApk',
     internetArchiveURL: ['https://archive.org/details/nc113_health'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc113_health',
@@ -344,7 +344,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 10,
     titles: ['TV Shows Online', 'TV Shows Online'],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=wNlBHc8cluo',
     internetArchiveURL: ['https://archive.org/details/TVshowso98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TVshowso98',
@@ -360,7 +360,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 11,
     titles: ['Censorship Online', 'Censorship Online'],
     date: 826761600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=jsDxdEvkZgg',
     internetArchiveURL: ['https://archive.org/details/nc111_censorship'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc111_censorship',
@@ -376,8 +376,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 11.5,
     titles: ['Weird Web', 'The Weird Web'],
     date: 861922800000,
-    youtubeURL:
-      'https://www.youtube.com/watch?v=H-shglfRxWw&t=16s&pp=ygUNbmV0Y2FmZSB3ZWlyZA%3D%3D',
+    youtubeURL: 'https://www.youtube.com/watch?v=jsDxdEvkZgg',
     internetArchiveURL: ['https://archive.org/details/nc117_weird_web'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc117_weird_web',
@@ -393,7 +392,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 12,
     titles: ['Online Sports', 'Online Sports'],
     date: 880675200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=RyUosKB7Clk',
     internetArchiveURL: ['https://archive.org/details/OnlineSp1997'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineSp1997',
@@ -409,7 +408,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 13,
     titles: ['Privacy in Cyberspace', 'Privacy in Cyberspace'],
     date: 883094400000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=vLfO-Uffx8Y',
     internetArchiveURL: ['https://archive.org/details/privacyi97'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_privacyi97',
@@ -425,7 +424,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 14,
     titles: ['Science Fiction Online', 'Science Fiction Online'],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=uS4pMDp4GyE',
     internetArchiveURL: ['https://archive.org/details/nc118_scifi'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc118_scifi',
@@ -458,7 +457,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 17,
     titles: ['Virtual Doctors', 'Virtual Doctors'],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=1LcLc4ABKEg',
     internetArchiveURL: ['https://archive.org/details/nc216_virtual_doctor'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc216_virtual_doctor',
@@ -474,7 +473,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 18,
     titles: ['Web Radio', 'Web Radio'],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=2cKLe0EUufY',
     internetArchiveURL: ['https://archive.org/details/webradio97'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_webradio97',
@@ -490,7 +489,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 19,
     titles: ['Webby Awards 1997', 'Webby Awards 1997'],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=CKTUo1yTjpo',
     internetArchiveURL: ['https://archive.org/details/nc112_webby_awards'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc112_webby_awards',
@@ -523,7 +522,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 21,
     titles: ['Online Sports', 'Online Sports'],
     date: 880675200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=RyUosKB7Clk',
     internetArchiveURL: ['https://archive.org/details/OnlineSp1997'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineSp1997',
@@ -539,7 +538,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 22,
     titles: ['Privacy in Cyberspace', 'Privacy in Cyberspace'],
     date: 877647600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=vLfO-Uffx8Y',
     internetArchiveURL: ['https://archive.org/details/privacyi97'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_privacyi97',
@@ -555,7 +554,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 23,
     titles: ['Web Radio', 'Web Radio'],
     date: 877042800000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=2cKLe0EUufY',
     internetArchiveURL: ['https://archive.org/details/webradio97'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_webradio97',
@@ -588,7 +587,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 2,
     titles: ['War on the Web', 'War On The Web'],
     date: 887932800000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=Xqu_PSoyG0E',
     internetArchiveURL: ['https://archive.org/details/WarOnThe00'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WarOnThe00',
@@ -604,7 +603,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 3,
     titles: ['Chat Rooms', 'Chat Rooms'],
     date: 907887600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=lKIEI31aMHQ',
     internetArchiveURL: ['https://archive.org/details/ChatRoom00'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ChatRoom00',
@@ -637,7 +636,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 7,
     titles: ['Cyber News', 'Cyber News'],
     date: 888883200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=GgIBK1qT-3k',
     internetArchiveURL: ['https://archive.org/details/CyberNew00'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CyberNew00',
@@ -690,7 +689,7 @@ const netcafeEpisodes = [
       'Gambling and Gaming on the Web',
     ],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=xWU7hlkbAuM',
     internetArchiveURL: ['https://archive.org/details/nc428_gambling_games'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc428_gambling_games',
@@ -706,7 +705,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 11,
     titles: ['Games on the Net', 'Games on the Net'],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=ifEfswM1rpk',
     internetArchiveURL: ['https://archive.org/details/nc106_games'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc106_games',
@@ -722,7 +721,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 14,
     titles: ['Home Improvement (1998)', 'Home Improvement'],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=2A4uCMPICxo',
     internetArchiveURL: ['https://archive.org/details/nc231_home_improvement'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc231_home_improvement',
@@ -738,7 +737,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 16,
     titles: ['Investing Online (1998)', 'Investing Online'],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=EL1wQ8ew8_c',
     internetArchiveURL: ['https://archive.org/details/Investin1998'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Investin1998',
@@ -790,7 +789,7 @@ const netcafeEpisodes = [
       'Small Business Resources On the Net',
     ],
     date: 895791600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=bslm9Fu9xXI',
     internetArchiveURL: ['https://archive.org/details/BestSOHO98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BestSOHO98',
@@ -806,7 +805,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 24,
     titles: ['Space Science', 'Space Science'],
     date: 893977200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=pp8JCoBomoU',
     internetArchiveURL: ['https://archive.org/details/SpaceSci98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpaceSci98',
@@ -822,7 +821,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 25,
     titles: ['The Global Net', 'The Global Net'],
     date: 910915200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=KkBNzoh5uVs',
     internetArchiveURL: ['https://archive.org/details/GlobalNe99'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GlobalNe99',
@@ -838,7 +837,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 29,
     titles: ['TV Shows Online', 'TV Shows Online'],
     date: 878256000000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=wNlBHc8cluo',
     internetArchiveURL: ['https://archive.org/details/TVshowso98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_TVshowso98',
@@ -857,7 +856,7 @@ const netcafeEpisodes = [
       'Finding Anyone / Anything Online',
     ],
     date: 886118400000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=rTYCHRDUpEg',
     internetArchiveURL: ['https://archive.org/details/Findinga98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Findinga98',
@@ -873,7 +872,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 32,
     titles: ['Best SOHO Resources', 'Small Business Resources On the Net'],
     date: 895791600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=QoCfNM1TyKA',
     internetArchiveURL: ['https://archive.org/details/BestSOHO98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_BestSOHO98',
@@ -906,7 +905,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 34,
     titles: ['Humor on the Web', 'Humor on the Web'],
     date: 899420400000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=G7_26HK1hrA',
     internetArchiveURL: ['https://archive.org/details/HumorOnT98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HumorOnT98',
@@ -925,7 +924,7 @@ const netcafeEpisodes = [
       'Group Therapy Net Style (1998)',
     ],
     date: 900630000000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=2abDZBdwBIk',
     internetArchiveURL: ['https://archive.org/details/GroupThe98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_GroupThe98',
@@ -958,7 +957,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 37,
     titles: ['Jobs and Careers', 'Jobs and Careers'],
     date: 902444400000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=QT0kwTWCyQw',
     internetArchiveURL: ['https://archive.org/details/JobsandC98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_JobsandC98',
@@ -974,7 +973,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 38,
     titles: ['The Hollywood Connection', 'The Hollywood Connection'],
     date: 903049200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=fQ1f7wuPRrk',
     internetArchiveURL: ['https://archive.org/details/Hollywoo98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Hollywoo98',
@@ -990,7 +989,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 39,
     titles: ['Sex Online', 'Sex Online'],
     date: 904863600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=oZzIJmvDZxo',
     internetArchiveURL: ['https://archive.org/details/SexOnlin98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SexOnlin98',
@@ -1006,7 +1005,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 40,
     titles: ['Cool Home Pages', 'Cool Home Pages'],
     date: 906073200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=BiotWasglAw',
     internetArchiveURL: ['https://archive.org/details/CoolHome98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_CoolHome98',
@@ -1022,7 +1021,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 41,
     titles: ['Making Money On Line', 'Making Money On Line'],
     date: 906678000000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=S-dp_yu5JbI',
     internetArchiveURL: ['https://archive.org/details/Moneyont98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Moneyont98',
@@ -1038,7 +1037,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 42,
     titles: ['Portals', 'Portals'],
     date: 911520000000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=z4xoMekwShQ',
     internetArchiveURL: ['https://archive.org/details/Portals98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Portals98',
@@ -1054,7 +1053,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 43,
     titles: ['Space Science', 'Space Science'],
     date: 893977200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=pp8JCoBomoU',
     internetArchiveURL: ['https://archive.org/details/SpaceSci98'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_SpaceSci98',
@@ -1070,7 +1069,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 1,
     titles: ['Incredibly Useful Sites', 'Incredibly Useful Sites'],
     date: 923612400000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=OFUszRLmrsc',
     internetArchiveURL: ['https://archive.org/details/Incredib1999'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Incredib1999',
@@ -1086,7 +1085,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 2,
     titles: ['Online Literature', 'Online Literature'],
     date: 915753600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=WMswE9eCHFk',
     internetArchiveURL: ['https://archive.org/details/OnlineLi1999'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineLi1999',
@@ -1102,7 +1101,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 3,
     titles: ['Adventure Travel Online', 'Adventure Travel Online'],
     date: 916963200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=WmorRTrQboA',
     internetArchiveURL: ['https://archive.org/details/Adventur1999'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Adventur1999',
@@ -1134,7 +1133,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 5,
     titles: ['Performing Arts on the Web', 'Performing Arts on the Web'],
     date: 929055600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=Uhc8i4JtjMk',
     internetArchiveURL: ['https://archive.org/details/Performi1999'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Performi1999',
@@ -1166,7 +1165,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 7,
     titles: ['Hollywood on the Net', 'Hollywood on the Net'],
     date: 930870000000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=yqTlEDyf_CQ',
     internetArchiveURL: ['https://archive.org/details/Hollywoo1999'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Hollywoo1999',
@@ -1182,9 +1181,11 @@ const netcafeEpisodes = [
     episodeOfSeason: 8,
     titles: ['Investing Online (1999)', 'Investing Online (1999)'],
     date: 941760000000,
-    youtubeURL: null,
-    internetArchiveURL: [],
-    framesURL: [],
+    youtubeURL: 'https://www.youtube.com/watch?v=EL1wQ8ew8_c',
+    internetArchiveURL: ['https://archive.org/details/Investin1998'],
+    framesURL: [
+      'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Investin1998',
+    ],
     watched: false,
     streamTitle: null,
     streamDate: null,
@@ -1228,7 +1229,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 11,
     titles: ['E-Commerce', 'E-Commerce'],
     date: 940546800000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=ZNVEcGnx15k',
     internetArchiveURL: ['https://archive.org/details/ECommerc1999'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_ECommerc1999',
@@ -1244,7 +1245,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 12,
     titles: ['Conspiracy Theories (1999)', 'Conspiracy Theories (1999)'],
     date: 940546800000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=QeBUkZjdbi0',
     internetArchiveURL: ['https://archive.org/details/Conspira1999'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Conspira1999',
@@ -1291,7 +1292,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 15,
     titles: ['Humor Online', 'Humor Online'],
     date: 946339200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=oWBAkdJWyk8',
     internetArchiveURL: ['https://archive.org/details/HumorOnl00'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_HumorOnl00',
@@ -1307,7 +1308,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 16,
     titles: ['New Age Websites', 'New Age Web Sites'],
     date: 932079600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=TClAYYCYgKw',
     internetArchiveURL: ['https://archive.org/details/nc439_new_age_websites'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc439_new_age_websites',
@@ -1337,7 +1338,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 18,
     titles: ['Consumer Protection Online', 'Consumer Protection Online'],
     date: 928450800000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=jr67d93mGxc',
     internetArchiveURL: ['https://archive.org/details/Consumer99'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Consumer99',
@@ -1353,7 +1354,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 19,
     titles: ['Online Collecting', 'Online Collecting'],
     date: 931474800000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=oBnGSthRkw4',
     internetArchiveURL: ['https://archive.org/details/nc440_online_collecting'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc440_online_collecting',
@@ -1369,7 +1370,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 20,
     titles: ['Webby Awards 1999 - Part One', 'Webby Awards 1999 – Part One'],
     date: 925426800000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=aC-HW8-E7Tg',
     internetArchiveURL: ['https://archive.org/details/WebbyAwa99'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WebbyAwa99',
@@ -1385,7 +1386,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 21,
     titles: ['Webby Awards 1999 - Part Two', 'Webby Awards 1999 – Part Two'],
     date: 926031600000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=idMd_5FUmqM',
     internetArchiveURL: ['https://archive.org/details/WebbyAwa99_2'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_WebbyAwa99_2',
@@ -1401,7 +1402,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 1,
     titles: ['Online Job Hunting', 'Online Job Hunting'],
     date: 953251200000,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=TzGL1rNm05Y',
     internetArchiveURL: ['https://archive.org/details/OnlineJo2000'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_OnlineJo2000',
@@ -1417,7 +1418,7 @@ const netcafeEpisodes = [
     episodeOfSeason: 2,
     titles: ['Entertainment on the Web', 'Entertainment on the Web'],
     date: null,
-    youtubeURL: null,
+    youtubeURL: 'https://www.youtube.com/watch?v=pJTJ1bbXQnM',
     internetArchiveURL: ['https://archive.org/details/Entertai2000'],
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_Entertai2000',
@@ -1872,6 +1873,20 @@ const netcafeEpisodes = [
   {
     index: 113,
     season: '2001',
+    episodeOfSeason: 14,
+    titles: ['Web Startups October 20th', 'Web Startups October 20th'],
+    date: 1003532400000,
+    youtubeURL: 'https://www.youtube.com/watch?v=1twivxrrxo0',
+    internetArchiveURL: [],
+    framesURL: [],
+    watched: false,
+    streamTitle: null,
+    streamDate: null,
+    streamURL: null,
+  },
+  {
+    index: 114,
+    season: '2001',
     episodeOfSeason: 15,
     titles: [
       'Web Startups December 1st',
@@ -1887,7 +1902,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 114,
+    index: 115,
     season: '2001',
     episodeOfSeason: 16,
     titles: [
@@ -1906,7 +1921,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 115,
+    index: 116,
     season: '2001',
     episodeOfSeason: 17,
     titles: [
@@ -1925,7 +1940,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 116,
+    index: 117,
     season: '2002',
     episodeOfSeason: 1,
     titles: ['Home Improvement (2002)', 'Home Improvement'],
@@ -1939,7 +1954,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 117,
+    index: 118,
     season: '2002',
     episodeOfSeason: 2,
     titles: ['Nicholas Negroponte Part One', 'Nicholas Negroponte – Part One'],
@@ -1957,7 +1972,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 118,
+    index: 119,
     season: '2002',
     episodeOfSeason: 3,
     titles: ['Nicholas Negroponte Part Two', 'Nicholas Negroponte – Part Two'],
@@ -1975,7 +1990,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 119,
+    index: 120,
     season: '2002',
     episodeOfSeason: 4,
     titles: ['State of the Web', 'State of the Web Part Two'],
@@ -1989,7 +2004,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 120,
+    index: 121,
     season: '2002',
     episodeOfSeason: 5,
     titles: [
@@ -2008,7 +2023,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 121,
+    index: 122,
     season: '2002',
     episodeOfSeason: 6,
     titles: [
@@ -2027,7 +2042,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 122,
+    index: 123,
     season: '2002',
     episodeOfSeason: 7,
     titles: [
@@ -2046,7 +2061,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 123,
+    index: 124,
     season: '2002',
     episodeOfSeason: 8,
     titles: [
@@ -2065,7 +2080,7 @@ const netcafeEpisodes = [
     streamURL: null,
   },
   {
-    index: 124,
+    index: 125,
     season: '2002',
     episodeOfSeason: 9,
     titles: [
