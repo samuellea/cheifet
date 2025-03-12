@@ -33,6 +33,119 @@ body {
   background-color: #007c7c;
 }
 
+.floatyBackgroundContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #007c7c;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.floatyBackground {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border: 8px solid red; */
+  position: relative;
+  overflow: hidden;
+}
+
+.floating-object {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  /* background: rgba(255, 255, 255, 0.6); */
+  /* border-radius: 50%; */
+  bottom: 0; /* Align to the right */
+}
+
+.floating-object img {
+  width: 150%;
+  height: 150%;
+}
+
+.floating-object:nth-child(7) {
+  animation: floatDiagonal 25s linear infinite;
+  animation-delay: 0s;
+  right: -16%;
+  bottom: 50%;
+}
+
+.floating-object:nth-child(8) {
+  animation: floatDiagonal 17s linear infinite;
+  animation-delay: 0s;
+  right: -32%;
+  bottom: 75%;
+}
+
+.floating-object:nth-child(1) {
+  animation: floatDiagonal 15s linear infinite;
+  animation-delay: 0s;
+  right: 0%;
+}
+
+.floating-object:nth-child(2) {
+  animation: floatDiagonal 20s linear infinite;
+  animation-delay: 1s;
+  right: 16%;
+}
+
+.floating-object:nth-child(3) {
+  animation: floatDiagonal 15s linear infinite;
+  animation-delay: 2s;
+  right: 32%;
+}
+
+.floating-object:nth-child(4) {
+  animation: floatDiagonal 12s linear infinite;
+  animation-delay: 3s;
+  right: 48%;
+}
+
+.floating-object:nth-child(5) {
+  animation: floatDiagonal 17s linear infinite;
+  animation-delay: 4s;
+  right: 64%;
+}
+
+.floating-object:nth-child(6) {
+  animation: floatDiagonal 10s linear infinite;
+  animation-delay: 5s;
+  right: 80%;
+}
+
+@keyframes floatDiagonal {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-250vh, -100vw); /* Moves diagonally up and left */
+  }
+}
+
+.contentContainer {
+  /* border: 5px solid blue; */
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+  /* border: 8px dotted red; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
 .windowPicContainer {
   position: relative;
 }
@@ -69,6 +182,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, Geneva, sans-serif;
+  z-index: 2;
 }
 
 .pageHeader h1 {
@@ -135,6 +249,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  box-sizing: border-box;
 }
 
 .gradientSash {
@@ -251,6 +366,8 @@ body {
   width: 80%;
   /* max-width: 80%; */
   /* min-width: 850px; */
+  z-index: 2;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1200px) {
@@ -397,7 +514,7 @@ body {
   padding: 0;
   /* border: 2px solid red; */
   position: relative;
-  z-index: 2;
+  z-index: 4;
   margin-bottom: 4px;
   text-shadow: 6px 4px 0 rgb(134, 134, 134),
     /* Moves the entire shadow down-right */ 3px 3px 0 rgb(134, 134, 134);
@@ -1170,4 +1287,28 @@ a.header-link:active {
 
 a.header-link:hover {
   color: blue; /* Ensure link stays blue on hover */
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust scrollbar width */
+}
+
+/* Make the scrollbar thumb taller */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+  min-height: 50px; /* Makes the thumb taller */
+}
+
+/* Optional: Style scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.bottomSpace {
+  /* border: 10px solid green; */
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 500px;
 }

@@ -231,192 +231,255 @@ function App() {
     console.log({ sortOn, order });
   }, [sortOn, order]);
 
+  const images = [
+    '/icotim.png',
+    '/icoalp.png',
+    '/icopri.png',
+    '/icofra.png',
+    '/icowin.png',
+    '/icomen.png',
+    '/icobox.png',
+    '/icomag.png',
+    '/icodocs.png',
+    '/icorom2.png',
+    '/icorom.png',
+    '/icoput.png',
+    '/icorecy.png',
+  ];
+
+  const objectCount = 8; // Number of floating objects
+
+  // Function to generate a random time between 4-12 seconds
+  const getRandomInterval = () =>
+    Math.floor(Math.random() * (12000 - 4000) + 4000);
+
+  function FloatingObject({ images, getRandomInterval }) {
+    const [src, setSrc] = useState(
+      images[Math.floor(Math.random() * images.length)]
+    );
+
+    useEffect(() => {
+      const changeImage = () => {
+        setSrc(images[Math.floor(Math.random() * images.length)]); // Pick a new random image
+        const nextInterval = getRandomInterval();
+        setTimeout(changeImage, nextInterval); // Schedule next change
+      };
+
+      const initialTimeout = getRandomInterval();
+      const timeout = setTimeout(changeImage, initialTimeout);
+
+      return () => clearTimeout(timeout); // Cleanup on unmount
+    }, [images, getRandomInterval]);
+
+    return (
+      <div className="floating-object">
+        <img src={src} alt="Floating" />
+      </div>
+    );
+  }
+
   return (
     <div className="App">
-      <div className="pageHeader">
-        <div className="windowPicContainer">
-          <img className="bannerGif" src="/banner.gif" />
-          <h1 className="pageHeaderTitle">
-            <div className="windowButtons">
-              <p>Yes</p>
-              <p>No</p>
-            </div>
-          </h1>
+      <div className="floatyBackgroundContainer">
+        <div className="floatyBackground">
+          {Array.from({ length: objectCount }).map((_, index) => (
+            <FloatingObject
+              key={index}
+              images={images}
+              getRandomInterval={getRandomInterval}
+            />
+          ))}
         </div>
+      </div>
+      <div className="contentContainer">
+        <div className="pageHeader">
+          <div className="windowPicContainer">
+            <img className="bannerGif" src="/banner.gif" />
+            <h1 className="pageHeaderTitle">
+              <div className="windowButtons">
+                <p>Yes</p>
+                <p>No</p>
+              </div>
+            </h1>
+          </div>
 
-        <p className="pageHeaderDescription">
-          A resource for keeping track of{' '}
-          <span style={{ fontWeight: 900 }}>Computer Chronicles</span> /{' '}
-          <span style={{ fontWeight: 900 }}>Netcafe </span>
-          episodes watched on{' '}
-          <span style={{ fontWeight: 900 }}>Francis Higgins'</span>{' '}
-          <a
-            href="https://www.youtube.com/@FrancisHiggins/playlists"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-link"
-          >
-            streams
-          </a>
-        </p>
-        <div className="followContainer">
-          <p className="followText">
-            Follow:
+          <p className="pageHeaderDescription">
+            A resource for keeping track of{' '}
+            <span style={{ fontWeight: 900 }}>Computer Chronicles</span> /{' '}
+            <span style={{ fontWeight: 900 }}>Netcafe </span>
+            episodes watched on{' '}
+            <span style={{ fontWeight: 900 }}>Francis Higgins'</span>{' '}
             <a
-              href="https://www.youtube.com/@FrancisHiggins/"
+              href="https://www.youtube.com/@FrancisHiggins/playlists"
               target="_blank"
               rel="noopener noreferrer"
               className="header-link"
-              style={{ marginLeft: '5px', marginRight: '5px' }}
             >
-              francis_higgins
+              streams
             </a>
           </p>
-          <a
-            href="https://www.youtube.com/@FrancisHiggins"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-link"
-          >
-            <img className="youtubeImg" src="/youtubeicon.png" />
-          </a>
-          <p
-            className="followText"
-            style={{ marginLeft: '5px', marginRight: '5px' }}
-          >
-            Webmaster:
+          <div className="followContainer">
+            <p className="followText">
+              Follow:
+              <a
+                href="https://www.youtube.com/@FrancisHiggins/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="header-link"
+                style={{ marginLeft: '5px', marginRight: '5px' }}
+              >
+                francis_higgins
+              </a>
+            </p>
+            <a
+              href="https://www.youtube.com/@FrancisHiggins"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="header-link"
+            >
+              <img className="youtubeImg" src="/youtubeicon.png" />
+            </a>
+            <p
+              className="followText"
+              style={{ marginLeft: '5px', marginRight: '5px' }}
+            >
+              Webmaster:
+              <a
+                href="https://soundcloud.com/samlea"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="header-link"
+                style={{ marginLeft: '5px' }}
+              >
+                sam_lea
+              </a>
+            </p>
             <a
               href="https://soundcloud.com/samlea"
               target="_blank"
               rel="noopener noreferrer"
               className="header-link"
-              style={{ marginLeft: '5px' }}
             >
-              sam_lea
+              <img className="soundcloudImg" src="/soundcloudicon.png" />
             </a>
-          </p>
-          <a
-            href="https://soundcloud.com/samlea"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-link"
-          >
-            <img className="soundcloudImg" src="/soundcloudicon.png" />
-          </a>
-        </div>
-      </div>
-
-      <div className="table">
-        <div className="pretableHeader">
-          <div className="gradientSash" />
-
-          <div className="tabs">
-            <div className={chronsTabClass} onClick={() => handleTab('chrons')}>
-              <div className={chronsDashTab}>Computer Chronicles</div>
-            </div>
-            <div
-              className={netcafeTabClass}
-              onClick={() => handleTab('netcafe')}
-            >
-              <div className={netcafeDashTab}>Net Cafe</div>
-            </div>
-          </div>
-          <div className="greyDivider">
-            <div className="whiteLineHalf" />
-          </div>
-
-          <div style={{ display: series === 'chrons' ? 'block' : 'none' }}>
-            <ChronsCategory progress={progress} series={series} />
-          </div>
-          <div style={{ display: series === 'netcafe' ? 'block' : 'none' }}>
-            <NetcafeCategory progress={progress} series={series} />
           </div>
         </div>
-        <div className="toolbar">
-          <button
-            className="showWatchedAllButton"
-            type="button"
-            onClick={handleToggleWatched}
-          >
-            <div className="showWatchedAllButtonInside">
-              {!watchedFilter
-                ? 'Show Watched Only 👁️ '
-                : 'Show All Episodes 📖'}
-            </div>
-          </button>
-          <div className="searchAndClear">
-            <div className="magnifContainer">
-              <img className="magnif" src="/magnif.png" />
-            </div>
 
-            <div className="searchBarOuter">
-              <div className="searchBarInner">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  onChange={handleSearch}
-                  value={searchTerm}
-                />
+        <div className="table">
+          <div className="pretableHeader">
+            <div className="gradientSash" />
+
+            <div className="tabs">
+              <div
+                className={chronsTabClass}
+                onClick={() => handleTab('chrons')}
+              >
+                <div className={chronsDashTab}>Computer Chronicles</div>
+              </div>
+              <div
+                className={netcafeTabClass}
+                onClick={() => handleTab('netcafe')}
+              >
+                <div className={netcafeDashTab}>Net Cafe</div>
               </div>
             </div>
-            <button className="clearButton" type="button" onClick={() => {}}>
-              <div
-                className="clearButtonInside"
-                onClick={() => setSearchTerm('')}
-              >
-                Clear
+            <div className="greyDivider">
+              <div className="whiteLineHalf" />
+            </div>
+
+            <div style={{ display: series === 'chrons' ? 'block' : 'none' }}>
+              <ChronsCategory progress={progress} series={series} />
+            </div>
+            <div style={{ display: series === 'netcafe' ? 'block' : 'none' }}>
+              <NetcafeCategory progress={progress} series={series} />
+            </div>
+          </div>
+          <div className="toolbar">
+            <button
+              className="showWatchedAllButton"
+              type="button"
+              onClick={handleToggleWatched}
+            >
+              <div className="showWatchedAllButtonInside">
+                {!watchedFilter
+                  ? 'Show Watched Only 👁️ '
+                  : 'Show All Episodes 📖'}
               </div>
             </button>
-          </div>
-        </div>
+            <div className="searchAndClear">
+              <div className="magnifContainer">
+                <img className="magnif" src="/magnif.png" />
+              </div>
 
-        <div className="columnHeaders">
-          <div
-            className="cell epColumn"
-            onClick={() => handleColumnClick('index')}
-          >
-            Ep.
+              <div className="searchBarOuter">
+                <div className="searchBarInner">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    onChange={handleSearch}
+                    value={searchTerm}
+                  />
+                </div>
+              </div>
+              <button className="clearButton" type="button" onClick={() => {}}>
+                <div
+                  className="clearButtonInside"
+                  onClick={() => setSearchTerm('')}
+                >
+                  Clear
+                </div>
+              </button>
+            </div>
           </div>
-          <div
-            className="cell titleColumn"
-            onClick={() => handleColumnClick('titles')}
-          >
-            Title
+
+          <div className="columnHeaders">
+            <div
+              className="cell epColumn"
+              onClick={() => handleColumnClick('index')}
+            >
+              Ep.
+            </div>
+            <div
+              className="cell titleColumn"
+              onClick={() => handleColumnClick('titles')}
+            >
+              Title
+            </div>
+            <div
+              className="cell dateColumn"
+              onClick={() => handleColumnClick('date')}
+            >
+              Air Date
+            </div>
+            <div className="cell youtubeColumn">YT Link</div>
+            <div className="cell internetArchiveColumn">I.A. Link</div>
+            <div className="cell framesColumn">Frames</div>
+            <div
+              className="cell streamDateColumn"
+              onClick={() => handleColumnClick('streamDate')}
+            >
+              Streamed
+            </div>
+            <div
+              className="cell streamTitleColumn"
+              onClick={() => handleColumnClick('streamTitle')}
+            >
+              Stream Title
+            </div>
           </div>
-          <div
-            className="cell dateColumn"
-            onClick={() => handleColumnClick('date')}
-          >
-            Air Date
-          </div>
-          <div className="cell youtubeColumn">YT Link</div>
-          <div className="cell internetArchiveColumn">I.A. Link</div>
-          <div className="cell framesColumn">Frames</div>
-          <div
-            className="cell streamDateColumn"
-            onClick={() => handleColumnClick('streamDate')}
-          >
-            Streamed
-          </div>
-          <div
-            className="cell streamTitleColumn"
-            onClick={() => handleColumnClick('streamTitle')}
-          >
-            Stream Title
-          </div>
+          {episodeObjs.chrons.length && episodeObjs.netcafe.length && (
+            <Table
+              episodeObjs={episodeObjs[series]}
+              sortOn={sortOn}
+              order={order}
+              watchedFilter={watchedFilter}
+              series={series}
+              searchTerm={searchTerm}
+            />
+          )}
         </div>
-        {episodeObjs.chrons.length && episodeObjs.netcafe.length && (
-          <Table
-            episodeObjs={episodeObjs[series]}
-            sortOn={sortOn}
-            order={order}
-            watchedFilter={watchedFilter}
-            series={series}
-            searchTerm={searchTerm}
-          />
-        )}
+        <div className="bottomSpace"></div>
       </div>
-      <div className="bottomSpace" style={{ height: '500px' }} />
     </div>
   );
 }
