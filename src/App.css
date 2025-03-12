@@ -67,16 +67,66 @@ body {
   height: 150%;
 }
 
+.floating-object:nth-child(9) {
+  animation: floatDiagonal 11s linear infinite;
+  animation-delay: 4s;
+  right: -16%;
+  bottom: 65%;
+}
+
+.floating-object:nth-child(10) {
+  animation: floatDiagonal 9s linear infinite;
+  animation-delay: 0s;
+  right: -32%;
+  bottom: 85%;
+}
+
+.floating-object:nth-child(11) {
+  animation: floatDiagonal 15s linear infinite;
+  animation-delay: 10s;
+  right: 0%;
+}
+
+.floating-object:nth-child(12) {
+  animation: floatDiagonal 20s linear infinite;
+  animation-delay: 8s;
+  right: 16%;
+}
+
+.floating-object:nth-child(13) {
+  animation: floatDiagonal 15s linear infinite;
+  animation-delay: 7s;
+  right: 32%;
+}
+
+.floating-object:nth-child(14) {
+  animation: floatDiagonal 12s linear infinite;
+  animation-delay: 5s;
+  right: 48%;
+}
+
+.floating-object:nth-child(15) {
+  animation: floatDiagonal 17s linear infinite;
+  animation-delay: 6s;
+  right: 64%;
+}
+
+.floating-object:nth-child(16) {
+  animation: floatDiagonal 10s linear infinite;
+  animation-delay: 7s;
+  right: 80%;
+}
+
 .floating-object:nth-child(7) {
   animation: floatDiagonal 25s linear infinite;
-  animation-delay: 0s;
+  animation-delay: 6s;
   right: -16%;
   bottom: 50%;
 }
 
 .floating-object:nth-child(8) {
   animation: floatDiagonal 17s linear infinite;
-  animation-delay: 0s;
+  animation-delay: 7s;
   right: -32%;
   bottom: 75%;
 }
