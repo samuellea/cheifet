@@ -101,7 +101,7 @@ const Row = ({ episode, index, lastInSeason }) => {
         >
           {framesURL.length ? (
             <>
-              🎞️ 🔎
+              🎞️ 👁️
               <br />
               show Frames
             </>

@@ -41,6 +41,8 @@ function App() {
   const [stuImage, setStuImage] = useState(null);
   const [janeImage, setJaneImage] = useState(null);
 
+  const [searchTerm, setSearchTerm] = useState('');
+
   // Function to extract video ID from YouTube URL
   const extractVideoId = (url) => {
     if (!url) return null;
@@ -185,6 +187,10 @@ function App() {
     setWatchedFilter((prevState) => !prevState);
   };
 
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
   return (
     <div className="App">
       <div className="pageHeader">
@@ -202,7 +208,8 @@ function App() {
           A resource for keeping track of{' '}
           <span style={{ fontWeight: 900 }}>Computer Chronicles</span> /{' '}
           <span style={{ fontWeight: 900 }}>Netcafe </span>
-          episodes watched on Francis Higgins'{' '}
+          episodes watched on{' '}
+          <span style={{ fontWeight: 900 }}>Francis Higgins'</span>{' '}
           <a
             href="https://www.youtube.com/@FrancisHiggins/playlists"
             target="_blank"
@@ -294,18 +301,34 @@ function App() {
           <button
             className="showWatchedAllButton"
             type="button"
-            onClick={() => {}}
+            onClick={handleToggleWatched}
           >
-            <div
-              className="showWatchedAllButtonInside"
-              onClick={handleToggleWatched}
-            >
+            <div className="showWatchedAllButtonInside">
               {!watchedFilter
                 ? 'Show Watched Only 👁️ '
                 : 'Show All Episodes 📖'}
             </div>
           </button>
+          <div className="searchAndClear">
+            <div className="magnifContainer">
+              <img className="magnif" src="/magnif.png" />
+            </div>
+
+            <div className="searchBarOuter">
+              <div className="searchBarInner">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  onChange={handleSearch}
+                />
+              </div>
+            </div>
+            <button className="clearButton" type="button" onClick={() => {}}>
+              <div className="clearButtonInside">Clear</div>
+            </button>
+          </div>
         </div>
+
         <div className="columnHeaders">
           <div className="cell epColumn">Ep.</div>
           <div className="cell titleColumn">Title</div>

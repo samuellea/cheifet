@@ -84,7 +84,7 @@ body {
 
 .pageHeaderDescription {
   margin: 0;
-  font-size: 20px;
+  font-size: 24px;
 }
 .followContainer {
   display: flex;
@@ -101,6 +101,7 @@ body {
   /* border: 1px solid blue; */
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 .followText p {
@@ -140,15 +141,14 @@ body {
   position: absolute;
   right: 355px;
   background: linear-gradient(to right, transparent, white);
-  height: calc(100% - 0px);
+  height: calc(100% - 50px);
   width: 200px;
   z-index: 2000;
-  bottom: -50px;
+  bottom: 0px;
 }
 
 .progressHeader {
   width: 30px;
-  /* border: 4px solid black; */
   flex-grow: 1; /* Allows it to grow and take up available width */
   display: flex;
   flex-direction: column; /* Allows it to stretch vertically */
@@ -162,7 +162,7 @@ body {
   box-sizing: border-box;
   z-index: 3000;
   position: relative;
-  bottom: -50px;
+  bottom: 0px;
 }
 
 .progressHeader {
@@ -188,7 +188,7 @@ body {
   box-sizing: border-box;
   color: black;
   position: relative;
-  bottom: -50px;
+  bottom: 0px;
   z-index: 3000;
   /* border: 1px solid red; */
 }
@@ -249,8 +249,14 @@ body {
   border-bottom: 5px solid #000000;
 
   width: 80%;
-  max-width: 80%;
-  min-width: 850px;
+  /* max-width: 80%; */
+  /* min-width: 850px; */
+}
+
+@media (max-width: 1200px) {
+  .table {
+    width: 100%;
+  }
 }
 
 .categoryInfo {
@@ -422,6 +428,7 @@ body {
   position: sticky;
   top: 50px;
   z-index: 1000;
+  /* border-top: 5px solid #f2f2f2; */
 }
 
 .epColumn {
@@ -545,7 +552,7 @@ body {
 }
 
 .showWatchedAllButton {
-  width: 25%;
+  width: 290px;
   height: 40px;
   border: 2px solid black;
   border-radius: 0px;
@@ -555,6 +562,62 @@ body {
 }
 
 .showWatchedAllButtonInside {
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+@media (max-width: 830px) {
+  .showWatchedAllButtonInside {
+    font-size: calc(1vw + 10px); /* Font size scales with the viewport */
+  }
+}
+
+.magnifContainer {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-right: 8px;
+  display: flex; /* Optional, to center image */
+  justify-content: center; /* Optional, to center image horizontally */
+  align-items: center; /* Optional, to center image vertically */
+}
+
+.magnif {
+  width: 100%; /* Make the image fill the container width */
+  height: 100%; /* Make the image fill the container height */
+  object-fit: cover; /* Ensure the image covers the entire container without distorting */
+  margin-top: 2px;
+}
+
+.searchAndClear {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.clearButton {
+  width: 100px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 0px;
+  background-color: #bfb8bf;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: 5px;
+}
+
+.clearButtonInside {
   border-top: 2px solid white;
   border-left: 2px solid white;
   border-right: 2px solid black;
@@ -1006,18 +1069,64 @@ a:active {
 }
 
 .toolbar {
+  border: 5px solid red;
+  border-top: 5px solid #f2f2f2;
+
   width: 100%;
   background-color: #c0c0c0;
   position: sticky;
   top: 0px;
-  height: 50px;
+  min-height: 50px;
   z-index: 1000;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 5px;
-  padding-top: 5px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5px;
+
   box-sizing: border-box;
+}
+
+.searchBarOuter {
+  height: 40px;
+  background-color: white;
+  border-top: 2px solid #706971;
+  border-left: 2px solid #706971;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.searchBarInner {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid #c0c0c0;
+  border-right: 2px solid #c0c0c0;
+  box-sizing: border-box;
+}
+
+.searchBarInner input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.buttonAndSearchHalf {
+  border: 5px solid purple;
+  box-sizing: border-box;
+
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .greyDivider {
