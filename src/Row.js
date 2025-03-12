@@ -81,7 +81,16 @@ const Row = ({ episode, index, lastInSeason }) => {
         <div className="cell youtube">
           {youtubeURL ? (
             <a target="_blank" href={youtubeURL} rel="noreferrer">
-              ▶️ YouTube
+              ▶️ <br />
+              YouTube
+            </a>
+          ) : null}
+        </div>
+        <div className="cell internetArchive">
+          {internetArchiveURL.length ? (
+            <a target="_blank" href={internetArchiveURL[0]} rel="noreferrer">
+              ▶️ <br />
+              Internet Archive
             </a>
           ) : null}
         </div>
@@ -92,16 +101,10 @@ const Row = ({ episode, index, lastInSeason }) => {
         >
           {framesURL.length ? (
             <>
-              🔎 See <br />
-              🎞️ Frames
+              🎞️ 🔎
+              <br />
+              show Frames
             </>
-          ) : null}
-        </div>
-        <div className="cell internetArchive">
-          {internetArchiveURL.length ? (
-            <a target="_blank" href={internetArchiveURL[0]} rel="noreferrer">
-              ▶️ Internet Archive
-            </a>
           ) : null}
         </div>
         <div className="cell streamDate">

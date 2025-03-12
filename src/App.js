@@ -311,8 +311,8 @@ function App() {
           <div className="cell titleColumn">Title</div>
           <div className="cell dateColumn">Air Date</div>
           <div className="cell youtubeColumn">YT Link</div>
+          <div className="cell internetArchiveColumn">I.A. Link</div>
           <div className="cell framesColumn">Frames</div>
-          <div className="cell internetArchiveColumn">Int. Arch.</div>
           <div className="cell streamDateColumn">Streamed</div>
           <div className="cell streamTitleColumn">Stream Title</div>
         </div>
