@@ -117,6 +117,13 @@ body {
   right: 80%;
 }
 
+.floating-object:nth-child(17) {
+  animation: floatDiagonal 12s linear infinite;
+  animation-delay: 0s;
+  right: -0%;
+  bottom: 25%;
+}
+
 .floating-object:nth-child(7) {
   animation: floatDiagonal 25s linear infinite;
   animation-delay: 6s;

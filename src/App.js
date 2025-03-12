@@ -247,7 +247,7 @@ function App() {
     '/icorecy.png',
   ];
 
-  const objectCount = 16; // Number of floating objects
+  const objectCount = 17; // Number of floating objects
 
   // Function to generate a random time between 4-12 seconds
   const getRandomInterval = () =>
