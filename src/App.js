@@ -6,7 +6,6 @@ import netcafeEpisodes from './netcafeData.js'; // Adjust the path to your data.
 import Table from './Table';
 import ChronsCategory from './ChronsCategory'; // Add this line to import ChronsCategory
 import NetcafeCategory from './NetcafeCategory'; // Add this line to import NetcafeCategory
-import Getter from './Getter';
 
 function App() {
   const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
@@ -41,18 +40,6 @@ function App() {
 
   const [stuImage, setStuImage] = useState(null);
   const [janeImage, setJaneImage] = useState(null);
-
-  // useEffect(() => {
-  //   const img = new Image();
-  //   img.src = '/stu95.png'; // Preload image
-  //   img.onload = () => setStuImage(img.src);
-  // }, []);
-
-  // useEffect(() => {
-  //   const img = new Image();
-  //   img.src = '/jane95.png'; // Preload image
-  //   img.onload = () => setJaneImage(img.src);
-  // }, []);
 
   // Function to extract video ID from YouTube URL
   const extractVideoId = (url) => {
@@ -198,19 +185,8 @@ function App() {
     setWatchedFilter((prevState) => !prevState);
   };
 
-  // const [showGetter, setShowGetter] = useState(false);
-
-  // const handleGet = () => {
-  //   if (!showGetter) {
-  //     setShowGetter(true);
-  //   }
-  // };
-
   return (
     <div className="App">
-      {/* <button onClick={handleGet}>GET</button>
-      {showGetter && <Getter />} */}
-
       <div className="pageHeader">
         <div className="windowPicContainer">
           <img className="bannerGif" src="/banner.gif" />
