@@ -648,7 +648,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
-  font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, Geneva, sans-serif;
+  font-family: 'Courier', monospace;
 }
 
 .rowInfo {
