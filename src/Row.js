@@ -82,7 +82,12 @@ const Row = ({ episode, index, lastInSeason }) => {
         <div className="cell youtube">
           {youtubeURL ? (
             <a target="_blank" href={youtubeURL} rel="noreferrer">
-              ▶️ <br />
+              <img
+                className="youtubeImg"
+                src="/youtubeicon.png"
+                style={{ height: '20px' }}
+              />
+              <br />
               YouTube
             </a>
           ) : null}
@@ -90,7 +95,12 @@ const Row = ({ episode, index, lastInSeason }) => {
         <div className="cell internetArchive">
           {internetArchiveURL.length ? (
             <a target="_blank" href={internetArchiveURL[0]} rel="noreferrer">
-              ▶️ <br />
+              <img
+                className="internetArchiveImg"
+                src="/intarchico.png"
+                style={{ height: '24px' }}
+              />
+              <br />
               Internet Archive
             </a>
           ) : null}

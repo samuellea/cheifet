@@ -291,6 +291,13 @@ body {
   width: auto;
 }
 
+.sortChevrons {
+  width: 12px;
+  height: auto;
+  margin-right: 12px;
+  margin-top: 1px;
+}
+
 .seasonsProgress {
   /* border: 4px dashed pink; */
   display: flex;
@@ -600,9 +607,16 @@ body {
   flex-direction: row;
   height: 30px;
   position: sticky;
-  top: 50px;
+  top: 55px;
   z-index: 1000;
   /* border-top: 5px solid #f2f2f2; */
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sort-true {
+  background-color: #552dff;
 }
 
 .epColumn {

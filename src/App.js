@@ -278,6 +278,12 @@ function App() {
     );
   }
 
+  const handleClear = () => {
+    setSearchTerm('');
+    setSortOn(null);
+    setOrder(1);
+  };
+
   return (
     <div className="App">
       <div className="floatyBackgroundContainer">
@@ -422,10 +428,7 @@ function App() {
                 </div>
               </div>
               <button className="clearButton" type="button" onClick={() => {}}>
-                <div
-                  className="clearButtonInside"
-                  onClick={() => setSearchTerm('')}
-                >
+                <div className="clearButtonInside" onClick={handleClear}>
                   Clear
                 </div>
               </button>
@@ -434,36 +437,84 @@ function App() {
 
           <div className="columnHeaders">
             <div
-              className="cell epColumn"
+              className={`cell epColumn sort-${sortOn === 'index'}`}
               onClick={() => handleColumnClick('index')}
             >
               Ep.
             </div>
             <div
-              className="cell titleColumn"
+              className={`cell titleColumn sort-${sortOn === 'titles'}`}
               onClick={() => handleColumnClick('titles')}
             >
+              <img
+                class="sortChevrons"
+                src={
+                  sortOn !== 'titles'
+                    ? `/sortWhite.png`
+                    : order === 1
+                    ? `/sortDesc.png`
+                    : `/sortAsc.png`
+                }
+                alt={`sort`}
+              />
               Title
             </div>
             <div
-              className="cell dateColumn"
+              className={`cell dateColumn sort-${sortOn === 'date'}`}
               onClick={() => handleColumnClick('date')}
             >
+              <img
+                class="sortChevrons"
+                src={
+                  sortOn !== 'date'
+                    ? `/sortWhite.png`
+                    : order === 1
+                    ? `/sortDesc.png`
+                    : `/sortAsc.png`
+                }
+                alt={`sort`}
+              />
               Air Date
             </div>
             <div className="cell youtubeColumn">YT Link</div>
             <div className="cell internetArchiveColumn">I.A. Link</div>
             <div className="cell framesColumn">Frames</div>
             <div
-              className="cell streamDateColumn"
+              className={`cell streamDateColumn sort-${
+                sortOn === 'streamDate'
+              }`}
               onClick={() => handleColumnClick('streamDate')}
             >
+              <img
+                class="sortChevrons"
+                src={
+                  sortOn !== 'streamDate'
+                    ? `/sortWhite.png`
+                    : order === 1
+                    ? `/sortDesc.png`
+                    : `/sortAsc.png`
+                }
+                alt={`sort`}
+              />
               Streamed
             </div>
             <div
-              className="cell streamTitleColumn"
+              className={`cell streamTitleColumn sort-${
+                sortOn === 'streamTitle'
+              }`}
               onClick={() => handleColumnClick('streamTitle')}
             >
+              <img
+                class="sortChevrons"
+                src={
+                  sortOn !== 'streamTitle'
+                    ? `/sortWhite.png`
+                    : order === 1
+                    ? `/sortDesc.png`
+                    : `/sortAsc.png`
+                }
+                alt={`sort`}
+              />
               Stream Title
             </div>
           </div>
