@@ -98,7 +98,11 @@ const Row = ({ episode, index, lastInSeason }) => {
               <img
                 className="internetArchiveImg"
                 src="/intarchico.png"
-                style={{ height: '24px' }}
+                style={{
+                  height: '24px',
+                  borderRadius: '2px',
+                  overflow: 'hidden',
+                }}
               />
               <br />
               Internet Archive

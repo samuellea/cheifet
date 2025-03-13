@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Howl } from 'howler';
 import './App.css';
 import chronsEpisodes from './chronsData.js'; // Adjust the path to your data.js file
@@ -6,6 +6,8 @@ import netcafeEpisodes from './netcafeData.js'; // Adjust the path to your data.
 import Table from './Table';
 import ChronsCategory from './ChronsCategory'; // Add this line to import ChronsCategory
 import NetcafeCategory from './NetcafeCategory'; // Add this line to import NetcafeCategory
+import FloatingObject from './FloatingObject';
+import Search from './Search';
 
 function App() {
   const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
@@ -37,7 +39,7 @@ function App() {
   const [thumbnails, setThumbnails] = useState({}); // Store fetched thumbnails
   const [series, setSeries] = useState('chrons'); // chrons or netcafe
   const [watchedFilter, setWatchedFilter] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [finalSearch, setFinalSearch] = useState('');
 
   // Function to extract video ID from YouTube URL
   const extractVideoId = (url) => {
@@ -199,16 +201,6 @@ function App() {
     setWatchedFilter((prevState) => !prevState);
   };
 
-  const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
-  };
-
-  useEffect(() => {
-    if (!searchTerm.length) {
-    } else {
-    }
-  }, [searchTerm]);
-
   // onClick handler for the column headers
   const handleColumnClick = (column) => {
     console.log('!');
@@ -249,37 +241,8 @@ function App() {
 
   const objectCount = 17; // Number of floating objects
 
-  // Function to generate a random time between 4-12 seconds
-  const getRandomInterval = () =>
-    Math.floor(Math.random() * (12000 - 4000) + 4000);
-
-  function FloatingObject({ images, getRandomInterval }) {
-    const [src, setSrc] = useState(
-      images[Math.floor(Math.random() * images.length)]
-    );
-
-    useEffect(() => {
-      const changeImage = () => {
-        setSrc(images[Math.floor(Math.random() * images.length)]); // Pick a new random image
-        const nextInterval = getRandomInterval();
-        setTimeout(changeImage, nextInterval); // Schedule next change
-      };
-
-      const initialTimeout = getRandomInterval();
-      const timeout = setTimeout(changeImage, initialTimeout);
-
-      return () => clearTimeout(timeout); // Cleanup on unmount
-    }, [images, getRandomInterval]);
-
-    return (
-      <div className="floating-object">
-        <img src={src} alt="Floating" />
-      </div>
-    );
-  }
-
   const handleClear = () => {
-    setSearchTerm('');
+    setFinalSearch('');
     setSortOn(null);
     setOrder(1);
   };
@@ -289,11 +252,7 @@ function App() {
       <div className="floatyBackgroundContainer">
         <div className="floatyBackground">
           {Array.from({ length: objectCount }).map((_, index) => (
-            <FloatingObject
-              key={index}
-              images={images}
-              getRandomInterval={getRandomInterval}
-            />
+            <FloatingObject key={index} images={images} />
           ))}
         </div>
       </div>
@@ -412,27 +371,7 @@ function App() {
                   : 'Show All Episodes 📖'}
               </div>
             </button>
-            <div className="searchAndClear">
-              <div className="magnifContainer">
-                <img className="magnif" src="/magnif.png" />
-              </div>
-
-              <div className="searchBarOuter">
-                <div className="searchBarInner">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    onChange={handleSearch}
-                    value={searchTerm}
-                  />
-                </div>
-              </div>
-              <button className="clearButton" type="button" onClick={() => {}}>
-                <div className="clearButtonInside" onClick={handleClear}>
-                  Clear
-                </div>
-              </button>
-            </div>
+            <Search handleClear={handleClear} setFinalSearch={setFinalSearch} />
           </div>
 
           <div className="columnHeaders">
@@ -525,7 +464,7 @@ function App() {
               order={order}
               watchedFilter={watchedFilter}
               series={series}
-              searchTerm={searchTerm}
+              finalSearch={finalSearch}
             />
           )}
         </div>
