@@ -228,8 +228,8 @@ body {
 
 .windowButtons {
   position: absolute;
-  left: 243px;
-  top: 154px;
+  left: 324px;
+  top: 202px;
   width: 100px;
   color: rgb(68, 68, 68);
   display: flex;
@@ -265,13 +265,6 @@ body {
 
 .windowPicContainer {
   position: relative;
-}
-
-.bannerGif {
-  /* border: 2px solid red; */
-  height: 110px;
-  width: auto;
-  margin-bottom: 20px;
 }
 
 .followContainer {
@@ -702,12 +695,17 @@ body {
   width: auto;
   /* max-width: 100%; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   box-sizing: border-box;
   position: relative;
   font-family: 'Courier', monospace;
-
   /* border-right: 5px solid black; */
+}
+
+.rowInfo {
+  /* border: 3px dashed purple; */
+  display: flex;
+  flex-direction: row;
 }
 
 .rowFrames img {
@@ -890,6 +888,7 @@ body {
   border-left: 1px solid rgb(234, 234, 234);
   border-top: 1px solid rgb(234, 234, 234);
   box-sizing: border-box;
+  height: 72px;
   /* padding: 0px 8px; */
   /* border: 2px solid green; */
 }
@@ -1449,6 +1448,12 @@ a.header-link:hover {
 }
 
 @media (max-width: 768px) {
+  .bannerGif {
+    /* border: 2px solid red; */
+    height: 110px;
+    width: auto;
+    margin-bottom: 20px;
+  }
   .floating-object {
     position: absolute;
     width: 50px;
@@ -1640,7 +1645,7 @@ a.header-link:hover {
 
   .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: black;
     width: max-content; /* Expands to fit all children */
     min-width: 100%; /* Prevents shrinking below its container */
@@ -1736,5 +1741,71 @@ a.header-link:hover {
     to {
       transform: translate(-100vh, -300vw); /* Moves diagonally up and left */
     }
+  }
+
+  .rowFrames {
+    background-color: #bfb8bf;
+
+    /* border: 6px solid lime; */
+    width: 95vw;
+    max-width: 95vw;
+    flex-direction: column;
+    height: calc(80vh - 100px);
+    overflow-y: scroll;
+    position: sticky;
+    left: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE & Edge */
+  }
+
+  .rowFrames::-webkit-scrollbar {
+    display: none;
+  }
+
+  .left {
+    /* border: 3px solid red; */
+    background-color: #bfb8bf;
+
+    width: 95vw;
+    max-width: 95vw;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leftSticky {
+    /* border: 4px dotted orange; */
+    width: 97%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .closeFramesButton {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .right {
+    width: 100%;
+    /* border: 6px solid red; */
+    height: auto;
+  }
+
+  .showFrames-true img {
+    /* border: 3px solid orange; */
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
