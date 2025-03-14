@@ -16,11 +16,18 @@ const Search = ({ handleClear, setFinalSearch }) => {
     };
   }, [searchTerm]);
 
+  const handlePreClear = () => {
+    setSearchTerm('');
+    handleClear();
+  };
+
   return (
     <div className="searchAndClear">
-      <div className="magnifContainer">
-        <img className="magnif" src="/magnif.png" />
-      </div>
+      {window.innerWidth > 768 && (
+        <div className="magnifContainer">
+          <img className="magnif" src="/magnif.png" />
+        </div>
+      )}
 
       <div className="searchBarOuter">
         <div className="searchBarInner">
@@ -31,10 +38,15 @@ const Search = ({ handleClear, setFinalSearch }) => {
             value={searchTerm}
             defaultValue={searchTerm}
           />
+          {window.innerWidth < 768 && !searchTerm.length && (
+            <div className="magnifContainer">
+              <img className="magnif" src="/magnif.png" />
+            </div>
+          )}
         </div>
       </div>
       <button className="clearButton" type="button" onClick={() => {}}>
-        <div className="clearButtonInside" onClick={handleClear}>
+        <div className="clearButtonInside" onClick={handlePreClear}>
           Clear
         </div>
       </button>

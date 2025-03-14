@@ -4,15 +4,19 @@ import Row from './Row';
 const Table = ({
   episodeObjs,
   sortOn,
+  setSortOn,
   order,
+  setOrder,
   series,
   watchedFilter,
   finalSearch,
 }) => {
-  const [filteredEpisodes, setFilteredEpisodes] = useState([...episodeObjs]);
+  const [filteredEpisodes, setFilteredEpisodes] = useState([
+    ...episodeObjs[series],
+  ]);
 
   useEffect(() => {
-    const filteredEpisodes = episodeObjs
+    const filteredEpisodes = episodeObjs[series]
       .filter((episode) => {
         // 1. Apply watched filter
         if (watchedFilter && !episode.watched) {
@@ -67,7 +71,7 @@ const Table = ({
         return (valA > valB ? 1 : valA < valB ? -1 : 0) * order;
       });
     setFilteredEpisodes(filteredEpisodes);
-  }, [watchedFilter, finalSearch]);
+  }, [watchedFilter, finalSearch, series]);
 
   useEffect(() => {
     console.log('Sorting has changed:', { sortOn, order });
@@ -103,14 +107,116 @@ const Table = ({
     return formattedDate;
   }
 
+  // onClick handler for the column headers
+  const handleColumnClick = (column) => {
+    console.log('!');
+    if (sortOn === column) {
+      // If the same column is clicked again, toggle the order (ascending <-> descending)
+      if (order === 1) {
+        setOrder(-1); // Set to descending order
+      } else if (order === -1) {
+        setSortOn(null); // Reset sortOn
+        setOrder(1); // Reset order to ascending
+      }
+    } else {
+      // Set the new column to sort on, default to ascending order
+      setSortOn(column);
+      setOrder(1); // Always start with ascending order for a new column
+    }
+  };
+
   return (
     <div className="tableContainer">
+      <div className="columnHeaders">
+        <div
+          className={`cell column epColumn sort-${sortOn === 'index'}`}
+          onClick={() => handleColumnClick('index')}
+        >
+          {window.innerWidth > 768 ? 'Ep.' : null}
+        </div>
+        <div
+          className={`cell column titleColumn sort-${sortOn === 'titles'}`}
+          onClick={() => handleColumnClick('titles')}
+        >
+          <img
+            class="sortChevrons"
+            src={
+              sortOn !== 'titles'
+                ? `/sortWhite.png`
+                : order === 1
+                ? `/sortDesc.png`
+                : `/sortAsc.png`
+            }
+            alt={`sort`}
+          />
+          Title
+        </div>
+        <div
+          className={`cell column dateColumn sort-${sortOn === 'date'}`}
+          onClick={() => handleColumnClick('date')}
+        >
+          <img
+            class="sortChevrons"
+            src={
+              sortOn !== 'date'
+                ? `/sortWhite.png`
+                : order === 1
+                ? `/sortDesc.png`
+                : `/sortAsc.png`
+            }
+            alt={`sort`}
+          />
+          Air Date
+        </div>
+
+        <div className="cell column youtubeColumn">YT Link</div>
+        <div className="cell column internetArchiveColumn">I.A. Link</div>
+        <div className="cell column framesColumn">Frames</div>
+        <div
+          className={`cell column streamDateColumn sort-${
+            sortOn === 'streamDate'
+          }`}
+          onClick={() => handleColumnClick('streamDate')}
+        >
+          <img
+            class="sortChevrons"
+            src={
+              sortOn !== 'streamDate'
+                ? `/sortWhite.png`
+                : order === 1
+                ? `/sortDesc.png`
+                : `/sortAsc.png`
+            }
+            alt={`sort`}
+          />
+          Streamed
+        </div>
+        <div
+          className={`cell column streamTitleColumn sort-${
+            sortOn === 'streamTitle'
+          }`}
+          onClick={() => handleColumnClick('streamTitle')}
+        >
+          <img
+            class="sortChevrons"
+            src={
+              sortOn !== 'streamTitle'
+                ? `/sortWhite.png`
+                : order === 1
+                ? `/sortDesc.png`
+                : `/sortAsc.png`
+            }
+            alt={`sort`}
+          />
+          Stream Title
+        </div>
+      </div>
       {filteredEpisodes.map((episode, i) => {
         const isNewSeason = episode.season !== prevSeason;
         prevSeason = episode.season; // Update the prevSeason for the next iteration
 
         return (
-          <div key={i}>
+          <>
             {isNewSeason && !finalSearch.length && !sortOn && (
               <div className="SeasonDivider">
                 <p className={`color-season${episode.season}`}>
@@ -126,7 +232,7 @@ const Table = ({
                 filteredEpisodes[i + 1].season > episode.season
               }
             />
-          </div>
+          </>
         );
       })}
     </div>

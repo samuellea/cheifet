@@ -36,7 +36,6 @@ const Row = ({ episode, index, lastInSeason }) => {
   const formattedStreamDate = streamDate
     ? format(new Date(streamDate), 'MMM d, yyyy')
     : null;
-  const rowInfoClass = `rowInfo watched-${watched}`;
   const rowFramesClass = `rowFrames showFrames-${showFrames}`;
 
   const extractId = (url) => {
@@ -60,90 +59,92 @@ const Row = ({ episode, index, lastInSeason }) => {
   const fullFramesImgURL = `${imageURLStart}${imageNamePortion}.jpg`;
 
   // Determine the background color based on the index
-  const rowBackgroundColor = index % 2 === 0 ? 'white' : 'rgb(244, 244, 244)';
+  const rowBackgroundColor = index % 2 === 0 ? 'odd' : 'even';
 
   return (
     <div
-      className="row"
+      className={`row rowBackground-${rowBackgroundColor} watched-${watched}`}
       style={{
         borderBottom: lastInSeason ? '1px solid rgb(244, 244, 244)' : 'none',
-        backgroundColor: rowBackgroundColor, // Set the background color conditionally
       }}
     >
-      <div className={rowInfoClass}>
-        <div className={`cell ep season${season}`}>{episodeOfSeason}</div>
-        {watched === true || watched === 'partial' ? (
-          <div className="progress">{watched === true ? '✅' : '⏳'}</div>
+      <div className={`cell ep season${season}`}>{episodeOfSeason}</div>
+      {watched === true || watched === 'partial' ? (
+        <div className="progress">{watched === true ? '✅' : '⏳'}</div>
+      ) : null}
+      <div
+        className="cell title"
+        style={{
+          background:
+            watched === 'partial'
+              ? 'rgb(255, 243, 184)'
+              : watched === true
+              ? 'rgb(205, 250, 215)'
+              : rowBackgroundColor === 'odd'
+              ? 'white'
+              : 'rgb(244, 244, 244)',
+        }}
+      >
+        <p>{titles.join(' / ')}</p>
+      </div>
+      <div className="cell date">
+        <p>{formattedDate}</p>
+      </div>
+      <div className="cell youtube">
+        {youtubeURL ? (
+          <a target="_blank" href={youtubeURL} rel="noreferrer">
+            <img
+              className="youtubeImg"
+              src="/youtubeicon.png"
+              style={{ height: '20px' }}
+            />
+            <br />
+            YouTube
+          </a>
         ) : null}
-        <div className="cell title">
-          <p>{titles.join(' / ')}</p>
-        </div>
-        <div className="cell date">{formattedDate}</div>
-        <div className="cell youtube">
-          {youtubeURL ? (
-            <a target="_blank" href={youtubeURL} rel="noreferrer">
-              <img
-                className="youtubeImg"
-                src="/youtubeicon.png"
-                style={{ height: '20px' }}
-              />
-              <br />
-              YouTube
-            </a>
-          ) : null}
-        </div>
-        <div className="cell internetArchive">
-          {internetArchiveURL.length ? (
-            <a target="_blank" href={internetArchiveURL[0]} rel="noreferrer">
-              <img
-                className="internetArchiveImg"
-                src="/intarchico.png"
-                style={{
-                  height: '24px',
-                  borderRadius: '2px',
-                  overflow: 'hidden',
-                }}
-              />
-              <br />
-              Internet Archive
-            </a>
-          ) : null}
-        </div>
-        <div
-          className="cell frames"
-          style={{ cursor: framesURL.length ? 'pointer' : 'default' }}
-          onClick={() => (framesURL.length ? handleClickFrames() : null)}
-        >
-          {framesURL.length ? (
-            <>
-              🎞️ 👁️
-              <br />
-              show Frames
-            </>
-          ) : null}
-        </div>
-        <div className="cell streamDate">
-          {watched === true || watched === 'partial' ? (
-            <p className="">{formattedStreamDate}</p>
-          ) : null}
-        </div>
+      </div>
+      <div className="cell internetArchive">
+        {internetArchiveURL.length ? (
+          <a target="_blank" href={internetArchiveURL[0]} rel="noreferrer">
+            <img className="internetArchiveImg" src="/intarchico.png" />
+            <br />
+            Internet Archive
+          </a>
+        ) : null}
+      </div>
+      <div
+        className="cell frames"
+        style={{ cursor: framesURL.length ? 'pointer' : 'default' }}
+        onClick={() => (framesURL.length ? handleClickFrames() : null)}
+      >
+        {framesURL.length ? (
+          <>
+            🎞️ 👁️
+            <br />
+            <p>show Frames</p>
+          </>
+        ) : null}
+      </div>
 
-        <div
-          className="cell streamTitle"
-          id={!framesURL ? 'unclickable' : null}
-        >
-          {watched === true || watched === 'partial' ? (
-            <>
-              <img src={streamThumbURL} />
-              <p>
-                {' '}
-                <a target="_blank" href={streamURL} rel="noreferrer">
-                  🔗 {streamTitle}
-                </a>
-              </p>
-            </>
-          ) : null}
-        </div>
+      <div className="cell streamDate">
+        {watched === true || watched === 'partial' ? (
+          <p className="">{formattedStreamDate}</p>
+        ) : null}
+      </div>
+
+      <div className="cell streamTitle" id={!framesURL ? 'unclickable' : null}>
+        {watched === true || watched === 'partial' ? (
+          <>
+            <img src={streamThumbURL} />
+            <p>
+              {' '}
+              <a target="_blank" href={streamURL} rel="noreferrer">
+                {window.innerWidth > 768 && '🔗'}
+                {streamTitle}
+              </a>
+            </p>
+          </>
+        ) : null}
       </div>
       {showFrames ? (
         <div className={rowFramesClass}>

@@ -30,14 +30,22 @@ const ChronsCategory = ({ progress, series, stuImage }) => {
             <span>e</span>
             <span>s</span>
             <span style={{ marginLeft: '15px' }}> </span>
-            <span>🖥️</span>
+            <span
+              style={{
+                visibility: window.innerWidth < 768 ? 'hidden' : 'visible',
+              }}
+            >
+              🖥️
+            </span>
           </h1>
         </div>
       </div>
 
-      {progress.chrons && progress.netcafe ? (
-        <ProgressGraph progress={progress} series={series} />
-      ) : null}
+      <div className="progressGraphWrapper">
+        {progress.chrons && progress.netcafe ? (
+          <ProgressGraph progress={progress} series={series} />
+        ) : null}
+      </div>
     </div>
   );
 };

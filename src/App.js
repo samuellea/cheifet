@@ -28,6 +28,7 @@ function App() {
     sound.play();
   };
 
+  const [isGapiLoaded, setIsGapiLoaded] = useState(false);
   const [episodeObjs, setEpisodeObjs] = useState({
     chrons: chronsEpisodes,
     netcafe: netcafeEpisodes,
@@ -35,11 +36,10 @@ function App() {
   const [progress, setProgress] = useState({ chrons: {}, netcafe: {} });
   const [sortOn, setSortOn] = useState(null);
   const [order, setOrder] = useState(1); // 1 for asc, -1 for desc
-  const [isGapiLoaded, setIsGapiLoaded] = useState(false);
-  const [thumbnails, setThumbnails] = useState({}); // Store fetched thumbnails
   const [series, setSeries] = useState('chrons'); // chrons or netcafe
-  const [watchedFilter, setWatchedFilter] = useState(false);
   const [finalSearch, setFinalSearch] = useState('');
+  const [watchedFilter, setWatchedFilter] = useState(false);
+  const [thumbnails, setThumbnails] = useState({}); // Store fetched thumbnails
 
   // Function to extract video ID from YouTube URL
   const extractVideoId = (url) => {
@@ -201,24 +201,6 @@ function App() {
     setWatchedFilter((prevState) => !prevState);
   };
 
-  // onClick handler for the column headers
-  const handleColumnClick = (column) => {
-    console.log('!');
-    if (sortOn === column) {
-      // If the same column is clicked again, toggle the order (ascending <-> descending)
-      if (order === 1) {
-        setOrder(-1); // Set to descending order
-      } else if (order === -1) {
-        setSortOn(null); // Reset sortOn
-        setOrder(1); // Reset order to ascending
-      }
-    } else {
-      // Set the new column to sort on, default to ascending order
-      setSortOn(column);
-      setOrder(1); // Always start with ascending order for a new column
-    }
-  };
-
   useEffect(() => {
     console.log({ sortOn, order });
   }, [sortOn, order]);
@@ -260,12 +242,10 @@ function App() {
         <div className="pageHeader">
           <div className="windowPicContainer">
             <img className="bannerGif" src="/banner.gif" />
-            <h1 className="pageHeaderTitle">
-              <div className="windowButtons">
-                <p>Yes</p>
-                <p>No</p>
-              </div>
-            </h1>
+            <div className="windowButtons">
+              <p>Yes</p>
+              <p>No</p>
+            </div>
           </div>
 
           <p className="pageHeaderDescription">
@@ -284,55 +264,54 @@ function App() {
             </a>
           </p>
           <div className="followContainer">
-            <p className="followText">
-              Follow:
+            <div className="followTextWrapper">
+              <p className="followText">
+                Follow:
+                <a
+                  href="https://www.youtube.com/@FrancisHiggins/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="header-link"
+                >
+                  francis_higgins
+                </a>
+              </p>
               <a
-                href="https://www.youtube.com/@FrancisHiggins/"
+                href="https://www.youtube.com/@FrancisHiggins"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="header-link"
-                style={{ marginLeft: '5px', marginRight: '5px' }}
               >
-                francis_higgins
+                <img className="youtubeImg" src="/youtubeicon.png" />
               </a>
-            </p>
-            <a
-              href="https://www.youtube.com/@FrancisHiggins"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="header-link"
-            >
-              <img className="youtubeImg" src="/youtubeicon.png" />
-            </a>
-            <p
-              className="followText"
-              style={{ marginLeft: '5px', marginRight: '5px' }}
-            >
-              Webmaster:
+            </div>
+            <div className="followTextWrapper">
+              <p className="followText">
+                Webmaster:
+                <a
+                  href="https://soundcloud.com/samlea"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="header-link"
+                >
+                  sam_lea
+                </a>
+              </p>
               <a
                 href="https://soundcloud.com/samlea"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="header-link"
-                style={{ marginLeft: '5px' }}
               >
-                sam_lea
+                <img className="soundcloudImg" src="/soundcloudicon.png" />
               </a>
-            </p>
-            <a
-              href="https://soundcloud.com/samlea"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="header-link"
-            >
-              <img className="soundcloudImg" src="/soundcloudicon.png" />
-            </a>
+            </div>
           </div>
         </div>
 
         <div className="table">
           <div className="pretableHeader">
-            <div className="gradientSash" />
+            {window.innerWidth > 768 && <div className="gradientSash" />}
 
             <div className="tabs">
               <div
@@ -374,92 +353,9 @@ function App() {
             <Search handleClear={handleClear} setFinalSearch={setFinalSearch} />
           </div>
 
-          <div className="columnHeaders">
-            <div
-              className={`cell epColumn sort-${sortOn === 'index'}`}
-              onClick={() => handleColumnClick('index')}
-            >
-              Ep.
-            </div>
-            <div
-              className={`cell titleColumn sort-${sortOn === 'titles'}`}
-              onClick={() => handleColumnClick('titles')}
-            >
-              <img
-                class="sortChevrons"
-                src={
-                  sortOn !== 'titles'
-                    ? `/sortWhite.png`
-                    : order === 1
-                    ? `/sortDesc.png`
-                    : `/sortAsc.png`
-                }
-                alt={`sort`}
-              />
-              Title
-            </div>
-            <div
-              className={`cell dateColumn sort-${sortOn === 'date'}`}
-              onClick={() => handleColumnClick('date')}
-            >
-              <img
-                class="sortChevrons"
-                src={
-                  sortOn !== 'date'
-                    ? `/sortWhite.png`
-                    : order === 1
-                    ? `/sortDesc.png`
-                    : `/sortAsc.png`
-                }
-                alt={`sort`}
-              />
-              Air Date
-            </div>
-            <div className="cell youtubeColumn">YT Link</div>
-            <div className="cell internetArchiveColumn">I.A. Link</div>
-            <div className="cell framesColumn">Frames</div>
-            <div
-              className={`cell streamDateColumn sort-${
-                sortOn === 'streamDate'
-              }`}
-              onClick={() => handleColumnClick('streamDate')}
-            >
-              <img
-                class="sortChevrons"
-                src={
-                  sortOn !== 'streamDate'
-                    ? `/sortWhite.png`
-                    : order === 1
-                    ? `/sortDesc.png`
-                    : `/sortAsc.png`
-                }
-                alt={`sort`}
-              />
-              Streamed
-            </div>
-            <div
-              className={`cell streamTitleColumn sort-${
-                sortOn === 'streamTitle'
-              }`}
-              onClick={() => handleColumnClick('streamTitle')}
-            >
-              <img
-                class="sortChevrons"
-                src={
-                  sortOn !== 'streamTitle'
-                    ? `/sortWhite.png`
-                    : order === 1
-                    ? `/sortDesc.png`
-                    : `/sortAsc.png`
-                }
-                alt={`sort`}
-              />
-              Stream Title
-            </div>
-          </div>
           {episodeObjs.chrons.length && episodeObjs.netcafe.length && (
             <Table
-              episodeObjs={episodeObjs[series]}
+              episodeObjs={episodeObjs}
               sortOn={sortOn}
               order={order}
               watchedFilter={watchedFilter}

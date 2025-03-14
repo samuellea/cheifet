@@ -3,14 +3,16 @@ import React from 'react';
 const ProgressGraph = ({ progress, series }) => {
   return (
     <div className="seasonsProgress">
-      <div
-        className="progressHeader"
-        style={{
-          animation: `fadeIn 0.5s ease-in 0.5s forwards`,
-        }}
-      >
-        PROGRESS...
-      </div>
+      {window.innerWidth > 768 && (
+        <div
+          className="progressHeader"
+          style={{
+            animation: `fadeIn 0.5s ease-in 0.5s forwards`,
+          }}
+        >
+          PROGRESS...
+        </div>
+      )}
       <div className="progressGraph">
         {Object.entries(progress[series]).map(
           ([seasonKey, { total, watched }]) => (
@@ -26,14 +28,14 @@ const ProgressGraph = ({ progress, series }) => {
               <div className="seasonCount">{`${watched}/${total}`}</div>
               <div className="seasonBar">
                 {Array.from({ length: watched }).map((_, index) => (
-                  <div key={index} className={`dot`} style={{ width: `8px` }}>
+                  <div key={index} className={`dot`}>
                     <div className={`blob ${seasonKey}`} />
                   </div>
                 ))}
 
                 {Array.from({ length: total - watched }).map(
                   (_, index, arr) => (
-                    <div key={index} className="dot" style={{ width: '8px' }}>
+                    <div key={index} className="dot">
                       <div
                         className={`blob unwatched ${
                           index === arr.length - 1 ? 'endBlob' : ''

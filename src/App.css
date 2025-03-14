@@ -8,6 +8,20 @@
   --internetArchive-width: 8%;
   --streamDate-width: 8%;
   --streamTitle-width: 34%;
+  max-width: 100vw;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --ep-width: 20px;
+    --title-width: 145px;
+    --date-width: 80px;
+    --youtube-width: 80px;
+    --frames-width: 80px;
+    --internetArchive-width: 80px;
+    --streamDate-width: 80px;
+    --streamTitle-width: 250px;
+  }
 }
 
 /* Reset margin and padding on html and body */
@@ -18,11 +32,11 @@ body {
   height: 100%; /* Ensure the body takes up the full height */
   background-color: #007c7c;
   color: rgb(244, 244, 244);
+  max-width: 100vw;
 }
 
 .App {
   text-align: center;
-  /* border: 8px dotted red; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -31,6 +45,8 @@ body {
   width: 100%;
   align-items: center;
   background-color: #007c7c;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .floatyBackgroundContainer {
@@ -42,6 +58,7 @@ body {
   top: 0;
   left: 0;
   box-sizing: border-box;
+  /* border: 8px dotted blue; */
 }
 
 .floatyBackground {
@@ -197,14 +214,9 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   justify-content: flex-start;
-  width: 100%;
   align-items: center;
   z-index: 2;
   overflow-y: scroll;
-}
-
-.windowPicContainer {
-  position: relative;
 }
 
 .bannerGif {
@@ -246,17 +258,22 @@ body {
   font-weight: 400;
 }
 
-.pageHeaderTitle {
-  margin: 0;
-  position: absolute;
-  top: 50px;
-  left: 85px;
-}
-
 .pageHeaderDescription {
   margin: 0;
   font-size: 24px;
 }
+
+.windowPicContainer {
+  position: relative;
+}
+
+.bannerGif {
+  /* border: 2px solid red; */
+  height: 110px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
 .followContainer {
   display: flex;
   flex-direction: row;
@@ -264,6 +281,14 @@ body {
   justify-content: space-between;
   /* border: 1px solid white; */
   width: 420px;
+}
+.followTextWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid white; */
+  height: 40px;
+  margin-right: 8px;
 }
 .followText {
   margin: 0;
@@ -291,11 +316,17 @@ body {
   width: auto;
 }
 
+.internetArchiveImg {
+  height: 24px;
+  border-radius: 2px;
+  overflow: 'hidden';
+}
+
 .sortChevrons {
   width: 12px;
   height: auto;
-  margin-right: 12px;
-  margin-top: 1px;
+  margin-right: 6px;
+  margin-top: 3px;
 }
 
 .seasonsProgress {
@@ -417,6 +448,8 @@ body {
   /* border: 1px solid white; */
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .table {
@@ -426,18 +459,22 @@ body {
   border-left: 5px solid #f2f2f2;
   border-right: 5px solid #000000;
   border-bottom: 5px solid #000000;
-
   width: 80%;
   /* max-width: 80%; */
   /* min-width: 850px; */
   z-index: 2;
   box-sizing: border-box;
+  /* border: 5px solid lime; */
 }
 
 @media (max-width: 1200px) {
   .table {
     width: 100%;
   }
+}
+
+.tableContainer {
+  /* border: 5px solid hotpink; */
 }
 
 .categoryInfo {
@@ -470,6 +507,7 @@ body {
   align-items: flex-start;
   justify-content: flex-end;
   overflow: hidden; /* Prevents any layout shifts */
+  /* border: 1px solid red; */
 }
 
 .stuImg {
@@ -605,14 +643,20 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 30px;
+  height: 35px;
   position: sticky;
   top: 55px;
-  z-index: 1000;
-  /* border-top: 5px solid #f2f2f2; */
+  z-index: 40;
+  border-top: 5px solid #f2f2f2;
   font-size: 14px;
   cursor: pointer;
   user-select: none;
+  box-sizing: border-box;
+  /* border: 3px solid red; */
+}
+
+.column {
+  padding-bottom: 2px;
 }
 
 .sort-true {
@@ -625,53 +669,45 @@ body {
 }
 
 .titleColumn {
-  width: var(--title-width);
+  min-width: var(--title-width);
   max-width: var(--title-width);
 }
 .dateColumn {
-  width: var(--date-width);
+  min-width: var(--date-width);
   max-width: var(--date-width);
 }
 .youtubeColumn {
-  width: var(--youtube-width);
+  min-width: var(--youtube-width);
   max-width: var(--youtube-width);
 }
 .framesColumn {
-  width: var(--frames-width);
+  min-width: var(--frames-width);
   max-width: var(--frames-width);
 }
 .internetArchiveColumn {
-  width: var(--internetArchive-width);
+  min-width: var(--internetArchive-width);
   max-width: var(--internetArchive-width);
 }
 .streamDateColumn {
-  width: var(--streamDate-width);
+  min-width: var(--streamDate-width);
   max-width: var(--streamDate-width);
 }
 .streamTitleColumn {
-  width: var(--streamTitle-width);
+  min-width: var(--streamTitle-width);
   max-width: var(--streamTitle-width);
 }
 
 .row {
-  /* border: 5px solid black; */
   color: black;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'Courier', monospace;
-}
-
-.rowInfo {
-  /* border: 2px solid red; */
-  width: 100%;
-  height: 70px;
+  width: auto;
+  /* max-width: 100%; */
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+  position: relative;
+  font-family: 'Courier', monospace;
+
+  /* border-right: 5px solid black; */
 }
 
 .rowFrames img {
@@ -779,6 +815,7 @@ body {
   display: flex; /* Optional, to center image */
   justify-content: center; /* Optional, to center image horizontally */
   align-items: center; /* Optional, to center image vertically */
+  /* border: 3px solid red; */
 }
 
 .magnif {
@@ -824,7 +861,7 @@ body {
 
 .imageContainer {
   width: 90%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   box-sizing: border-box;
   flex-grow: 1; /* Let it take available space */
 }
@@ -846,14 +883,15 @@ body {
 }
 
 .cell {
-  /* border: 2px solid green; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   border-left: 1px solid rgb(234, 234, 234);
   border-top: 1px solid rgb(234, 234, 234);
+  box-sizing: border-box;
   /* padding: 0px 8px; */
+  /* border: 2px solid green; */
 }
 
 .progress {
@@ -877,13 +915,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  width: 8px;
 }
 
 .blob {
   width: 8px;
   height: 8px;
   background-color: blue; /* Or any color you'd like for the blob */
-  border-radius: 0px; /* Makes the div round */
+  border-radius: 00px; /* Makes the div round */
 }
 
 .endBlob {
@@ -898,10 +939,12 @@ body {
   width: var(--ep-width);
   max-width: var(--ep-width);
   font-weight: 700;
+  position: sticky;
+  left: 0;
 }
 
 .title {
-  width: var(--title-width);
+  min-width: var(--title-width);
   max-width: var(--title-width);
   justify-content: flex-start; /* Align content to the start (left) */
   text-align: left; /* Align text inside the div to the left */
@@ -921,7 +964,12 @@ body {
 .date {
   width: var(--date-width);
   max-width: var(--date-width);
-  font-size: 14px;
+  /* font-size: 14px; */
+}
+
+.date p {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -950,6 +998,7 @@ a:active {
   /* text-decoration: underline;
   text-underline-offset: 8px; */
   font-size: 14px;
+  white-space: normal;
 }
 
 .frames {
@@ -961,6 +1010,7 @@ a:active {
   user-select: none;
   font-size: 14px;
   /* text-align: left; */
+  white-space: normal;
 }
 
 .internetArchive {
@@ -969,6 +1019,7 @@ a:active {
   /* text-decoration: underline;
   text-underline-offset: 8px; */
   font-size: 14px;
+  white-space: normal;
 }
 
 .streamDate {
@@ -981,6 +1032,7 @@ a:active {
   font-size: 42px;
   font-weight: 900;
   /* border: 2px solid blue; */
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -994,7 +1046,15 @@ a:active {
 }
 
 .watched-true {
-  background: rgb(205, 250, 215);
+  background: rgb(205, 250, 215) !important;
+}
+
+.rowBackground-odd {
+  background-color: white;
+}
+
+.rowBackground-even {
+  background-color: rgb(244, 244, 244);
 }
 
 .watched-partial {
@@ -1010,20 +1070,22 @@ a:active {
 }
 
 .streamTitle {
-  width: 34%; /* Set a fixed width */
+  width: var(--streamTitle-width);
+  max-width: var(--streamTitle-width);
   display: flex; /* Ensures content respects this width */
   align-items: center; /* Align text vertically */
   justify-content: flex-start; /* Keep text aligned left */
   overflow: hidden; /* Prevent overflow */
   padding: 8px;
   box-sizing: border-box;
+  /* border: 1px solid blue; */
 }
 
 .streamTitle p {
   /* border: 1px dashed red; */
   width: 85%; /* Take up 75% of the .streamTitle div's width */
-  overflow: hidden;
   white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;
   text-overflow: ellipsis; /* Truncate text with ellipsis */
   text-align: left;
   margin-left: 5px;
@@ -1296,6 +1358,7 @@ a:active {
   border-bottom: 2px solid #c0c0c0;
   border-right: 2px solid #c0c0c0;
   box-sizing: border-box;
+  position: relative;
 }
 
 .searchBarInner input {
@@ -1345,6 +1408,7 @@ a:active {
 }
 
 a.header-link {
+  margin-left: 5px;
   color: blue !important; /* Ensure visited links stay blue */
 }
 
@@ -1379,7 +1443,298 @@ a.header-link:hover {
 
 .bottomSpace {
   /* border: 10px solid green; */
-  width: 100%;
+  width: 10%;
   box-sizing: border-box;
   min-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .floating-object {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* background: rgba(255, 255, 255, 0.6); */
+    /* border-radius: 50%; */
+    bottom: 0; /* Align to the right */
+  }
+
+  .floating-object img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pageHeader {
+    /* border: 4px solid hotpink; */
+    width: 75%;
+    height: 380px;
+  }
+
+  .windowButtons {
+    visibility: hidden;
+    /* border: 3px solid red; */
+  }
+
+  .pageHeaderDescription {
+    margin: 0;
+    font-size: 14px;
+  }
+  .followContainer {
+    flex-direction: column;
+    width: 100% !important;
+    /* border: 3px solid red; */
+  }
+  .followTextWrapper {
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .followText {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .tabs {
+    font-size: 12px;
+  }
+  .isTabbed {
+    width: 72px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .picAndTitle {
+    width: 100%;
+    height: 310px;
+  }
+
+  .StuPicContainer {
+    height: 310px;
+    /* border: 5px solid red; */
+  }
+
+  .stuImg {
+    height: 250px;
+    width: auto;
+  }
+
+  .ph1Container {
+    height: 55px;
+    max-height: 55px;
+    width: 100%;
+  }
+
+  .ph1 {
+    font-size: 31px;
+  }
+
+  .categoryInfo {
+    padding-left: 0px;
+    /* height: 265px; */
+    height: auto;
+    flex-direction: column;
+  }
+  .greyDivider {
+    height: 0px;
+  }
+  .seasonContainer {
+    width: 100%;
+  }
+  .seasonBar {
+    width: 65%;
+  }
+  .dot {
+    width: 7.5px;
+  }
+  .blob {
+    width: 7.5px;
+  }
+  .whiteLineHalf {
+    height: 0px; /* 30px + 1px to exceed parent */
+    bottom: 0px; /* Moves it 1px outside */
+    width: calc(49% - 2px);
+  }
+  .progressGraph {
+    margin-top: 6px;
+    padding-left: 6px;
+  }
+  .toolbar {
+    flex-direction: column;
+    height: auto;
+  }
+  .showWatchedAllButton {
+    width: 100%;
+  }
+
+  .magnifContainer {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 3px;
+    left: 80px;
+  }
+
+  .searchAndClear {
+    margin-top: 5px;
+    width: 100%;
+    /* flex-direction: row-reverse; */
+  }
+  .searchBarOuter {
+    width: 50px;
+  }
+  .showWatchedAllButtonInside {
+    font-size: 18px;
+  }
+  .columnHeaders {
+    position: static; /* Removes sticky behavior */
+    /* top: 100px; */
+    width: max-content; /* Expands based on its content */
+    /* height: 40px; */
+  }
+  .searchBarInner input {
+    padding-top: 8px;
+  }
+
+  .table {
+    /* border: 5px solid green; */
+    max-width: 100%;
+  }
+
+  .tableContainer {
+    font-size: 12px;
+
+    width: 100%; /* Restricted to viewport width */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    position: relative; /* Required for sticky positioning */
+    display: block; /* Change from flex to block */
+    box-sizing: border-box;
+  }
+
+  .title {
+    font-size: 12px;
+    /* border: 1px solid red; */
+    position: sticky;
+    left: 20px;
+    /* background: white;  */
+    z-index: 10; /* Keep it above other scrolling elements */
+    height: 75px;
+    box-sizing: border-box;
+  }
+
+  .titleColumn {
+    position: sticky;
+    left: 0;
+    z-index: 900;
+    background: #001082;
+    /* height: 10px; */
+  }
+
+  .cell:not(.column) {
+    font-size: 12px;
+    height: 75px;
+    box-sizing: border-box;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    width: max-content; /* Expands to fit all children */
+    min-width: 100%; /* Prevents shrinking below its container */
+    white-space: nowrap; /* Prevents child elements from wrapping */
+  }
+
+  .rowWrapper {
+    /* border: 3px dashed purple; */
+    /* display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 0; /* Prevent overflow issues */
+  }
+
+  .SeasonDivider {
+    width: 90%; /* Makes it as wide as the parent container */
+    position: sticky;
+    left: 0;
+  }
+
+  .date {
+    width: var(--date-width);
+    max-width: var(--date-width); /* Keep this width for your desired layout */
+    display: flex; /* Makes .date a flex item */
+    align-items: center; /* Optional: center vertically */
+    justify-content: center; /* Optional: center horizontally */
+  }
+
+  .frames {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .internetArchiveImg {
+    height: 18px;
+    width: auto;
+  }
+
+  .cell:not(.title):not(.streamTitle) p {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  /* .streamTitle {
+    width: 1200px;
+  } */
+
+  .streamTitle img {
+    margin-right: 8px;
+  }
+
+  .streamTitle p {
+    /* border: 1px dashed red; */
+    /* max-width: 100%; */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate text with ellipsis */
+  }
+
+  .frames p {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+  }
+  .SeasonDivider {
+    font-size: 30px;
+  }
+
+  .column {
+    height: 30px;
+    /* border: 2px solid green; */
+    box-sizing: border-box;
+    background: #001082;
+  }
+
+  @keyframes floatDiagonal {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-100vh, -300vw); /* Moves diagonally up and left */
+    }
+  }
 }
