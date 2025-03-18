@@ -70,9 +70,6 @@ const Row = ({ episode, index, lastInSeason }) => {
     >
       <div className="rowInfo">
         <div className={`cell ep season${season}`}>{episodeOfSeason}</div>
-        {watched === true || watched === 'partial' ? (
-          <div className="progress">{watched === true ? '✅' : '⏳'}</div>
-        ) : null}
         <div
           className="cell title"
           style={{
@@ -86,7 +83,10 @@ const Row = ({ episode, index, lastInSeason }) => {
                 : 'rgb(244, 244, 244)',
           }}
         >
-          <p>{titles.join(' / ')}</p>
+          <p>
+            {titles.join(' / ')}
+            {watched === 'partial' ? ' ⏳' : watched === true ? ' ✅' : null}
+          </p>
         </div>
         <div className="cell date">
           <p>{formattedDate}</p>
