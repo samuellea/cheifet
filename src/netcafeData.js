@@ -49,7 +49,7 @@ const netcafeEpisodes = [
     index: 2,
     season: '1996',
     episodeOfSeason: 2,
-    titles: ["UFO's"],
+    titles: ['UFOs'],
     date: 844815600000,
     youtubeURL:
       'https://www.youtube.com/watch?v=87U5b-yiuNE&pp=ygUMbmV0Y2FmZSB1Zm9z',
@@ -705,10 +705,11 @@ const netcafeEpisodes = [
     framesURL: [
       'https://api.gdeltproject.org/api/v2/tvv/tvv?id=IAITEM_nc428_gambling_games',
     ],
-    watched: false,
-    streamTitle: null,
-    streamDate: null,
-    streamURL: null,
+    watched: true,
+    streamTitle: 'Streamage',
+    streamDate: 1742515200,
+    streamURL: 'https://www.youtube.com/watch?v=K2qy2nLhvlw',
+    streamThumbURL: 'https://i.ytimg.com/vi/K2qy2nLhvlw/hqdefault.jpg',
   },
   {
     index: 42,
@@ -1279,7 +1280,7 @@ const netcafeEpisodes = [
     index: 77,
     season: '1999',
     episodeOfSeason: 14,
-    titles: ['Xtreme Web'],
+    titles: ['Xtreme Web', 'Extreme Web'],
     date: 945734400000,
     youtubeURL:
       'https://www.youtube.com/watch?v=ATxuqGRUWdM&pp=ygUObmV0Y2FmZSB4dHJlbWU%3D',

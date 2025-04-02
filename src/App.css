@@ -310,7 +310,7 @@ body {
 }
 
 .internetArchiveImg {
-  height: 24px;
+  height: 20px;
   border-radius: 2px;
   overflow: 'hidden';
 }
@@ -708,7 +708,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
-  font-family: 'Courier', monospace;
+  /* font-family: 'Courier', monospace; */
   /* border-right: 5px solid black; */
 }
 
@@ -738,18 +738,23 @@ body {
   position: relative;
   padding: 5px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .leftSticky {
   /* border: 6px solid yellow; */
-  position: sticky;
-  top: 30%;
+  width: 100%;
 }
 
 .right {
   width: 90%;
   /* border: 6px solid red; */
   height: auto;
+  max-height: 640px;
+  overflow-y: scroll;
 }
 
 .buttonContainer {
@@ -781,6 +786,48 @@ body {
   align-items: center;
   font-size: 18px;
   box-sizing: border-box;
+}
+
+.watchedAllButtonLegendWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend {
+  /* border: 1px solid red; */
+  height: 40px;
+  /* width: 200px; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 14px;
+}
+
+.legendShade {
+  height: 36px;
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.legendWatched {
+  background: rgb(205, 250, 215) !important;
+  padding-right: 0px;
+}
+
+.legendPartial {
+  background: rgb(255, 243, 184);
 }
 
 .showWatchedAllButton {
@@ -961,6 +1008,7 @@ body {
   padding: 8px;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: 'Courier', monospace;
 }
 
 .title p {
@@ -979,6 +1027,7 @@ body {
 .date p {
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 
 a {
@@ -1022,12 +1071,23 @@ a:active {
   white-space: normal;
   display: flex;
   flex-direction: column;
+  /* border: 3px solid purple; */
 }
 
 .frames p {
-  margin: 0;
-  width: 100%;
-  max-width: 96px;
+  /* border: 1px solid red; */
+  /* margin: 0; */
+  /* width: 50%; */
+  /* max-width: 96px; */
+}
+
+.showFramesLabel {
+  margin-top: 1px;
+}
+
+.framesInner {
+  /* border: 1px solid red; */
+  /* background-color: red; */
 }
 
 .internetArchive {
@@ -1587,6 +1647,12 @@ a.header-link:hover {
     flex-direction: column;
     height: auto;
   }
+
+  .legend {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
   .showWatchedAllButton {
     width: 100%;
   }
@@ -1692,6 +1758,10 @@ a.header-link:hover {
     justify-content: center; /* Optional: center horizontally */
   }
 
+  .date p {
+    font-size: 12px;
+  }
+
   .internetArchiveImg {
     height: 18px;
     width: auto;
@@ -1741,6 +1811,12 @@ a.header-link:hover {
     padding: 10px;
     box-sizing: border-box;
     border: 2px solid transparent;
+  }
+
+  .showFramesLabel {
+    /* border: 1px solid red; */
+    max-width: 45px;
+    margin-top: 3px;
   }
   .SeasonDivider {
     font-size: 30px;

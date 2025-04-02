@@ -70,8 +70,9 @@ const Table = ({
         // Normal comparison for values
         return (valA > valB ? 1 : valA < valB ? -1 : 0) * order;
       });
+    console.log(filteredEpisodes[0]);
     setFilteredEpisodes(filteredEpisodes);
-  }, [watchedFilter, finalSearch, series]);
+  }, [watchedFilter, finalSearch, series, sortOn, order]);
 
   useEffect(() => {
     console.log('Sorting has changed:', { sortOn, order });

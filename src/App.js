@@ -339,17 +339,24 @@ function App() {
             </div>
           </div>
           <div className="toolbar">
-            <button
-              className="showWatchedAllButton"
-              type="button"
-              onClick={handleToggleWatched}
-            >
-              <div className="showWatchedAllButtonInside">
-                {!watchedFilter
-                  ? 'Show Watched Only 👁️ '
-                  : 'Show All Episodes 📖'}
+            <div className="watchedAllButtonLegendWrapper">
+              <button
+                className="showWatchedAllButton"
+                type="button"
+                onClick={handleToggleWatched}
+              >
+                <div className="showWatchedAllButtonInside">
+                  {!watchedFilter
+                    ? 'Show Watched Only 👁️ '
+                    : 'Show All Episodes 📖'}
+                </div>
+              </button>
+              <div className="legend">
+                <div className="legendShade legendWatched">✅</div>= completed
+                <div className="legendShade legendPartial">⏳</div>= partial
               </div>
-            </button>
+            </div>
+
             <Search handleClear={handleClear} setFinalSearch={setFinalSearch} />
           </div>
 
@@ -357,7 +364,9 @@ function App() {
             <Table
               episodeObjs={episodeObjs}
               sortOn={sortOn}
+              setSortOn={setSortOn}
               order={order}
+              setOrder={setOrder}
               watchedFilter={watchedFilter}
               series={series}
               finalSearch={finalSearch}

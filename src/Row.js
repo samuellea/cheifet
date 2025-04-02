@@ -84,8 +84,8 @@ const Row = ({ episode, index, lastInSeason }) => {
           }}
         >
           <p>
+            {watched === 'partial' ? '⏳ ' : watched === true ? '✅ ' : null}
             {titles.join(' / ')}
-            {watched === 'partial' ? ' ⏳' : watched === true ? ' ✅' : null}
           </p>
         </div>
         <div className="cell date">
@@ -119,11 +119,10 @@ const Row = ({ episode, index, lastInSeason }) => {
           onClick={() => (framesURL.length ? handleClickFrames() : null)}
         >
           {framesURL.length ? (
-            <>
-              🎞️ 👁️
-              {/* <br /> */}
-              <p>show Frames</p>
-            </>
+            <div className="framesInner">
+              <div>🎞️ 👁️</div>
+              <div className="showFramesLabel">show Frames</div>
+            </div>
           ) : null}
         </div>
 
@@ -143,7 +142,7 @@ const Row = ({ episode, index, lastInSeason }) => {
               <p>
                 {' '}
                 <a target="_blank" href={streamURL} rel="noreferrer">
-                  {window.innerWidth > 768 && '🔗'}
+                  {window.innerWidth > 768 && '🔗 '}
                   {streamTitle}
                 </a>
               </p>
